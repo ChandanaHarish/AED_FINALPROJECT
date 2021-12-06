@@ -12,21 +12,21 @@ import java.util.Date;
  * @author preranaj
  */
 public class GeneralVitalsDirectory {
-    ArrayList<GeneralVitals> g = new ArrayList<GeneralVitals>();
+    ArrayList<GeneralVitals> gv = new ArrayList<GeneralVitals>();
     
     public ArrayList<GeneralVitals> getarray() {
-        return g;
+        return gv;
     }
 
     public void setarray(ArrayList<GeneralVitals> user) {
-        this.g = g;
+        this.gv = gv;
     }
     public void addrequest(GeneralVitals user){
-        g.add(user);
+        gv.add(user);
     }
     
     public void removerequest(GeneralVitals user){
-        g.remove(user);
+        gv.remove(user);
     }
     
 }
