@@ -13,24 +13,24 @@ import java.util.ArrayList;
  */
 public class ambulance_directory {
      ArrayList<Ambulance> amb =new ArrayList<Ambulance>();
-    
-    public void addambulance(Ambulance c)
+     
+     public void addambulance(Ambulance c)
     {        
        amb.add(c);
     }
 
-    public ArrayList<Ambulance> getA() {
+    public ArrayList<Ambulance> getAmb() {
         return amb;
     }
 
-    public void setA(ArrayList<Ambulance> amb) {
+    public void setAmb(ArrayList<Ambulance> amb) {
         this.amb = amb;
     }
-
-    
-    
+     
     public void removeambulance(Ambulance customer){
         amb.remove(customer);
     }
+    
+   
     
 }
