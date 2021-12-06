@@ -16,16 +16,16 @@ public class Ambulance extends UserAccount{
     String driverName;
     String phoneNumber;
     String userID;
-    String password;
+    String pwd;
     
-    public Ambulance(String ambulanceName, String driverName, String phoneNumber, String userID, String password) {
+    public Ambulance(String ambulanceName, String driverName, String phoneNumber, String userID, String pwd) {
         setUsername(userID);
-        setPassword(password);
+        setPassword(pwd);
        // setRole(new AmbulanceDriver());
         this.ambulanceName = ambulanceName;
         this.driverName = driverName;
         this.userID=userID;
-        this.password= password;        
+        this.pwd= pwd;        
         this.phoneNumber = phoneNumber;
     }
 
@@ -62,13 +62,15 @@ public class Ambulance extends UserAccount{
         this.userID = userID;
     }
 
-    public String getPassword() {
-        return password;
+    public String getPwd() {
+        return pwd;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setPwd(String pwd) {
+        this.pwd = pwd;
     }
+
+   
     
     
 }
