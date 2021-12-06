@@ -14,18 +14,18 @@ import java.util.Date;
 public class GeneralVitalsDirectory {
     ArrayList<GeneralVitals> gv = new ArrayList<GeneralVitals>();
     
-    public ArrayList<GeneralVitals> getarray() {
+    public ArrayList<GeneralVitals> getArray() {
         return gv;
     }
 
-    public void setarray(ArrayList<GeneralVitals> user) {
+    public void setArray(ArrayList<GeneralVitals> user) {
         this.gv = gv;
     }
-    public void addrequest(GeneralVitals user){
+    public void addRequest(GeneralVitals user){
         gv.add(user);
     }
     
-    public void removerequest(GeneralVitals user){
+    public void removeRequest(GeneralVitals user){
         gv.remove(user);
     }
     

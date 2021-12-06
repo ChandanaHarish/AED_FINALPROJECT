@@ -21,7 +21,7 @@ public class Ambulance extends UserAccount{
     public Ambulance(String ambulanceName, String driverName, String phoneNumber, String userID, String pwd) {
         setUsername(userID);
         setPassword(pwd);
-        setRole(new AmbulanceDriver());
+        //setRole(new AmbulanceDriver());
         this.ambulanceName = ambulanceName;
         this.driverName = driverName;
         this.userID=userID;
