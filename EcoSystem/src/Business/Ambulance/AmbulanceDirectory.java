@@ -11,12 +11,12 @@ import java.util.ArrayList;
  *
  * @author chand
  */
-public class ambulance_directory {
+public class AmbulanceDirectory {
      ArrayList<Ambulance> amb =new ArrayList<Ambulance>();
      
-     public void addambulance(Ambulance c)
+     public void addAmbulance(Ambulance a)
     {        
-       amb.add(c);
+       amb.add(a);
     }
 
     public ArrayList<Ambulance> getAmb() {
@@ -27,7 +27,7 @@ public class ambulance_directory {
         this.amb = amb;
     }
      
-    public void removeambulance(Ambulance customer){
+    public void removeAmbulance(Ambulance customer){
         amb.remove(customer);
     }
     
