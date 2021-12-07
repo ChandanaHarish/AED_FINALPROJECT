@@ -6,6 +6,7 @@
 package Business.Pharmacy;
 
 import Business.UserAccount.UserAccount;
+import Business.role.PharmacyAdministrator;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -77,7 +78,7 @@ public class Pharmacy extends UserAccount {
     public Pharmacy(String name,  String userID, String password, String phoneNumber,String location) {
         setUsername(userID);
         setPassword(password);
-       // setRole(new PharmacyAdmin());
+        setRole(new PharmacyAdministrator());
         this.name = name;
         this.phoneNumber = phoneNumber;
         this.Location = location;
