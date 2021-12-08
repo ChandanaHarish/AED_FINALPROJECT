@@ -3,13 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/chand/OneDrive/Desktop/AED%20FINAL%20PROJECT/AED_FINALPROJECT/EcoSystem/src/Business/role/Role.java</file>
-            <file>file:/C:/Users/chand/OneDrive/Desktop/AED%20FINAL%20PROJECT/AED_FINALPROJECT/EcoSystem/src/Business/NCI/NCI.java</file>
-            <file>file:/C:/Users/chand/OneDrive/Desktop/AED%20FINAL%20PROJECT/AED_FINALPROJECT/EcoSystem/src/Business/role/Nci.java</file>
-            <file>file:/C:/Users/chand/OneDrive/Desktop/AED%20FINAL%20PROJECT/AED_FINALPROJECT/EcoSystem/src/Business/Ambulance/Ambulance.java</file>
-            <file>file:/C:/Users/chand/OneDrive/Desktop/AED%20FINAL%20PROJECT/AED_FINALPROJECT/EcoSystem/src/Business/role/AmbulanceDriver.java</file>
-            <file>file:/C:/Users/chand/OneDrive/Desktop/AED%20FINAL%20PROJECT/AED_FINALPROJECT/EcoSystem/src/Business/NCI/NCIDirectory.java</file>
-            <file>file:/C:/Users/chand/OneDrive/Desktop/AED%20FINAL%20PROJECT/AED_FINALPROJECT/EcoSystem/src/userInterface/CustomerRole/CustomerAreaJPanel.java</file>
+            <file>file:/C:/Users/chand/OneDrive/Desktop/AED%20FINAL%20PROJECT/AED_FINALPROJECT/EcoSystem/src/Business/Pharmacy/Pharmacy.java</file>
+            <file>file:/C:/Users/chand/OneDrive/Desktop/AED%20FINAL%20PROJECT/AED_FINALPROJECT/EcoSystem/src/userInterface/Pharmacy/ManageMedicines.java</file>
+            <file>file:/C:/Users/chand/OneDrive/Desktop/AED%20FINAL%20PROJECT/AED_FINALPROJECT/EcoSystem/src/Business/Pharmacy/PharmacyDirectory.java</file>
+            <file>file:/C:/Users/chand/OneDrive/Desktop/AED%20FINAL%20PROJECT/AED_FINALPROJECT/EcoSystem/src/Business/role/PharmacyAdministrator.java</file>
         </group>
     </open-files>
 </project-private>
