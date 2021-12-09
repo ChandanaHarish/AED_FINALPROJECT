@@ -17,8 +17,8 @@ public abstract class Role {
     
     public enum RoleType{
         
-        PharmacyAdmin("PharmacyAdmin"),
-        FireDepartmentAdmin("FireDepartmentAdmin"),
+        PharmacyAdministrator("PharmacyAdmin"),
+        MedicineDeliveryAdmin("MedicineDeliveryAdmin"),
         PoliceRole("PoilceAdmin"),
         Customer("Customer"),
         User("user"),
