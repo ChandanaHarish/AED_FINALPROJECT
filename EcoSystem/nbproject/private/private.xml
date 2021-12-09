@@ -4,6 +4,14 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
 <<<<<<< HEAD
+            <file>file:/C:/Users/chand/OneDrive/Desktop/AED%20FINAL%20PROJECT/AED_FINALPROJECT/EcoSystem/src/userInterface/ChildCare/ChildCareUI.java</file>
+            <file>file:/C:/Users/chand/OneDrive/Desktop/AED%20FINAL%20PROJECT/AED_FINALPROJECT/EcoSystem/src/Business/WorkQueue/EmergencyReportDirectory.java</file>
+            <file>file:/C:/Users/chand/OneDrive/Desktop/AED%20FINAL%20PROJECT/AED_FINALPROJECT/EcoSystem/src/userInterface/MedicineDelivery/MedicineDeliveryUI.java</file>
+            <file>file:/C:/Users/chand/OneDrive/Desktop/AED%20FINAL%20PROJECT/AED_FINALPROJECT/EcoSystem/src/Business/WorkQueue/EmergencyReport.java</file>
+            <file>file:/C:/Users/chand/OneDrive/Desktop/AED%20FINAL%20PROJECT/AED_FINALPROJECT/EcoSystem/src/userInterface/Ambulance/AmbulanceUI.java</file>
+            <file>file:/C:/Users/chand/OneDrive/Desktop/AED%20FINAL%20PROJECT/AED_FINALPROJECT/EcoSystem/src/Business/MedicineDelivery/MedicineDelivery.java</file>
+=======
+<<<<<<< HEAD
             <file>file:/C:/Users/18573/Desktop/AED_FinalProject/AED_FINALPROJECT/EcoSystem/src/Business/ChildCare/ChildCare.java</file>
             <file>file:/C:/Users/18573/Desktop/AED_FinalProject/AED_FINALPROJECT/EcoSystem/src/Business/MedicineDelivery/MedicineDelivery.java</file>
             <file>file:/C:/Users/18573/Desktop/AED_FinalProject/AED_FINALPROJECT/EcoSystem/src/Business/role/ChildCareAdmin.java</file>
@@ -21,6 +29,7 @@
             <file>file:/C:/Users/chand/OneDrive/Desktop/AED%20FINAL%20PROJECT/AED_FINALPROJECT/EcoSystem/src/Business/WorkQueue/MentalHealth.java</file>
             <file>file:/C:/Users/chand/OneDrive/Desktop/AED%20FINAL%20PROJECT/AED_FINALPROJECT/EcoSystem/src/Business/WorkQueue/MentalHealthDirectory.java</file>
 >>>>>>> ed6100ad5f89c2dca4b4c2068abfb3a8ec447f45
+>>>>>>> 7125584cf426e401b041a59e9d6a57747644e570
         </group>
     </open-files>
 </project-private>

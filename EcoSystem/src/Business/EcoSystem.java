@@ -5,6 +5,7 @@
  */
 package Business;
 
+import Business.WorkQueue.EmergencyReportDirectory;
 import Business.WorkQueue.OrderRequestDirectory;
 
 
@@ -18,6 +19,10 @@ import Business.WorkQueue.OrderRequestDirectory;
 public class EcoSystem {
 
     public OrderRequestDirectory getOrderRequestDirectory() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public EmergencyReportDirectory getEmergencyReportDirectory() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
