@@ -6,6 +6,7 @@
 package Business.UserAccount;
 
 import Business.Employee.Employee;
+import Business.WorkQueue.WorkQueue;
 import Business.role.Role;
 //import com.sun.corba.se.spi.orbutil.threadpool.WorkQueue;
 
@@ -18,7 +19,7 @@ public class UserAccount {
     private String password;  
     private Employee employee;
     private Role role;
-    //private WorkQueue workQueue;
+    private WorkQueue workQueue;
     
     
     public String getUsername() {
