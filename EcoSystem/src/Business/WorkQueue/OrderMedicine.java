@@ -14,7 +14,7 @@ import java.util.Map;
 public class OrderMedicine {
     int ID;
     String orderStatus;
-    String patiendID;
+    String patientID;
     String pharmacyName;
     String oncologistName;
 
@@ -34,12 +34,12 @@ public class OrderMedicine {
         this.orderStatus = orderStatus;
     }
 
-    public String getPatiendID() {
-        return patiendID;
+    public String getPatientID() {
+        return patientID;
     }
 
-    public void setPatiendID(String patiendID) {
-        this.patiendID = patiendID;
+    public void setPatientID(String patientID) {
+        this.patientID = patientID;
     }
 
     public String getPharmacyName() {
