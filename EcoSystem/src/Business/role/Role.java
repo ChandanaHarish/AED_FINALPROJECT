@@ -19,7 +19,7 @@ public abstract class Role {
         
         PharmacyAdministrator("PharmacyAdmin"),
         MedicineDeliveryAdmin("MedicineDeliveryAdmin"),
-        PoliceRole("PoilceAdmin"),
+        ChildCareAdmin("ChildCare"),
         Customer("Customer"),
         User("user"),
         Vaccination_admin("Vaccination_admin"),
