@@ -18,7 +18,7 @@ public class CancerHospitalsDirectory {
        a.add(c);
     }
 
-    public ArrayList<CancerHospitals> getA() {
+    public ArrayList<CancerHospitals> getA(){
         return a;
     }
 
