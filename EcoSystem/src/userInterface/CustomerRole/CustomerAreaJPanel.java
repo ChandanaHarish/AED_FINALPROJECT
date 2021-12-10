@@ -137,6 +137,7 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
     private void refreshTestJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_refreshTestJButtonActionPerformed
 
         populateRequestTable();
+        
 
     }//GEN-LAST:event_refreshTestJButtonActionPerformed
 

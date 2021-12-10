@@ -6,6 +6,12 @@
 package Business;
 
 import Business.WorkQueue.OrderRequestDirectory;
+import Business.Employee.EmployeeDirectory;
+import Business.UserAccount.UserAccountDirectory;
+import Business.WorkQueue.WorkQueue;
+import Business.user.userDirectory;
+import Business.role.Role;
+import java.util.ArrayList;
 
 /**
  *
@@ -14,8 +20,13 @@ import Business.WorkQueue.OrderRequestDirectory;
 public abstract class Organization {
     
     private String name;
+    private WorkQueue workQueue;
+    userDirectory userdirectory;
+    private EmployeeDirectory employeeDirectory;
+    private UserAccountDirectory userAccountDirectory;
+    
     OrderRequestDirectory OrderRequestDirectory;
-    public enum Type{
+    public enum Type{ 
 //        RestaurantAdmin("RestaurantAdmin"),
 //        Customer("Customer"),
 //        DeliveryMan("Delivery"),
@@ -33,7 +44,24 @@ public abstract class Organization {
 
     public Organization(String name) {
         this.name = name;
+        WorkQueue workQueue = new WorkQueue();
+        employeeDirectory = new EmployeeDirectory();
+        userAccountDirectory = new UserAccountDirectory();
         OrderRequestDirectory = new OrderRequestDirectory();
+        userdirectory =new userDirectory();
+    }
+    
+    public userDirectory getUserdirectory() {
+        if(userdirectory==null)
+        {
+            userdirectory =new userDirectory();
+        }
+            
+        return userdirectory;
+    }
+
+    public void setUserdirectory(userDirectory userdirectory) {
+        this.userdirectory = userdirectory;
     }
 
     public OrderRequestDirectory getOrderRequestDirectory() {
@@ -43,6 +71,28 @@ public abstract class Organization {
         }
         return OrderRequestDirectory;
     }
+    
+     public String getName() {
+        return name;
+    }
+
+    public WorkQueue getWorkQueue() {
+        return workQueue;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setWorkQueue(WorkQueue workQueue) {
+        this.workQueue = workQueue;
+    }
+
+    @Override
+    public String toString() {
+        return name;
+    }
+
 
     public void setOrderRequestDirectory(OrderRequestDirectory OrderRequestDirectory) {
         this.OrderRequestDirectory = OrderRequestDirectory;

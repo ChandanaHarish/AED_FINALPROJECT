@@ -6,6 +6,8 @@
 package Business.user;
 
 import Business.UserAccount.UserAccount;
+import Business.role.UserRole;
+import Business.UserAccount.UserAccount;
 
 /**
  *
@@ -23,7 +25,7 @@ public class User extends UserAccount{
     public User(String firstName, String lastName, String emailID, String userID, String password, String phoneNumber,String location) {
         setUsername(userID);
         setPassword(password);
-        //setRole(new UserRole());
+        setRole(new UserRole());
         this.firstName = firstName;
         this.lastName = lastName;
         this.userID= userID;
