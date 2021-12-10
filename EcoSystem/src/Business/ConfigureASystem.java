@@ -1,5 +1,6 @@
 package Business;
 
+import Business.Employee.Employee;
 import Business.UserAccount.UserAccount;
 
 
@@ -9,13 +10,13 @@ import Business.UserAccount.UserAccount;
  */
 public class ConfigureASystem {
     
-    public static EcoSystem configure(){
+  public static EcoSystem configure(){
+      
+      return null;
+  }
+         
         
         
-        
-        return null;
-        
-        
-    }
+    
     
 }
