@@ -19,7 +19,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author raksh
+ * @author Chand
  */
 public class ManagerestaurantInfo extends javax.swing.JPanel {
 
