@@ -14,8 +14,8 @@ import java.awt.Component;
 
 /**
  *
- * @author Chand
- */
+ * @author Chand 
+ */ 
 public class AdminWorkAreaJPanel extends javax.swing.JPanel {
     
     JPanel userProcessContainer;
