@@ -5,7 +5,6 @@
  */
 package Business.Customer;
 
-<<<<<<< HEAD
 
 import Business.UserAccount.UserAccount;
 import Business.role.CustomerRole;
@@ -13,16 +12,8 @@ import Business.role.CustomerRole;
 /**
  *
  * @author Chand
-=======
-import Business.role.CustomerRole;
+*/
 
-import Business.UserAccount.UserAccount;
-
-/**
- *
- * @author preranaj
->>>>>>> b1f533b23e72ad07e84c19fccb5337710757af4e
- */
 public class Customer extends UserAccount {
     String firstname;
     String lastname;

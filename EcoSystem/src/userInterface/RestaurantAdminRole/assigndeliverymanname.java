@@ -22,7 +22,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author raksh
+ * @author Chand
  */
 public class assigndeliverymanname extends javax.swing.JPanel {
 

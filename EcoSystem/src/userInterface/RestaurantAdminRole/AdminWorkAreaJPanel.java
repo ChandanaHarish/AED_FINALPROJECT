@@ -14,7 +14,7 @@ import java.awt.Component;
 
 /**
  *
- * @author chand
+ * @author Chand
  */
 public class AdminWorkAreaJPanel extends javax.swing.JPanel {
     
