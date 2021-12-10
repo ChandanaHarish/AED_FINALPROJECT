@@ -8,7 +8,7 @@ import Business.EcoSystem;
 
 import Business.UserAccount.UserAccount;
 import javax.swing.JPanel;
-import userinterface.CustomerRole.*;
+import userInterface.CustomerRole.*;
 
 /**
  *

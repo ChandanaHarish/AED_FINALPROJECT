@@ -8,7 +8,7 @@ package Business.role;
 import Business.EcoSystem;
 import Business.UserAccount.UserAccount;
 import javax.swing.JPanel;
-import userinterface.RestaurantAdminRole.*;
+import userInterface.RestaurantAdminRole.*;
 
 /**
  *
