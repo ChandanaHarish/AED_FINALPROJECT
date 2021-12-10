@@ -54,7 +54,7 @@ import javax.swing.table.DefaultTableModel;
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jScrollPane1 = new javax.swing.JScrollPane();
+        tblMedicine = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         lblMedName = new javax.swing.JLabel();
         txtMedName = new javax.swing.JTextField();
@@ -71,7 +71,7 @@ import javax.swing.table.DefaultTableModel;
                 "Item Name ", "Item Cost"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        tblMedicine.setViewportView(jTable1);
 
         lblMedName.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         lblMedName.setText("Name :");
@@ -127,7 +127,7 @@ import javax.swing.table.DefaultTableModel;
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addContainerGap()
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 418, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(tblMedicine, javax.swing.GroupLayout.PREFERRED_SIZE, 418, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addContainerGap(277, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
@@ -147,7 +147,7 @@ import javax.swing.table.DefaultTableModel;
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(68, 68, 68)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(tblMedicine, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addContainerGap(202, Short.MAX_VALUE)))
         );
     }// </editor-fold>//GEN-END:initComponents
@@ -221,10 +221,10 @@ import javax.swing.table.DefaultTableModel;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnMedAdd;
     private javax.swing.JButton btnMedDelete;
-    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
     private javax.swing.JLabel lblMedCost;
     private javax.swing.JLabel lblMedName;
+    private javax.swing.JScrollPane tblMedicine;
     private javax.swing.JTextField txtMedCost;
     private javax.swing.JTextField txtMedName;
     // End of variables declaration//GEN-END:variables

@@ -36,7 +36,7 @@ public class Ambulance extends UserAccount{
     }
 
     public void setAmbulanceName(String ambulanceName) {
-        this.ambulanceName = ambulanceName;
+        this.ambulanceName = ambulanceName;  
     }
 
     public String getDriverName() {
