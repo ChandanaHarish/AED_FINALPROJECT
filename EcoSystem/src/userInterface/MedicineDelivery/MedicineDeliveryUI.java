@@ -99,7 +99,7 @@ public class MedicineDeliveryUI extends javax.swing.JPanel {
         });
 
         btnFalseAlarmRespond.setBackground(new java.awt.Color(195, 233, 245));
-        btnFalseAlarmRespond.setText("False Alaram");
+        btnFalseAlarmRespond.setText("False Alarm");
         btnFalseAlarmRespond.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnFalseAlarmRespondActionPerformed(evt);
