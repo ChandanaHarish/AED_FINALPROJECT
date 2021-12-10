@@ -7,8 +7,11 @@ package Business;
 
 import Business.WorkQueue.OrderRequestDirectory;
 import Business.Employee.EmployeeDirectory;
+import Business.Oncologist.OncologistsDirectory;
 import Business.UserAccount.UserAccountDirectory;
+import Business.WorkQueue.OncologistAppointmentDirectory;
 import Business.WorkQueue.WorkQueue;
+import Business.WorkQueue.appointmentCheck;
 import Business.user.userDirectory;
 import Business.role.Role;
 import java.util.ArrayList;
@@ -21,7 +24,10 @@ public abstract class Organization {
     
     private String name;
     private WorkQueue workQueue;
+    appointmentCheck appcheck;
     userDirectory userdirectory;
+    OncologistAppointmentDirectory oncologistAppointmentDirectory;
+    OncologistsDirectory oncologistsDirectory;
     private EmployeeDirectory employeeDirectory;
     private UserAccountDirectory userAccountDirectory;
     
@@ -72,6 +78,28 @@ public abstract class Organization {
         return OrderRequestDirectory;
     }
     
+    public OncologistsDirectory OncologistsDirectory() {
+        if(oncologistsDirectory==null)
+        {
+            oncologistsDirectory = new OncologistsDirectory();
+        }
+        return oncologistsDirectory;
+    }
+    
+    public OncologistAppointmentDirectory getoncologistAppointmentDirectory() {
+        if(oncologistAppointmentDirectory==null)
+        {
+            oncologistAppointmentDirectory = new OncologistAppointmentDirectory();        
+        }
+        return oncologistAppointmentDirectory;
+        
+    }
+
+    public void setDoctor_appointment_directory(OncologistAppointmentDirectory oncologistAppointmentDirectory) {
+        this.oncologistAppointmentDirectory = oncologistAppointmentDirectory;
+    }
+
+    
      public String getName() {
         return name;
     }
@@ -92,7 +120,18 @@ public abstract class Organization {
     public String toString() {
         return name;
     }
+    
+    public appointmentCheck getAppcheck() {
+        if(appcheck ==null)
+        {
+            appcheck = new appointmentCheck();       
+        }
+        return appcheck;
+    }
 
+    public void setAppcheck(appointmentCheck appcheck) {
+        this.appcheck = appcheck;
+    }
 
     public void setOrderRequestDirectory(OrderRequestDirectory OrderRequestDirectory) {
         this.OrderRequestDirectory = OrderRequestDirectory;

@@ -90,7 +90,7 @@ public class AmbulanceUI extends javax.swing.JPanel {
         });
 
         btnAmbulanceFalseAlarm.setBackground(new java.awt.Color(189, 195, 199));
-        btnAmbulanceFalseAlarm.setText("False Alaram");
+        btnAmbulanceFalseAlarm.setText("False Alarm");
         btnAmbulanceFalseAlarm.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAmbulanceFalseAlarmActionPerformed(evt);

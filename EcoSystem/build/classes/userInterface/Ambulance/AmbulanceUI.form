@@ -91,7 +91,7 @@
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="c7" green="c3" red="bd" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="False Alaram"/>
+        <Property name="text" type="java.lang.String" value="False Alarm"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAmbulanceFalseAlarmActionPerformed"/>

@@ -5,10 +5,20 @@
  */
 package Business.role;
 
+import Business.EcoSystem;
+import Business.UserAccount.UserAccount;
+import javax.swing.JPanel;
+import userInterface.CustomerRole.CustomerAreaJPanel;
+
 /**
  *
  * @author ajay09
  */
-public class OncologistRole {
+public class OncologistRole extends Role {
+
+    public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, EcoSystem business) {
+        return new CustomerAreaJPanel(userProcessContainer, account, business);
+    }
+    
     
 }
