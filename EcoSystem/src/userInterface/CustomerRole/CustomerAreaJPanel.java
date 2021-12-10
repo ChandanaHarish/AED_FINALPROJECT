@@ -15,8 +15,8 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Chand 
- */ 
+ * @author chand
+ */
 public class CustomerAreaJPanel extends javax.swing.JPanel {
 
     private JPanel userProcessContainer;
