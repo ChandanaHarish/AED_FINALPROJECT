@@ -6,6 +6,7 @@
 package Business.Oncologist;
 
 import Business.UserAccount.UserAccount;
+import Business.role.OncologistRole;
 
 /**
  *
@@ -22,12 +23,11 @@ public class Oncologist extends UserAccount{
     public Oncologist(String firstName, String lastName, String userID, String password, String phoneNumber, String Spealization) {
         setUsername(userID);
         setPassword(password);
-       // setRole(new OncologistRole());
+        setRole(new OncologistRole());
         this.firstName = firstName;
         this.lastName = lastName;
         this.phoneNumber = phoneNumber;
         this.spealization=Spealization;
-        
         
     }
 

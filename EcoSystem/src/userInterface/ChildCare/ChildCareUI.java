@@ -72,7 +72,7 @@ public class ChildCareUI extends javax.swing.JPanel {
         });
 
         btnFalseAlarmChildCare.setBackground(new java.awt.Color(195, 233, 245));
-        btnFalseAlarmChildCare.setText("False Alaram");
+        btnFalseAlarmChildCare.setText("False Alarm");
         btnFalseAlarmChildCare.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnFalseAlarmChildCareActionPerformed(evt);
