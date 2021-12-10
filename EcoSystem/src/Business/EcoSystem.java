@@ -5,6 +5,7 @@
  */
 package Business;
 
+import Business.WorkQueue.EmergencyReportDirectory;
 import Business.WorkQueue.OrderRequestDirectory;
 import Business.user.userDirectory;
 import Business.role.Role;
@@ -22,37 +23,33 @@ public class EcoSystem extends Organization{
     
     private static EcoSystem business;
 
-    //public EcoSystem (userDirectory userdirectory) {
-       // this.userdirectory = userdirectory;
-    //}
-//    public OrderRequestDirectory getOrderRequestDirectory() {
-//        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-//    }
-    
+//    //public EcoSystem (userDirectory userdirectory) {
+//       // this.userdirectory = userdirectory;
+//    //}
+////    public OrderRequestDirectory getOrderRequestDirectory() {
+////        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+////    }
+//    
     public static EcoSystem getInstance(){
         if(business==null){
             business=new EcoSystem();
         }
         return business;
     }
-    
+//    
      private EcoSystem(){
         super(null);
        
     }
  
-    
-    public boolean checkIfUserIsUnique(String userName){
-       //
-       return false;
+//    
+//    public boolean checkIfUserIsUnique(String userName){
+//       //
+//       return false;
+
+    public EcoSystem(String name) {
+        super(name);
     }
-
-//    Object getUserAccountDirectory() {
-//        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-//    }
-
-    
-
-    
+    }
    
-}
+
