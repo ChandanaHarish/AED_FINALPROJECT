@@ -6,12 +6,12 @@
 package userInterface.user;
 
 import Business.DB4OUtil.DB4OUtil;
-//import Business.Doctor.Doctor;
+import Business.Oncologist.Oncologist;
 import Business.EcoSystem;
 import Business.UserAccount.UserAccount;
-//import Business.WorkQueue.Doctor_appointment;
-//import Business.WorkQueue.Doctor_appointment_directory;
-//import Business.WorkQueue.Donate_blood_Directory;
+import Business.WorkQueue.OncologistAppointment;
+import Business.WorkQueue.OncologistAppointmentDirectory;
+import Business.WorkQueue.Donate_blood_Directory;
 import Business.user.User;
 import java.awt.CardLayout;
 import java.text.SimpleDateFormat;
@@ -21,9 +21,6 @@ import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
-import Business.Oncologist.Oncologist;
-import Business.WorkQueue.OncologistAppointment;
-import Business.WorkQueue.OncologistAppointmentDirectory;
 
 /**
  *
@@ -100,6 +97,7 @@ public class Doctor_App extends javax.swing.JPanel {
         jComboBox1 = new javax.swing.JComboBox<>();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
+        jDateChooser1 = new com.toedter.calendar.JDateChooser();
         jComboBox2 = new javax.swing.JComboBox<>();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
@@ -153,6 +151,9 @@ public class Doctor_App extends javax.swing.JPanel {
                         .addGap(108, 108, 108)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 396, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
+                        .addGap(174, 174, 174)
+                        .addComponent(jDateChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, 268, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
                         .addGap(267, 267, 267)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -167,7 +168,9 @@ public class Doctor_App extends javax.swing.JPanel {
                 .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(55, 55, 55)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(123, 123, 123)
+                .addGap(29, 29, 29)
+                .addComponent(jDateChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(54, 54, 54)
                 .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(29, 29, 29)
                 .addComponent(jButton1)
@@ -184,7 +187,7 @@ public class Doctor_App extends javax.swing.JPanel {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        //blood_bank();
+        blood_bank();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -214,7 +217,7 @@ public class Doctor_App extends javax.swing.JPanel {
                     User u=(User)(userAccount);
                     d.setUserID(u.getUserID());
                     d.setUserName(u.getFirstName());
-                    OncologistAppointmentDirectory dad=ecosystem.getoncologistAppointmentDirectory();
+                    OncologistAppointmentDirectory dad=ecosystem.getOncologistAppointmentDirectory();
                     dad.addRequest(d);
                     DB4OUtil.dB4OUtil.storeSystem(ecosystem);
                     JOptionPane.showMessageDialog(null,"Appointment booked!!");
@@ -238,13 +241,20 @@ public class Doctor_App extends javax.swing.JPanel {
 
     }//GEN-LAST:event_jButton1ActionPerformed
 
-   
+    public void blood_bank()
+    {
+        appointmentStatus ur=new appointmentStatus(container,ecosystem,userAccount);
+        container.add(ur);
+        CardLayout layout = (CardLayout) container.getLayout();
+        layout.next(container); 
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
+    private com.toedter.calendar.JDateChooser jDateChooser1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables
