@@ -58,7 +58,6 @@ public class OncologistFrame extends javax.swing.JPanel {
         setBackground(new java.awt.Color(195, 233, 245));
         setPreferredSize(new java.awt.Dimension(1036, 539));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/logout (1).png"))); // NOI18N
         jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel1MouseClicked(evt);
@@ -94,11 +93,6 @@ public class OncologistFrame extends javax.swing.JPanel {
             }
         });
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/doctor (1).png"))); // NOI18N
-
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/medical-appointment (1).png"))); // NOI18N
-
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/blood (1).png"))); // NOI18N
         jLabel6.setToolTipText("");
 
         jLabel7.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N

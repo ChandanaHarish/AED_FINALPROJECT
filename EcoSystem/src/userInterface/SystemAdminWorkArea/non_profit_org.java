@@ -49,7 +49,6 @@ public class non_profit_org extends javax.swing.JPanel {
         container1.setPreferredSize(new java.awt.Dimension(770, 539));
         container1.setLayout(new java.awt.CardLayout());
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/logout (1).png"))); // NOI18N
         jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel2MouseClicked(evt);
@@ -65,8 +64,6 @@ public class non_profit_org extends javax.swing.JPanel {
                 jLabel1MouseClicked(evt);
             }
         });
-
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/blood-bank (1) (1).png"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
