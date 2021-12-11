@@ -16,17 +16,10 @@ import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
-<<<<<<< HEAD
-//import userInterface.MainJFrame;
-/**
- *
- * @author ajay09
-=======
 //import userinterface.MainJFrame;
 /**
  *
- * @author raksh
->>>>>>> 7bcedf5b7a8d78036d74f906ceda3961453edc8a
+ * @author ajay09
  */
 public class CustomerFrame extends javax.swing.JPanel {
 
@@ -60,47 +53,28 @@ public class CustomerFrame extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-<<<<<<< HEAD
-        lblFirstName = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         txtFirstName = new javax.swing.JTextField();
-        lblLastName = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         txtLastName = new javax.swing.JTextField();
-        lblUserName = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         txtUserName = new javax.swing.JTextField();
-        lblPassword = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
         txtPassword = new javax.swing.JTextField();
         btnAdd = new javax.swing.JButton();
         btnUpdate = new javax.swing.JButton();
         tblCustomer = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
-        lblPhNo = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
         txtPhNo = new javax.swing.JTextField();
         btnDelete = new javax.swing.JButton();
-=======
-        jLabel1 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
-        jLabel4 = new javax.swing.JLabel();
-        jTextField4 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
-        jLabel5 = new javax.swing.JLabel();
-        jTextField5 = new javax.swing.JTextField();
-        jButton3 = new javax.swing.JButton();
->>>>>>> 7bcedf5b7a8d78036d74f906ceda3961453edc8a
         jPanel1 = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
+        btnBack = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
 
-<<<<<<< HEAD
-        lblFirstName.setText("First Name :");
+        jLabel1.setText("First Name :");
 
         txtFirstName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -113,7 +87,7 @@ public class CustomerFrame extends javax.swing.JPanel {
             }
         });
 
-        lblLastName.setText("Last Name:");
+        jLabel2.setText("Last Name:");
 
         txtLastName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -126,9 +100,9 @@ public class CustomerFrame extends javax.swing.JPanel {
             }
         });
 
-        lblUserName.setText("User Name:");
+        jLabel3.setText("User Name:");
 
-        lblPassword.setText("Password:");
+        jLabel4.setText("Password:");
 
         btnAdd.setText("Add");
         btnAdd.addActionListener(new java.awt.event.ActionListener() {
@@ -141,49 +115,6 @@ public class CustomerFrame extends javax.swing.JPanel {
         btnUpdate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnUpdateActionPerformed(evt);
-=======
-        jLabel1.setText("First Name :");
-
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
-            }
-        });
-        jTextField1.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
-                jTextField1KeyPressed(evt);
-            }
-        });
-
-        jLabel2.setText("Last Name:");
-
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
-            }
-        });
-        jTextField2.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
-                jTextField2KeyPressed(evt);
-            }
-        });
-
-        jLabel3.setText("User Name:");
-
-        jLabel4.setText("Password:");
-
-        jButton1.setText("Add");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-
-        jButton2.setText("Update");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
->>>>>>> 7bcedf5b7a8d78036d74f906ceda3961453edc8a
             }
         });
 
@@ -200,10 +131,9 @@ public class CustomerFrame extends javax.swing.JPanel {
                 jTable1MouseClicked(evt);
             }
         });
-<<<<<<< HEAD
         tblCustomer.setViewportView(jTable1);
 
-        lblPhNo.setText("Phone Number:");
+        jLabel5.setText("Phone Number:");
 
         txtPhNo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -220,27 +150,6 @@ public class CustomerFrame extends javax.swing.JPanel {
         btnDelete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDeleteActionPerformed(evt);
-=======
-        jScrollPane1.setViewportView(jTable1);
-
-        jLabel5.setText("Phone Number:");
-
-        jTextField5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField5ActionPerformed(evt);
-            }
-        });
-        jTextField5.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
-                jTextField5KeyPressed(evt);
-            }
-        });
-
-        jButton3.setText("Delete");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
->>>>>>> 7bcedf5b7a8d78036d74f906ceda3961453edc8a
             }
         });
 
@@ -248,10 +157,10 @@ public class CustomerFrame extends javax.swing.JPanel {
 
         jLabel8.setText("Customer Pannel");
 
-        jLabel6.setText("<<back");
-        jLabel6.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnBack.setText("<<back");
+        btnBack.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel6MouseClicked(evt);
+                btnBackMouseClicked(evt);
             }
         });
 
@@ -263,7 +172,7 @@ public class CustomerFrame extends javax.swing.JPanel {
                 .addGap(285, 285, 285)
                 .addComponent(jLabel8)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel6)
+                .addComponent(btnBack)
                 .addGap(47, 47, 47))
         );
         jPanel1Layout.setVerticalGroup(
@@ -272,7 +181,7 @@ public class CustomerFrame extends javax.swing.JPanel {
                 .addGap(24, 24, 24)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8)
-                    .addComponent(jLabel6))
+                    .addComponent(btnBack))
                 .addContainerGap(26, Short.MAX_VALUE))
         );
 
@@ -284,12 +193,11 @@ public class CustomerFrame extends javax.swing.JPanel {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-<<<<<<< HEAD
-                    .addComponent(lblPassword)
-                    .addComponent(lblUserName)
-                    .addComponent(lblLastName)
-                    .addComponent(lblPhNo)
-                    .addComponent(lblFirstName))
+                    .addComponent(jLabel4)
+                    .addComponent(jLabel3)
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel5)
+                    .addComponent(jLabel1))
                 .addGap(38, 38, 38)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(txtFirstName, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -312,68 +220,34 @@ public class CustomerFrame extends javax.swing.JPanel {
         );
 
         layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {btnAdd, btnDelete, btnUpdate});
-=======
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel1))
-                .addGap(38, 38, 38)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(82, 82, 82)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton2)
-                            .addComponent(jButton3))))
-                .addGap(91, 91, 91))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 660, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(37, Short.MAX_VALUE))
-        );
-
-        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jButton1, jButton2, jButton3});
->>>>>>> 7bcedf5b7a8d78036d74f906ceda3961453edc8a
 
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(36, 36, 36)
-<<<<<<< HEAD
                 .addComponent(tblCustomer, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
-=======
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
->>>>>>> 7bcedf5b7a8d78036d74f906ceda3961453edc8a
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-<<<<<<< HEAD
-                            .addComponent(lblFirstName)
+                            .addComponent(jLabel1)
                             .addComponent(txtFirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblLastName)
+                            .addComponent(jLabel2)
                             .addComponent(txtLastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblUserName)
+                            .addComponent(jLabel3)
                             .addComponent(txtUserName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblPassword)
+                            .addComponent(jLabel4)
                             .addComponent(txtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblPhNo)
+                            .addComponent(jLabel5)
                             .addComponent(txtPhNo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(btnAdd)
@@ -381,37 +255,10 @@ public class CustomerFrame extends javax.swing.JPanel {
                         .addComponent(btnUpdate)
                         .addGap(18, 18, 18)
                         .addComponent(btnDelete)))
-=======
-                            .addComponent(jLabel1)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel2)
-                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel3)
-                            .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel4)
-                            .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel5)
-                            .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton1)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton2)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton3)))
->>>>>>> 7bcedf5b7a8d78036d74f906ceda3961453edc8a
                 .addContainerGap(31, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
-<<<<<<< HEAD
     private void txtFirstNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFirstNameActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtFirstNameActionPerformed
@@ -423,25 +270,11 @@ public class CustomerFrame extends javax.swing.JPanel {
     private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
         // TODO add your handling code here:
         if( txtFirstName.getText().isEmpty()||txtLastName.getText().isEmpty()|| txtUserName.getText().isEmpty() || txtPhNo.getText().isEmpty() || txtPassword.getText().isEmpty())
-=======
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
-
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-        if( jTextField1.getText().isEmpty()||jTextField2.getText().isEmpty()|| jTextField3.getText().isEmpty() || jTextField5.getText().isEmpty() || jTextField4.getText().isEmpty())
->>>>>>> 7bcedf5b7a8d78036d74f906ceda3961453edc8a
         {
             JOptionPane.showMessageDialog(null, "please enter all mandatory fields");
             return;
         }
         
-<<<<<<< HEAD
          if(system.getUserAccountDirectory().checkIfUsernameIsUnique(txtUserName.getText())){
             Customer customer = new Customer(txtFirstName.getText(), txtLastName.getText(), txtUserName.getText(), txtPassword.getText(), txtPhNo.getText());
             system.getUserAccountDirectory().addAccount(customer);
@@ -458,24 +291,6 @@ public class CustomerFrame extends javax.swing.JPanel {
         
         
     }//GEN-LAST:event_btnAddActionPerformed
-=======
-         if(system.getUserAccountDirectory().checkIfUsernameIsUnique(jTextField3.getText())){
-            Customer customer = new Customer(jTextField1.getText(), jTextField2.getText(), jTextField3.getText(), jTextField4.getText(), jTextField5.getText());
-            system.getUserAccountDirectory().addAccount(customer);
-            system.getCustomerDirectory().adddirectory(customer);
-            populateTable();
-            jTextField1.setText("");
-            jTextField2.setText("");
-            jTextField3.setText("");
-            jTextField4.setText("");
-            jTextField5.setText("");
-         }else{
-            JOptionPane.showMessageDialog(null, "Username " + jTextField3.getText() + " already exists !!!, Please try a new one");
-         }
-        
-        
-    }//GEN-LAST:event_jButton1ActionPerformed
->>>>>>> 7bcedf5b7a8d78036d74f906ceda3961453edc8a
 
      private void populateTable() {
         CustomerDirectory customerDirectory = system.getCustomerDirectory();
@@ -495,15 +310,9 @@ public class CustomerFrame extends javax.swing.JPanel {
             }
         
     }
-<<<<<<< HEAD
     private void btnUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUpdateActionPerformed
         // TODO add your handling code here:
         String username=txtUserName.getText();
-=======
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-        String username=jTextField3.getText();
->>>>>>> 7bcedf5b7a8d78036d74f906ceda3961453edc8a
         DefaultTableModel t = (DefaultTableModel) jTable1.getModel();
         int t1=jTable1.getSelectedRow();
         String a=(String)t.getValueAt(t1, 2);
@@ -515,59 +324,33 @@ public class CustomerFrame extends javax.swing.JPanel {
             Customer c=cd1.get(i);
             if(c.getUsername().matches(a))
                     {
-<<<<<<< HEAD
                         c.setFirstname(txtFirstName.getText());
                         c.setLastname(txtLastName.getText());
                         c.setUsername(txtUserName.getText());
                         c.setPassword(txtPassword.getText());
                         c.setPhonenumber(txtPhNo.getText());
-=======
-                        c.setFirstname(jTextField1.getText());
-                        c.setLastname(jTextField2.getText());
-                        c.setUsername(jTextField3.getText());
-                        c.setPassword(jTextField4.getText());
-                        c.setPhonenumber(jTextField5.getText());
->>>>>>> 7bcedf5b7a8d78036d74f906ceda3961453edc8a
                     }
         }
         populateTable();
         
-<<<<<<< HEAD
     }//GEN-LAST:event_btnUpdateActionPerformed
-=======
-    }//GEN-LAST:event_jButton2ActionPerformed
->>>>>>> 7bcedf5b7a8d78036d74f906ceda3961453edc8a
 
     private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable1MouseClicked
         // TODO add your handling code here:
         DefaultTableModel t = (DefaultTableModel) jTable1.getModel();
         int t1=jTable1.getSelectedRow();
-<<<<<<< HEAD
         txtFirstName.setText(t.getValueAt(t1,0).toString());
         txtLastName.setText(t.getValueAt(t1,1).toString());
         txtUserName.setText(t.getValueAt(t1,2).toString());
         txtPassword.setText(t.getValueAt(t1,3).toString());
         txtPhNo.setText(t.getValueAt(t1,4).toString());
-=======
-        jTextField1.setText(t.getValueAt(t1,0).toString());
-        jTextField2.setText(t.getValueAt(t1,1).toString());
-        jTextField3.setText(t.getValueAt(t1,2).toString());
-        jTextField4.setText(t.getValueAt(t1,3).toString());
-        jTextField5.setText(t.getValueAt(t1,4).toString());
->>>>>>> 7bcedf5b7a8d78036d74f906ceda3961453edc8a
         
         
     }//GEN-LAST:event_jTable1MouseClicked
 
-<<<<<<< HEAD
     private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
         // TODO add your handling code here:
         String username=txtUserName.getText();
-=======
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
-        String username=jTextField3.getText();
->>>>>>> 7bcedf5b7a8d78036d74f906ceda3961453edc8a
         DefaultTableModel t = (DefaultTableModel) jTable1.getModel();
         int t1=jTable1.getSelectedRow();
         String a=(String)t.getValueAt(t1, 2);
@@ -584,105 +367,60 @@ public class CustomerFrame extends javax.swing.JPanel {
                     }
         }
         populateTable();
-<<<<<<< HEAD
             txtFirstName.setText("");
             txtLastName.setText("");
             txtUserName.setText("");
             txtPassword.setText("");
             txtPhNo.setText("");
-=======
-            jTextField1.setText("");
-            jTextField2.setText("");
-            jTextField3.setText("");
-            jTextField4.setText("");
-            jTextField5.setText("");
->>>>>>> 7bcedf5b7a8d78036d74f906ceda3961453edc8a
         
         
         
         
-<<<<<<< HEAD
     }//GEN-LAST:event_btnDeleteActionPerformed
-=======
-    }//GEN-LAST:event_jButton3ActionPerformed
->>>>>>> 7bcedf5b7a8d78036d74f906ceda3961453edc8a
 
-    private void jLabel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseClicked
+    private void btnBackMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBackMouseClicked
         // TODO add your handling code here:
         backAction();
-    }//GEN-LAST:event_jLabel6MouseClicked
+    }//GEN-LAST:event_btnBackMouseClicked
 
-<<<<<<< HEAD
     private void txtFirstNameKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtFirstNameKeyPressed
-=======
-    private void jTextField1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyPressed
->>>>>>> 7bcedf5b7a8d78036d74f906ceda3961453edc8a
         // TODO add your handling code here:
         char c=evt.getKeyChar();
         if(Character.isDigit(c))
         {
-<<<<<<< HEAD
             txtFirstName.setEditable(false);
-=======
-            jTextField1.setEditable(false);
->>>>>>> 7bcedf5b7a8d78036d74f906ceda3961453edc8a
             JOptionPane.showMessageDialog(null, "enter Alphabets");
         }
         else
         {
-<<<<<<< HEAD
             txtFirstName.setEditable(true);
         }
     }//GEN-LAST:event_txtFirstNameKeyPressed
 
     private void txtLastNameKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtLastNameKeyPressed
-=======
-            jTextField1.setEditable(true);
-        }
-    }//GEN-LAST:event_jTextField1KeyPressed
-
-    private void jTextField2KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField2KeyPressed
->>>>>>> 7bcedf5b7a8d78036d74f906ceda3961453edc8a
         // TODO add your handling code here:
         char c=evt.getKeyChar();
         if(Character.isDigit(c))
         {
-<<<<<<< HEAD
             txtLastName.setEditable(false);
-=======
-            jTextField2.setEditable(false);
->>>>>>> 7bcedf5b7a8d78036d74f906ceda3961453edc8a
             JOptionPane.showMessageDialog(null, "enter Alphabets");
         }
         else
         {
-<<<<<<< HEAD
             txtLastName.setEditable(true);
         }
     }//GEN-LAST:event_txtLastNameKeyPressed
 
     private void txtPhNoKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtPhNoKeyPressed
-=======
-            jTextField2.setEditable(true);
-        }
-    }//GEN-LAST:event_jTextField2KeyPressed
-
-    private void jTextField5KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField5KeyPressed
->>>>>>> 7bcedf5b7a8d78036d74f906ceda3961453edc8a
         // TODO add your handling code here:
         char c=evt.getKeyChar();
         if(Character.isLetter(c))
         {
-<<<<<<< HEAD
             txtPhNo.setEditable(false);
-=======
-            jTextField5.setEditable(false);
->>>>>>> 7bcedf5b7a8d78036d74f906ceda3961453edc8a
             JOptionPane.showMessageDialog(null, "enter number");
         }
         else
         {
-<<<<<<< HEAD
             txtLastName.setEditable(true);
         }
     }//GEN-LAST:event_txtPhNoKeyPressed
@@ -690,15 +428,6 @@ public class CustomerFrame extends javax.swing.JPanel {
     private void txtPhNoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPhNoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtPhNoActionPerformed
-=======
-            jTextField2.setEditable(true);
-        }
-    }//GEN-LAST:event_jTextField5KeyPressed
-
-    private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField5ActionPerformed
->>>>>>> 7bcedf5b7a8d78036d74f906ceda3961453edc8a
     
     private void backAction() {
         container.remove(this);
@@ -711,44 +440,23 @@ public class CustomerFrame extends javax.swing.JPanel {
 
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
-<<<<<<< HEAD
     private javax.swing.JButton btnAdd;
+    private javax.swing.JLabel btnBack;
     private javax.swing.JButton btnDelete;
     private javax.swing.JButton btnUpdate;
-    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTable jTable1;
-    private javax.swing.JLabel lblFirstName;
-    private javax.swing.JLabel lblLastName;
-    private javax.swing.JLabel lblPassword;
-    private javax.swing.JLabel lblPhNo;
-    private javax.swing.JLabel lblUserName;
     private javax.swing.JScrollPane tblCustomer;
     private javax.swing.JTextField txtFirstName;
     private javax.swing.JTextField txtLastName;
     private javax.swing.JTextField txtPassword;
     private javax.swing.JTextField txtPhNo;
     private javax.swing.JTextField txtUserName;
-=======
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
->>>>>>> 7bcedf5b7a8d78036d74f906ceda3961453edc8a
     // End of variables declaration//GEN-END:variables
 }
