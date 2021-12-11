@@ -6,11 +6,16 @@
 package Business;
 
 import Business.Ambulance.AmbulanceDirectory;
+import Business.CancerHospitals.CancerHospitalsDirectory;
+import Business.ChildCare.ChildCareDirectory;
+import Business.Consultancy.ConsultancyPageDirectory;
 import Business.Customer.CustomerDirectory;
 import Business.Customer.OrderDirectory;
 import Business.DeliveryMan.DeliveryManDirectory;
 import Business.WorkQueue.OrderRequestDirectory;
 import Business.Employee.EmployeeDirectory;
+import Business.MedicineDelivery.MedicineDeliveryDirectory;
+import Business.NCI.NCIDirectory;
 import Business.Oncologist.OncologistsDirectory;
 import Business.Pharmacy.PharmacyDirectory;
 import Business.UserAccount.UserAccountDirectory;
@@ -19,7 +24,10 @@ import Business.WorkQueue.WorkQueue;
 import Business.WorkQueue.appointmentCheck;
 import Business.user.userDirectory;
 import Business.Restaurant.RestaurantDirectory;
+import Business.WorkQueue.EmergencyReportDirectory;
 import Business.WorkQueue.GeneralVitalsDirectory;
+import Business.WorkQueue.MentalHealthDirectory;
+
 import Business.role.Role;
 import java.util.ArrayList;
 
@@ -41,16 +49,108 @@ public abstract class Organization {
     private RestaurantDirectory restaurantDirectory;
     private EmployeeDirectory employeeDirectory;
     private UserAccountDirectory userAccountDirectory;
-
+    private MedicineDeliveryDirectory medicineDelivery;
     private PharmacyDirectory pharmacyDirectory;
-    
-
+    private NCIDirectory nciDirectory;
+    private ChildCareDirectory ccd;
+    private ConsultancyPageDirectory cpd;
     private GeneralVitalsDirectory gvd;
+    private CancerHospitalsDirectory chd;
+    private MentalHealthDirectory mhd;
+    private EmergencyReportDirectory erd;
+    private AmbulanceDirectory ambulanceDirectory;
+    private OrderRequestDirectory OrderRequestDirectory;
+
+    public AmbulanceDirectory getAmbulanceDirectory() {
+        if(ambulanceDirectory == null)
+        {
+            ambulanceDirectory = new AmbulanceDirectory();
+        }
+        return ambulanceDirectory;
+    }
+
+    public void setAmbulanceDirectory(AmbulanceDirectory ambulanceDirectory) {
+        this.ambulanceDirectory = ambulanceDirectory;
+    }
+    
+    public ChildCareDirectory getCcd() {
+        if(ccd == null)
+        {
+            ccd = new ChildCareDirectory();
+        }
+        return ccd;
+    }
+
+    public EmergencyReportDirectory getErd() {
+        if(erd == null)
+        {
+            erd = new EmergencyReportDirectory();
+        }
+        return erd;
+    }
+
+    public void setErd(EmergencyReportDirectory erd) {
+        this.erd = erd;
+    }
+
+    public MentalHealthDirectory getMhd() {
+        if(mhd == null)
+        {
+            mhd = new MentalHealthDirectory();
+        }
+        return mhd;
+    }
+
+    public void setMhd(MentalHealthDirectory mhd) {
+        this.mhd = mhd;
+    }
+
+    public CancerHospitalsDirectory getChd() {
+        if(chd == null)
+        {
+            chd = new CancerHospitalsDirectory();
+        }
+        return chd;
+    }
+
+    public void setChd(CancerHospitalsDirectory chd) {
+        this.chd = chd;
+    }
+
+    public ConsultancyPageDirectory getCpd() {
+        if(cpd == null)
+        {
+            cpd = new ConsultancyPageDirectory();
+        }
+        return cpd;
+    }
+
+    public void setCpd(ConsultancyPageDirectory cpd) {
+        this.cpd = cpd;
+    }
+
+    public void setCcd(ChildCareDirectory ccd) {
+        this.ccd = ccd;
+    }
+
+    
 
     private int organizationID;
     private static int counter=0;
+
+    public NCIDirectory getNciDirectory() {
+        if(nciDirectory == null)
+        {
+            nciDirectory = new NCIDirectory();
+        }
+        return nciDirectory;
+    }
+
+    public void setNciDirectory(NCIDirectory nciDirectory) {
+        this.nciDirectory = nciDirectory;
+    }
     
-    private OrderRequestDirectory OrderRequestDirectory;
+    
     public enum Type{ 
         RestaurantAdmin("RestaurantAdmin"),
         Customer("Customer"),
@@ -81,7 +181,7 @@ public abstract class Organization {
         oncologistsDirectory = new OncologistsDirectory();
         appcheck = new appointmentCheck();
         oncologistAppointmentDirectory = new OncologistAppointmentDirectory();
-
+        medicineDelivery = new MedicineDeliveryDirectory();
         pharmacyDirectory = new PharmacyDirectory();
     }
 
@@ -98,8 +198,21 @@ public abstract class Organization {
 
         gvd = new GeneralVitalsDirectory();
         
-
     }
+
+    public MedicineDeliveryDirectory getMedicineDelivery() {
+        if(medicineDelivery == null)
+        {
+            medicineDelivery = new MedicineDeliveryDirectory();
+        }
+        return medicineDelivery;
+    }
+
+    public void setMedicineDelivery(MedicineDeliveryDirectory medicineDelivery) {
+        this.medicineDelivery = medicineDelivery;
+    }
+    
+    
     
     public userDirectory getUserDirectory() {
         if(userdirectory==null)
