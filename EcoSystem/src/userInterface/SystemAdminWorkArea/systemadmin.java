@@ -15,7 +15,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author raksh
+ * @author chand
  */
 public class systemadmin extends javax.swing.JPanel {
 
