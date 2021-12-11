@@ -12,6 +12,7 @@ import Business.DeliveryMan.DeliveryManDirectory;
 import Business.WorkQueue.OrderRequestDirectory;
 import Business.Employee.EmployeeDirectory;
 import Business.Oncologist.OncologistsDirectory;
+import Business.Pharmacy.PharmacyDirectory;
 import Business.UserAccount.UserAccountDirectory;
 import Business.WorkQueue.OncologistAppointmentDirectory;
 import Business.WorkQueue.WorkQueue;
@@ -39,6 +40,7 @@ public abstract class Organization {
     private RestaurantDirectory restaurantDirectory;
     private EmployeeDirectory employeeDirectory;
     private UserAccountDirectory userAccountDirectory;
+    private PharmacyDirectory pharmacyDirectory;
     
     private int organizationID;
     private static int counter=0;
@@ -74,6 +76,19 @@ public abstract class Organization {
         oncologistsDirectory = new OncologistsDirectory();
         appcheck = new appointmentCheck();
         oncologistAppointmentDirectory = new OncologistAppointmentDirectory();
+        pharmacyDirectory = new PharmacyDirectory();
+    }
+
+    public PharmacyDirectory getPharmacyDirectory() {
+        if(pharmacyDirectory == null)
+        {
+            pharmacyDirectory = new PharmacyDirectory();
+        }
+        return pharmacyDirectory;
+    }
+
+    public void setPharmacyDirectory(PharmacyDirectory pharmacyDirectory) {
+        this.pharmacyDirectory = pharmacyDirectory;
     }
     
     public userDirectory getUserDirectory() {
