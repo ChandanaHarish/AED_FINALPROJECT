@@ -273,7 +273,7 @@ public class usermainpannel extends javax.swing.JPanel {
 
      public void C19()
     {
-        C19 cr=new C19(container,system,userAccount);
+        generalVitalsUI cr=new generalVitalsUI(container,system,userAccount);
         container1.add(cr);
         CardLayout layout = (CardLayout) container1.getLayout();
         layout.next(container1); 
