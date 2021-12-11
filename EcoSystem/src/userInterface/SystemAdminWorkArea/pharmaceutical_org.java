@@ -12,7 +12,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author raksh
+ * @author chand
  */
 public class pharmaceutical_org extends javax.swing.JPanel {
 
