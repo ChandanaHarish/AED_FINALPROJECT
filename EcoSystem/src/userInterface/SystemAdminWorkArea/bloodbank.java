@@ -224,7 +224,7 @@ public class bloodbank extends javax.swing.JPanel {
 
             BloodBank customer = new BloodBank(jTextField1.getText(),jTextField4.getText(), jTextField5.getText(),  jTextField3.getText(),jTextField2.getText() );
             system.getUserAccountDirectory().addAccount(customer);
-            system.getBloodbankdirectory().addBloodBank(customer);
+            system.getBbd().addBloodBank(customer);
             populateTable();
             jTextField1.setText("");
             jTextField2.setText("");
@@ -246,7 +246,7 @@ public class bloodbank extends javax.swing.JPanel {
             
             {
         String a=(String)t.getValueAt(t1, 3);
-        bloodbank_directory bbd = system.getBloodbankdirectory();
+        bloodbank_directory bbd = system.getBbd();
         ArrayList<BloodBank> cd1=bbd.getA();
         int z=cd1.size();
         for(int i=0;i<z;i++)
@@ -286,7 +286,7 @@ public class bloodbank extends javax.swing.JPanel {
         if(t1>=0)
         {
         String a=(String)t.getValueAt(t1, 3);
-        bloodbank_directory bbd = system.getBloodbankdirectory();
+        bloodbank_directory bbd = system.getBbd();
         ArrayList<BloodBank> cd1=bbd.getA();
         int z=cd1.size();
         for(int i=0;i<z;i++)
@@ -315,7 +315,7 @@ public class bloodbank extends javax.swing.JPanel {
         }
     }
     private void populateTable() {
-        bloodbank_directory bbd = system.getBloodbankdirectory();
+        bloodbank_directory bbd = system.getBbd();
         DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
 
         model.setRowCount(0);
