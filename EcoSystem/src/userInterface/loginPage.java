@@ -59,8 +59,10 @@ import userInterface.Ambulance.AmbulanceUI;
 import userInterface.ChildCare.ChildCareUI;
 import userInterface.GeneralVitals.GVJPanel;
 import userInterface.MedicineDelivery.MedicineDeliveryUI;
+import userInterface.Oncologist.OncologistUI;
 import userInterface.Pharmacy.pharmacyframe;
 import userInterface.SystemAdminWorkArea.CancerHospitalUI;
+import userInterface.user.usermainpannel;
 //import userinterface.SystemAdminWorkArea.systemadminenterprise;
 //import userinterface.vaccination.vaccination;
 
@@ -613,7 +615,7 @@ public class loginPage extends javax.swing.JPanel {
 //    }
     public void callOncologist()
     {
-        Doctorframe ur=new Doctorframe(container,system,userAccount);
+        OncologistUI ur=new OncologistUI(container,system,userAccount);
         container.add(ur);
         CardLayout layout = (CardLayout) container.getLayout();
         layout.next(container); 
