@@ -36,7 +36,7 @@ public class AmbulanceUI extends javax.swing.JPanel {
     
     public void populate_table()
     {
-        EmergencyReportDirectory red=ecoSystem.getEmergencyReportDirectory();
+        EmergencyReportDirectory red=ecoSystem.getErd();
         ArrayList<EmergencyReport> ol=red.getUser();
         int u=ol.size();
         System.out.println(u);
@@ -145,7 +145,7 @@ public class AmbulanceUI extends javax.swing.JPanel {
         {
             int s=Integer.parseInt(t2.getValueAt(selectedRow, 0).toString());
             System.out.println("id"+s);
-            EmergencyReportDirectory red=ecoSystem.getEmergencyReportDirectory();
+            EmergencyReportDirectory red=ecoSystem.getErd();
             ArrayList<EmergencyReport> ol=red.getUser();
             int u=ol.size();
             Ambulance a=(Ambulance)ua;
@@ -190,7 +190,7 @@ public class AmbulanceUI extends javax.swing.JPanel {
         {
             int s=Integer.parseInt(t2.getValueAt(selectedRow, 0).toString());
             System.out.println("id"+s);
-            EmergencyReportDirectory red=ecoSystem.getEmergencyReportDirectory();
+            EmergencyReportDirectory red=ecoSystem.getErd();
             ArrayList<EmergencyReport> ol=red.getUser();
             int u=ol.size();
             for(int i=0;i<u;i++)
@@ -262,7 +262,7 @@ public class AmbulanceUI extends javax.swing.JPanel {
         {
             int s=Integer.parseInt(t2.getValueAt(selectedRow, 0).toString());
             System.out.println("id"+s);
-            EmergencyReportDirectory red=ecoSystem.getEmergencyReportDirectory();
+            EmergencyReportDirectory red=ecoSystem.getErd();
             ArrayList<EmergencyReport> ol=red.getUser();
             int u=ol.size();
             for(int i=0;i<u;i++)

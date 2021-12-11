@@ -41,7 +41,7 @@ public class MedicineDeliveryUI extends javax.swing.JPanel {
     
      public void populate_table()
     {
-        EmergencyReportDirectory red=ecoSystem.getEmergencyReportDirectory();
+        EmergencyReportDirectory red=ecoSystem.getErd();
         ArrayList<EmergencyReport> ol=red.getUser();
         int u=ol.size();
         System.out.println(u);
@@ -166,7 +166,7 @@ public class MedicineDeliveryUI extends javax.swing.JPanel {
         {
             int s=Integer.parseInt(t2.getValueAt(selectedRow, 0).toString());
             System.out.println("id"+s);
-            EmergencyReportDirectory red=ecoSystem.getEmergencyReportDirectory();
+            EmergencyReportDirectory red=ecoSystem.getErd();
             ArrayList<EmergencyReport> ol=red.getUser();
             int u=ol.size();
             MedicineDelivery a=(MedicineDelivery)ua;
@@ -212,7 +212,7 @@ public class MedicineDeliveryUI extends javax.swing.JPanel {
         {
             int s=Integer.parseInt(t2.getValueAt(selectedRow, 0).toString());
             System.out.println("id"+s);
-            EmergencyReportDirectory red=ecoSystem.getEmergencyReportDirectory();
+            EmergencyReportDirectory red=ecoSystem.getErd();
             ArrayList<EmergencyReport> ol=red.getUser();
             int u=ol.size();
             MedicineDelivery a=(MedicineDelivery)ua;
@@ -257,7 +257,7 @@ public class MedicineDeliveryUI extends javax.swing.JPanel {
         {
             int s=Integer.parseInt(t2.getValueAt(selectedRow, 0).toString());
             System.out.println("id"+s);
-            EmergencyReportDirectory red=ecoSystem.getEmergencyReportDirectory();
+            EmergencyReportDirectory red=ecoSystem.getErd();
             ArrayList<EmergencyReport> ol=red.getUser();
             int u=ol.size();
             MedicineDelivery a=(MedicineDelivery)ua;

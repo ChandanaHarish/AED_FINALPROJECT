@@ -223,7 +223,7 @@ public class emergencyReport extends javax.swing.JPanel {
         re.setLocation(jTextField4.getText());
         re.setStatus("In Progress");
         re.setResponse("No Response");
-        EmergencyReportDirectory red=ecosystem.getEmergencyReportDirectory();
+        EmergencyReportDirectory red=ecosystem.getErd();
         red.addUser(re);
         jTable1.setModel(new DefaultTableModel(null,new String[]{"ID","Emergency","Location","Status","Response"}));
         populate_table();
@@ -246,7 +246,7 @@ public class emergencyReport extends javax.swing.JPanel {
         {
         int s=Integer.parseInt(t2.getValueAt(selectedRow, 0).toString());
         System.out.println("id"+s);
-        EmergencyReportDirectory red=ecosystem.getEmergencyReportDirectory();
+        EmergencyReportDirectory red=ecosystem.getErd();
         ArrayList<EmergencyReport> ol=red.getUser();
         int u=ol.size();
         for(int i=0;i<u;i++)
@@ -288,7 +288,7 @@ public class emergencyReport extends javax.swing.JPanel {
 
     public void populate_table()
     {
-        EmergencyReportDirectory red=ecosystem.getEmergencyReportDirectory();
+        EmergencyReportDirectory red=ecosystem.getErd();
         ArrayList<EmergencyReport> ol=red.getUser();
         int u=ol.size();
         for(int i=0;i<u;i++)

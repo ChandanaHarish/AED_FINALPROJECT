@@ -131,18 +131,18 @@ public class loginPage extends javax.swing.JPanel {
         jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 310, 280, 10));
         jPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 210, 280, 10));
 
+        jLabel11.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel11MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 40, 40));
+        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 90, 40));
         jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 30, 100, 110));
 
         jPasswordField1.setBackground(new java.awt.Color(0, 0, 0));
         jPasswordField1.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
-        jPasswordField1.setForeground(new java.awt.Color(204, 204, 204));
-        jPasswordField1.setText("*******");
         jPasswordField1.setToolTipText("");
         jPasswordField1.setBorder(null);
         jPasswordField1.setSelectionColor(new java.awt.Color(255, 255, 255));
@@ -155,8 +155,6 @@ public class loginPage extends javax.swing.JPanel {
 
         jTextField1.setBackground(new java.awt.Color(0, 0, 0));
         jTextField1.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
-        jTextField1.setForeground(new java.awt.Color(204, 204, 204));
-        jTextField1.setText("Enter Username here");
         jTextField1.setBorder(null);
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -195,20 +193,18 @@ public class loginPage extends javax.swing.JPanel {
         jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 380, 170, -1));
 
         jLabel6.setFont(new java.awt.Font("Berlin Sans FB", 0, 20)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(204, 204, 204));
         jLabel6.setText("Password");
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 240, 140, 40));
 
         jLabel7.setFont(new java.awt.Font("Berlin Sans FB", 0, 20)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(204, 204, 204));
         jLabel7.setText("Username");
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 140, 140, 40));
 
-        jLabel3.setBackground(new java.awt.Color(26, 39, 68));
+        jLabel3.setBackground(new java.awt.Color(204, 204, 255));
         jLabel3.setOpaque(true);
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 0, 630, 540));
 
-        jLabel2.setBackground(new java.awt.Color(195, 233, 245));
+        jLabel2.setBackground(new java.awt.Color(0, 0, 0));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel2.setOpaque(true);
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 490, 540));
@@ -254,12 +250,12 @@ public class loginPage extends javax.swing.JPanel {
             System.out.println(userAccount.getRole());
             String a=(userAccount.getRole().toString());
             
-            if(a.equals("Business.Role.SystemAdminRole"))
+            if(a.equals("Business.role.SystemAdminRole"))
             {
                 callSystemAdminWorkAreaJPanel();
                 
             }
-            else if(a.equals("Business.Role.CustomerRole"))
+            else if(a.equals("Business.role.CustomerRole"))
             {
                 CustomerDirectory cd=system.getCustomerDirectory();
                 ArrayList<Customer> c=cd.getA();
@@ -279,7 +275,7 @@ public class loginPage extends javax.swing.JPanel {
                   JOptionPane.showMessageDialog(null, "Invalid credentials");  
                 }
             }
-            else if(a.equals("Business.Role.AdminRole"))
+            else if(a.equals("Business.role.AdminRole"))
             {
                 
                 RestaurantDirectory cd=system.getRestaurantDirectory();
@@ -300,7 +296,7 @@ public class loginPage extends javax.swing.JPanel {
                   JOptionPane.showMessageDialog(null, "Invalid credentials");  
                 }
             }
-            else if(a.equals("Business.Role.UserRole"))
+            else if(a.equals("Business.role.UserRole"))
             {
                 userDirectory cd=system.getUserDirectory();
                 ArrayList<User> c=cd.getUser();
@@ -321,7 +317,7 @@ public class loginPage extends javax.swing.JPanel {
                   JOptionPane.showMessageDialog(null, "Invalid credentials");  
                 }
             }
-            else if(a.equals("Business.Role.OncologistRole"))
+            else if(a.equals("Business.role.OncologistRole"))
             {
                 OncologistsDirectory cd=system.getOncologistsDirectory();
                 ArrayList<Oncologist> c=cd.getOncDir();
@@ -345,7 +341,7 @@ public class loginPage extends javax.swing.JPanel {
                   JOptionPane.showMessageDialog(null, "Invalid credentials");  
                 }
             }
-            else if(a.equals("Business.Role.bloodbankadminrole"))
+            else if(a.equals("Business.role.bloodbankadminrole"))
             {
                 bloodbank_directory cd=system.getBbd();
                 ArrayList<BloodBank> c=cd.getA();
@@ -366,7 +362,7 @@ public class loginPage extends javax.swing.JPanel {
                   JOptionPane.showMessageDialog(null, "Invalid credentials");  
                 }
             }
-            else if(a.equals("Business.Role.PharmacyAdmin"))
+            else if(a.equals("Business.role.PharmacyAdmin"))
             {
                 PharmacyDirectory cd=system.getPharmacyDirectory();
                 ArrayList<Pharmacy> c=cd.getPh();
@@ -387,7 +383,7 @@ public class loginPage extends javax.swing.JPanel {
                   JOptionPane.showMessageDialog(null, "Invalid credentials");  
                 }
             }
-            else if(a.equals("Business.Role.ChildCareRole"))
+            else if(a.equals("Business.role.ChildCareRole"))
             {
                 ChildCareDirectory cd=system.getCcd();
                 ArrayList<ChildCare> c=cd.getA();
@@ -408,7 +404,7 @@ public class loginPage extends javax.swing.JPanel {
                   JOptionPane.showMessageDialog(null, "Invalid credentials");  
                 }
             }
-            else if(a.equals("Business.Role.MedicineDeliveryAdmin"))
+            else if(a.equals("Business.role.MedicineDeliveryAdmin"))
             {
                 MedicineDeliveryDirectory cd=system.getMedicineDelivery();
                 ArrayList<MedicineDelivery> c=cd.getA();
@@ -429,7 +425,7 @@ public class loginPage extends javax.swing.JPanel {
                   JOptionPane.showMessageDialog(null, "Invalid credentials");  
                 }
             }
-            else if(a.equals("Business.Role.NCI"))
+            else if(a.equals("Business.role.NCI"))
             {
                 NCIDirectory nd=system.getNciDirectory();
                 ArrayList<NCI> c=nd.getA();
@@ -450,7 +446,7 @@ public class loginPage extends javax.swing.JPanel {
                   JOptionPane.showMessageDialog(null, "Invalid credentials");  
                 }
             }
-            else if(a.equals("Business.Role.AmbulanceDriver"))
+            else if(a.equals("Business.role.AmbulanceDriver"))
             {
                 AmbulanceDirectory cd=system.getAmbulanceDirectory();
                 ArrayList<Ambulance> c=cd.getAmb();
@@ -471,7 +467,7 @@ public class loginPage extends javax.swing.JPanel {
                   JOptionPane.showMessageDialog(null, "Invalid credentials");  
                 }
             }
-            else if(a.equals("Business.Role.CancerHospitalsadmin"))
+            else if(a.equals("Business.role.CancerHospitalsadmin"))
             {
                 CancerHospitalsDirectory cd=system.getChd();
                 ArrayList<CancerHospitals> c=cd.getA();
@@ -492,7 +488,7 @@ public class loginPage extends javax.swing.JPanel {
                   JOptionPane.showMessageDialog(null, "Invalid credentials");  
                 }
             }
-            else if(a.equals("Business.Role.Vaccination_admin"))
+            else if(a.equals("Business.role.Vaccination_admin"))
             {
                 ConsultancyPageDirectory cd=system.getCpd();
                 ArrayList<ConsultancyPage> c=cd.getA();
@@ -621,7 +617,7 @@ public class loginPage extends javax.swing.JPanel {
     
     public void calluserregisteration()
     {
-       userRegistration ur=new userRegistration(container,system);
+       User_register ur=new User_register(container,system);
         container.add(ur);
         CardLayout layout = (CardLayout) container.getLayout();
         layout.next(container); 
