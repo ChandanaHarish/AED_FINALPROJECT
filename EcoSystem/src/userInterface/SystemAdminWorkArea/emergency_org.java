@@ -53,7 +53,6 @@ public class emergency_org extends javax.swing.JPanel {
         container1.setPreferredSize(new java.awt.Dimension(770, 539));
         container1.setLayout(new java.awt.CardLayout());
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/logout (1).png"))); // NOI18N
         jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel4MouseClicked(evt);
@@ -97,11 +96,6 @@ public class emergency_org extends javax.swing.JPanel {
             }
         });
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/emergency (1).png"))); // NOI18N
-
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/police-station (1).png"))); // NOI18N
-
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/ambulance (1) (2).png"))); // NOI18N
         jLabel7.setText("jLabel5");
         jLabel7.setPreferredSize(new java.awt.Dimension(100, 100));
 
