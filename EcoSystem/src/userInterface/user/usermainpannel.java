@@ -313,7 +313,7 @@ public class usermainpannel extends javax.swing.JPanel {
     
     public void emergency()
     {
-        report_emergency_frame ur=new report_emergency_frame(container,system,userAccount);
+        emergencyReport ur=new emergencyReport(container,system,userAccount);
         container1.add(ur);
         CardLayout layout = (CardLayout) container1.getLayout();
         layout.next(container1); 
