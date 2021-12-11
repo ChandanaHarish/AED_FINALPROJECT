@@ -233,7 +233,7 @@ public static float getRandomInteger(int maximum, int minimum){
         // TODO add your handling code here:
   try
   {
-      //generalVitals cc = new generalVitals( container,ecosystem, userAccount);
+      generalVitalsUI cc = new generalVitalsUI( container,ecosystem, userAccount);
         myThread.runnable = false;
             jButton2.setEnabled(false);   
             jButton1.setEnabled(true);
