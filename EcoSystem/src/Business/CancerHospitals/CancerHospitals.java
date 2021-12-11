@@ -76,7 +76,7 @@ public class CancerHospitals extends UserAccount{
         this.result = result;
     }
 
-    public CancerHospitals(String hospitalName, String hospitalLocation, String phoneNumber, String userID, String pwd, String emailID) {
+    public CancerHospitals(String hospitalName, String hospitalLocation, String phoneNumber, String userID, String pwd) {
         setUsername(userID);
         setPassword(pwd);
         setRole(new CancerHospitalAdmin());
