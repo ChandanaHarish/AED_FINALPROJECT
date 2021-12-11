@@ -105,7 +105,10 @@ public class oncologistAppointmentUI extends javax.swing.JPanel {
         tblAppointment = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         lblDate = new javax.swing.JLabel();
+<<<<<<< HEAD
+=======
         jDateChooser1 = new com.toedter.calendar.JDateChooser();
+>>>>>>> 12a83670cd8bcd1764745d1f090df274f01b54f3
         lblTime = new javax.swing.JLabel();
         boxTime = new javax.swing.JComboBox<>();
         btnBookApp = new javax.swing.JButton();
@@ -142,9 +145,12 @@ public class oncologistAppointmentUI extends javax.swing.JPanel {
         lblDate.setText("Date :");
         lblDate.setPreferredSize(new java.awt.Dimension(70, 30));
 
+<<<<<<< HEAD
+=======
         jDateChooser1.setMaxSelectableDate(new java.util.Date(1641016905000L));
         jDateChooser1.setPreferredSize(new java.awt.Dimension(140, 30));
 
+>>>>>>> 12a83670cd8bcd1764745d1f090df274f01b54f3
         lblTime.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
         lblTime.setForeground(new java.awt.Color(204, 204, 204));
         lblTime.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
@@ -187,6 +193,22 @@ public class oncologistAppointmentUI extends javax.swing.JPanel {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(lblSpecialization)
+<<<<<<< HEAD
+                        .addGap(56, 56, 56)
+                        .addComponent(ddSpecialization, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(49, 49, 49)
+                        .addComponent(tblAppointment, javax.swing.GroupLayout.PREFERRED_SIZE, 664, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(274, 274, 274)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblTime, javax.swing.GroupLayout.Alignment.TRAILING))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(boxTime, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(199, 199, 199)
+=======
                         .addGap(116, 116, 116)
                         .addComponent(ddSpecialization, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(143, 143, 143))))
@@ -194,6 +216,7 @@ public class oncologistAppointmentUI extends javax.swing.JPanel {
                 .addContainerGap(20, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+>>>>>>> 12a83670cd8bcd1764745d1f090df274f01b54f3
                         .addComponent(btnBookApp)
                         .addGap(58, 58, 58)
                         .addComponent(btnAppStatus)
@@ -223,12 +246,19 @@ public class oncologistAppointmentUI extends javax.swing.JPanel {
                     .addComponent(lblSpecialization))
                 .addGap(42, 42, 42)
                 .addComponent(tblAppointment, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+<<<<<<< HEAD
+                .addGap(37, 37, 37)
+                .addComponent(lblDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(36, 36, 36)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+=======
                 .addGap(75, 75, 75)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(lblDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jDateChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(30, 30, 30)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+>>>>>>> 12a83670cd8bcd1764745d1f090df274f01b54f3
                     .addComponent(boxTime, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblTime))
                 .addGap(32, 32, 32)
