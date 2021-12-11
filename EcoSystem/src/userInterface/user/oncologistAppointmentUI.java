@@ -102,7 +102,6 @@ public class oncologistAppointmentUI extends javax.swing.JPanel {
         tblAppointment = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         lblDate = new javax.swing.JLabel();
-        boxDate = new com.toedter.calendar.JDateChooser();
         lblTime = new javax.swing.JLabel();
         boxTime = new javax.swing.JComboBox<>();
         btnBookApp = new javax.swing.JButton();
@@ -138,9 +137,6 @@ public class oncologistAppointmentUI extends javax.swing.JPanel {
         lblDate.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblDate.setText("Date :");
         lblDate.setPreferredSize(new java.awt.Dimension(70, 30));
-
-        boxDate.setMaxSelectableDate(new java.util.Date(1641016905000L));
-        boxDate.setPreferredSize(new java.awt.Dimension(140, 30));
 
         lblTime.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
         lblTime.setForeground(new java.awt.Color(204, 204, 204));
@@ -188,9 +184,7 @@ public class oncologistAppointmentUI extends javax.swing.JPanel {
                             .addComponent(lblDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(lblTime, javax.swing.GroupLayout.Alignment.TRAILING))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(boxTime, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(boxDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(boxTime, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(199, 199, 199)
                         .addComponent(btnBookApp)
@@ -210,9 +204,7 @@ public class oncologistAppointmentUI extends javax.swing.JPanel {
                 .addGap(54, 54, 54)
                 .addComponent(tblAppointment, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(37, 37, 37)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(lblDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(boxDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(lblDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(36, 36, 36)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(boxTime, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -364,7 +356,6 @@ public class oncologistAppointmentUI extends javax.swing.JPanel {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private com.toedter.calendar.JDateChooser boxDate;
     private javax.swing.JComboBox<String> boxTime;
     private javax.swing.JButton btnAppStatus;
     private javax.swing.JButton btnBookApp;
