@@ -14,6 +14,8 @@ import Business.Customer.OrderDirectory;
 import Business.DeliveryMan.DeliveryManDirectory;
 import Business.WorkQueue.OrderRequestDirectory;
 import Business.Employee.EmployeeDirectory;
+import Business.Lab.BloodBank;
+import Business.Lab.bloodbank_directory;
 import Business.MedicineDelivery.MedicineDeliveryDirectory;
 import Business.NCI.NCIDirectory;
 import Business.Oncologist.OncologistsDirectory;
@@ -24,9 +26,11 @@ import Business.WorkQueue.WorkQueue;
 import Business.WorkQueue.appointmentCheck;
 import Business.user.userDirectory;
 import Business.Restaurant.RestaurantDirectory;
+import Business.WorkQueue.Donate_blood_Directory;
 import Business.WorkQueue.EmergencyReportDirectory;
 import Business.WorkQueue.GeneralVitalsDirectory;
 import Business.WorkQueue.MentalHealthDirectory;
+import Business.WorkQueue.request_blood_directory;
 
 import Business.role.Role;
 import java.util.ArrayList;
@@ -60,6 +64,11 @@ public abstract class Organization {
     private EmergencyReportDirectory erd;
     private AmbulanceDirectory ambulanceDirectory;
     private OrderRequestDirectory OrderRequestDirectory;
+    private bloodbank_directory bbd;
+    private Donate_blood_Directory dbd;
+    private request_blood_directory rbd;
+    private int organizationID;
+    private static int counter=0;
 
     public AmbulanceDirectory getAmbulanceDirectory() {
         if(ambulanceDirectory == null)
@@ -71,6 +80,18 @@ public abstract class Organization {
 
     public void setAmbulanceDirectory(AmbulanceDirectory ambulanceDirectory) {
         this.ambulanceDirectory = ambulanceDirectory;
+    }
+
+    public bloodbank_directory getBbd() {
+        if(bbd == null)
+        {
+            bbd = new bloodbank_directory();
+        }
+        return bbd;
+    }
+
+    public void setBbd(bloodbank_directory bbd) {
+        this.bbd = bbd;
     }
     
     public ChildCareDirectory getCcd() {
@@ -133,10 +154,6 @@ public abstract class Organization {
         this.ccd = ccd;
     }
 
-    
-
-    private int organizationID;
-    private static int counter=0;
 
     public NCIDirectory getNciDirectory() {
         if(nciDirectory == null)
@@ -183,6 +200,42 @@ public abstract class Organization {
         oncologistAppointmentDirectory = new OncologistAppointmentDirectory();
         medicineDelivery = new MedicineDeliveryDirectory();
         pharmacyDirectory = new PharmacyDirectory();
+        bbd = new bloodbank_directory();
+        nciDirectory = new NCIDirectory();
+        ccd = new ChildCareDirectory();
+        cpd = new ConsultancyPageDirectory();
+        gvd = new GeneralVitalsDirectory();
+        chd = new CancerHospitalsDirectory();
+        mhd = new MentalHealthDirectory();
+        erd = new EmergencyReportDirectory();
+        ambulanceDirectory = new AmbulanceDirectory();
+        dbd = new Donate_blood_Directory();
+        rbd = new request_blood_directory();
+        
+    }
+
+    public Donate_blood_Directory getDbd() {
+         if(dbd == null)
+        {
+            dbd = new Donate_blood_Directory();
+        }
+        return dbd;
+    }
+
+    public void setDbd(Donate_blood_Directory dbd) {
+        this.dbd = dbd;
+    }
+
+    public request_blood_directory getRbd() {
+         if(rbd == null)
+        {
+            rbd = new request_blood_directory();
+        }
+        return rbd;
+    }
+
+    public void setRbd(request_blood_directory rbd) {
+        this.rbd = rbd;
     }
 
     public PharmacyDirectory getPharmacyDirectory() {
