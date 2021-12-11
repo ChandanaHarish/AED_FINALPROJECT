@@ -12,24 +12,24 @@ import java.util.ArrayList;
  * @author ajay09
  */
 public class OncologistsDirectory {
-    ArrayList<Oncologist> onc =new ArrayList<Oncologist>();
+    ArrayList<Oncologist> oncDir =new ArrayList<Oncologist>();
     
     public void addOncologist(Oncologist o)
     {        
-       onc.add(o);
+       oncDir.add(o);
     }
 
-    public ArrayList<Oncologist> getOnc() {
-        return onc;
+    public ArrayList<Oncologist> getOncDir() {
+        return oncDir;
     }
 
-    public void setA(ArrayList<Oncologist> onc) {
-        this.onc = onc;
+    public void setOncDir(ArrayList<Oncologist> oncDir) {
+        this.oncDir = oncDir;
     }
 
     
     
     public void removeOncologist(Oncologist customer){
-        onc.remove(customer);
+        oncDir.remove(customer);
     }
 }

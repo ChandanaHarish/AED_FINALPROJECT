@@ -5,6 +5,7 @@
  */
 package userInterface.user;
 
+import Business.DB4OUtil.DB4OUtil;
 import Business.EcoSystem;
 import Business.Oncologist.Oncologist;
 import Business.UserAccount.UserAccount;
@@ -20,6 +21,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
+import javax.mail.PasswordAuthentication;
 import javax.mail.Session;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
@@ -49,7 +51,7 @@ public class oncologistAppointmentUI extends javax.swing.JPanel {
     
     public void combobox()
     {
-        ArrayList<Oncologist> onc=ecosystem.getOncologistsDirectory().getOnc();
+        ArrayList<Oncologist> onc=ecosystem.getOncologistsDirectory().getOncDir();
         int s= onc.size();
         ArrayList<String> spe =new ArrayList<String>();
         for(int i=0;i<s;i++)
@@ -71,13 +73,13 @@ public class oncologistAppointmentUI extends javax.swing.JPanel {
     public void table()
     {
         String spe=ddSpecialization.getSelectedItem().toString();
-         ArrayList<Oncologist> d=ecosystem.getOncologistsDirectory().getA();
-        int s=d.size();
+        ArrayList<Oncologist> onc=ecosystem.getOncologistsDirectory().getOncDir();
+        int s=onc.size();
         ArrayList<String> spe1 =new ArrayList<String>();
         jTable1.setModel(new DefaultTableModel(null,new String[]{"Name","Hospital","Spealization","Phone Number"}));
         for(int i=0;i<s;i++)
         {
-            Oncologist onc1=d.get(i);
+            Oncologist onc1=onc.get(i);
             if(onc1.getSpealization().matches(spe))
             {
                 DefaultTableModel t2 = (DefaultTableModel) jTable1.getModel();    
@@ -96,12 +98,17 @@ public class oncologistAppointmentUI extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
         lblTitle = new javax.swing.JLabel();
         lblSpecialization = new javax.swing.JLabel();
         ddSpecialization = new javax.swing.JComboBox<>();
         tblAppointment = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         lblDate = new javax.swing.JLabel();
+<<<<<<< HEAD
+=======
+        jDateChooser1 = new com.toedter.calendar.JDateChooser();
+>>>>>>> 12a83670cd8bcd1764745d1f090df274f01b54f3
         lblTime = new javax.swing.JLabel();
         boxTime = new javax.swing.JComboBox<>();
         btnBookApp = new javax.swing.JButton();
@@ -138,12 +145,23 @@ public class oncologistAppointmentUI extends javax.swing.JPanel {
         lblDate.setText("Date :");
         lblDate.setPreferredSize(new java.awt.Dimension(70, 30));
 
+<<<<<<< HEAD
+=======
+        jDateChooser1.setMaxSelectableDate(new java.util.Date(1641016905000L));
+        jDateChooser1.setPreferredSize(new java.awt.Dimension(140, 30));
+
+>>>>>>> 12a83670cd8bcd1764745d1f090df274f01b54f3
         lblTime.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
         lblTime.setForeground(new java.awt.Color(204, 204, 204));
         lblTime.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblTime.setText("Time :");
 
         boxTime.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "09:00-10:00", "10:00-11:00", "11:00-12:00", "12:00-13:00", "13:00-14:00", "14:00-15:00", "15:00-16:00", "16:00-17:00", "17:00-18:00" }));
+        boxTime.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                boxTimeActionPerformed(evt);
+            }
+        });
 
         btnBookApp.setBackground(new java.awt.Color(195, 233, 245));
         btnBookApp.setText("Book Appointment");
@@ -161,18 +179,21 @@ public class oncologistAppointmentUI extends javax.swing.JPanel {
             }
         });
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(291, 291, 291)
-                        .addComponent(lblTitle))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(214, 214, 214)
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(127, 127, 127)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(140, 140, 140)
+                        .addComponent(lblTitle)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(lblSpecialization)
+<<<<<<< HEAD
                         .addGap(56, 56, 56)
                         .addComponent(ddSpecialization, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
@@ -187,33 +208,81 @@ public class oncologistAppointmentUI extends javax.swing.JPanel {
                         .addComponent(boxTime, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(199, 199, 199)
+=======
+                        .addGap(116, 116, 116)
+                        .addComponent(ddSpecialization, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(143, 143, 143))))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(20, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+>>>>>>> 12a83670cd8bcd1764745d1f090df274f01b54f3
                         .addComponent(btnBookApp)
-                        .addGap(20, 20, 20)
-                        .addComponent(btnAppStatus)))
-                .addContainerGap(87, Short.MAX_VALUE))
+                        .addGap(58, 58, 58)
+                        .addComponent(btnAppStatus)
+                        .addGap(85, 85, 85))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(tblAppointment, javax.swing.GroupLayout.PREFERRED_SIZE, 664, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(16, 16, 16))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(lblTime)
+                        .addGap(39, 39, 39)
+                        .addComponent(boxTime, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(180, 180, 180))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(lblDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(39, 39, 39)
+                        .addComponent(jDateChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(200, 200, 200))))
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(30, 30, 30)
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(52, 52, 52)
                 .addComponent(lblTitle)
-                .addGap(34, 34, 34)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblSpecialization)
-                    .addComponent(ddSpecialization, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(54, 54, 54)
+                .addGap(35, 35, 35)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ddSpecialization, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblSpecialization))
+                .addGap(42, 42, 42)
                 .addComponent(tblAppointment, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+<<<<<<< HEAD
                 .addGap(37, 37, 37)
                 .addComponent(lblDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(36, 36, 36)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+=======
+                .addGap(75, 75, 75)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(lblDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jDateChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(30, 30, 30)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+>>>>>>> 12a83670cd8bcd1764745d1f090df274f01b54f3
                     .addComponent(boxTime, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblTime))
-                .addGap(57, 57, 57)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGap(32, 32, 32)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnAppStatus)
                     .addComponent(btnBookApp))
-                .addContainerGap(313, Short.MAX_VALUE))
+                .addContainerGap(195, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
+        this.setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(287, 287, 287)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(223, Short.MAX_VALUE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(204, 204, 204)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(274, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -228,12 +297,12 @@ public class oncologistAppointmentUI extends javax.swing.JPanel {
         int t1=jTable1.getSelectedRow();
         if(t1>=0)
         {
-            if(boxDate.getDate()!=null)
+            if(jDateChooser1.getDate()!=null)
             {
                 int x = 1 + (int) (Math.random() * 100);
-                boolean b =false;
+                boolean b=false;
                 SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-                String d1 = sdf.format(boxDate.getDate());
+                String d1 = sdf.format(jDateChooser1.getDate());
                 DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd");
                 LocalDateTime d2 = LocalDateTime.now();
                 String s=(t.getValueAt(t1, 0).toString());
@@ -254,20 +323,20 @@ public class oncologistAppointmentUI extends javax.swing.JPanel {
                         OA.setUserID(u.getUserID());
                         OA.setUserName(u.getOncologistName());
                         OncologistAppointmentDirectory OAD=ecosystem.getOncologistAppointmentDirectory();
-                        dad.addrequest(d);
-                        app_check check= ecosystem.getAppcheck();
-                        Map<String,List<String>> a=check.getPeopleByForename();
+                        OAD.addRequest(OA);
+                        appointmentCheck check= ecosystem.getAppcheck();
+                        Map<String,List<String>> a=check.getPeopleByFirstName();
                         List<String> list = new ArrayList<String>();
                         list.add(d1);
-                        list.add(jComboBox2.getSelectedItem().toString());
+                        list.add(boxTime.getSelectedItem().toString());
                         a.put(s, list);
                         DB4OUtil.dB4OUtil.storeSystem(ecosystem);
 
                         //code to send email
                         {
-                            String ToEmail = u.getEmail();
-                            String myAccountEmail = "aedtesting123";
-                            String password = "aedtesting123456";
+                            String ToEmail = u.getEmailID();
+                            String myAccountEmail = "test123";
+                            String password = "test123";
 
                             Properties properties = new Properties();
                             properties.put("mail.smtp.auth","true");
@@ -286,7 +355,7 @@ public class oncologistAppointmentUI extends javax.swing.JPanel {
                                 message.setFrom(new InternetAddress(myAccountEmail));
                                 message.addRecipient(javax.mail.Message.RecipientType.TO, new InternetAddress(ToEmail));
                                 message.setSubject("Appointment Booked!!");
-                                message.setText("Oncologist : "+s+"\n"+"Hospital : "+s1+"\n"+"Date : "+d1+"\n"+"Time : "+boxTime.getSelectedItem().toString());
+                                message.setText("Doctor : "+s+"\n"+"Hospital : "+s1+"\n"+"Date : "+d1+"\n"+"Time : "+boxTime.getSelectedItem().toString());
                                 javax.mail.Transport.send(message);
                             }catch(Exception ex){
                                 System.out.println(""+ex);
@@ -320,8 +389,12 @@ public class oncologistAppointmentUI extends javax.swing.JPanel {
 
     private void btnAppStatusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAppStatusActionPerformed
         // TODO add your handling code here:
-        Doct_opp();
+        oncologistAppointmentUI();
     }//GEN-LAST:event_btnAppStatusActionPerformed
+
+    private void boxTimeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boxTimeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_boxTimeActionPerformed
     
     public boolean check(String s,String d1,String date)
     {
@@ -347,10 +420,10 @@ public class oncologistAppointmentUI extends javax.swing.JPanel {
         }
         return b;
     }
-    public void OncologistsDirectory()
+    public void oncologistAppointmentUI()
     {
-        opp_status ur=new opp_status(container,ecosystem,userAccount);
-        jPanel1.add(ur);
+        appointmentStatus as=new appointmentStatus(container,ecosystem,userAccount);
+        jPanel1.add(as);
         CardLayout layout = (CardLayout) jPanel1.getLayout();
         layout.next(jPanel1); 
     }
@@ -360,6 +433,8 @@ public class oncologistAppointmentUI extends javax.swing.JPanel {
     private javax.swing.JButton btnAppStatus;
     private javax.swing.JButton btnBookApp;
     private javax.swing.JComboBox<String> ddSpecialization;
+    private com.toedter.calendar.JDateChooser jDateChooser1;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JTable jTable1;
     private javax.swing.JLabel lblDate;
     private javax.swing.JLabel lblSpecialization;
