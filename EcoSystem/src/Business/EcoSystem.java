@@ -84,13 +84,13 @@ public class EcoSystem extends Organization {
        return false;
     }
 
-    public OrderRequestDirectory getOrderRequestDirectory() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public EmergencyReportDirectory getEmergencyReportDirectory() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+//    public OrderRequestDirectory getOrderRequestDirectory() {
+//        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+//    }
+//
+//    public EmergencyReportDirectory getEmergencyReportDirectory() {
+//        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+//    }
 
     public OrderDirectory getOrderdirectory() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
