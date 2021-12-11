@@ -41,12 +41,12 @@ public abstract class Organization {
     private RestaurantDirectory restaurantDirectory;
     private EmployeeDirectory employeeDirectory;
     private UserAccountDirectory userAccountDirectory;
-<<<<<<< HEAD
+
     private PharmacyDirectory pharmacyDirectory;
     
-=======
+
     private GeneralVitalsDirectory gvd;
->>>>>>> 73e9e0b6e67f5ae7f6e48aeded690124e4bf5449
+
     private int organizationID;
     private static int counter=0;
     
@@ -81,7 +81,7 @@ public abstract class Organization {
         oncologistsDirectory = new OncologistsDirectory();
         appcheck = new appointmentCheck();
         oncologistAppointmentDirectory = new OncologistAppointmentDirectory();
-<<<<<<< HEAD
+
         pharmacyDirectory = new PharmacyDirectory();
     }
 
@@ -95,10 +95,10 @@ public abstract class Organization {
 
     public void setPharmacyDirectory(PharmacyDirectory pharmacyDirectory) {
         this.pharmacyDirectory = pharmacyDirectory;
-=======
+
         gvd = new GeneralVitalsDirectory();
         
->>>>>>> 73e9e0b6e67f5ae7f6e48aeded690124e4bf5449
+
     }
     
     public userDirectory getUserDirectory() {
