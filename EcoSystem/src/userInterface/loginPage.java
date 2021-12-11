@@ -631,7 +631,7 @@ public class loginPage extends javax.swing.JPanel {
     
     public void calluserregisteration()
     {
-       User_register ur=new User_register(container,system);
+       userRegistration ur=new userRegistration(container,system);
         container.add(ur);
         CardLayout layout = (CardLayout) container.getLayout();
         layout.next(container); 
