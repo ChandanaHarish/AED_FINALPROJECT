@@ -7,7 +7,7 @@ package userInterface.SystemAdminWorkArea;
 
 import Business.Customer.Customer;
 import Business.Customer.CustomerDirectory;
-import userinterface.SystemAdminWorkArea.*;
+import userInterface.SystemAdminWorkArea.*;
 import Business.DB4OUtil.DB4OUtil;
 import Business.EcoSystem;
 import java.awt.CardLayout;
