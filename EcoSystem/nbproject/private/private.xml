@@ -3,27 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-<<<<<<< HEAD
-            <file>file:/Users/ajay09/Desktop/AED_FINALPROJECT/EcoSystem/src/Business/UserAccount/UserAccount.java</file>
-            <file>file:/Users/ajay09/Desktop/AED_FINALPROJECT/EcoSystem/src/Business/Oncologist/Oncologist.java</file>
-            <file>file:/Users/ajay09/Desktop/AED_FINALPROJECT/EcoSystem/src/Business/user/userDirectory.java</file>
-            <file>file:/Users/ajay09/Desktop/AED_FINALPROJECT/EcoSystem/src/Business/Organization.java</file>
-            <file>file:/Users/ajay09/Desktop/AED_FINALPROJECT/EcoSystem/src/Business/Oncologist/OncologistsDirectory.java</file>
-            <file>file:/Users/ajay09/Desktop/AED_FINALPROJECT/EcoSystem/src/userInterface/user/appointmentStatuss.java</file>
-            <file>file:/Users/ajay09/Desktop/AED_FINALPROJECT/EcoSystem/src/Business/ConfigureASystem.java</file>
-            <file>file:/Users/ajay09/Desktop/AED_FINALPROJECT/EcoSystem/src/Business/WorkQueue/appointmentCheck.java</file>
-            <file>file:/Users/ajay09/Desktop/AED_FINALPROJECT/EcoSystem/src/Business/role/UserRole.java</file>
-            <file>file:/Users/ajay09/Desktop/AED_FINALPROJECT/EcoSystem/src/Business/role/OncologistRole.java</file>
-            <file>file:/Users/ajay09/Desktop/AED_FINALPROJECT/EcoSystem/src/userInterface/user/oncologistAppointmentUI.java</file>
-            <file>file:/Users/ajay09/Desktop/AED_FINALPROJECT/EcoSystem/src/Business/WorkQueue/OncologistAppointment.java</file>
-            <file>file:/Users/ajay09/Desktop/AED_FINALPROJECT/EcoSystem/src/Business/EcoSystem.java</file>
-            <file>file:/Users/ajay09/Desktop/AED_FINALPROJECT/EcoSystem/src/Business/user/User.java</file>
-=======
-            <file>file:/C:/Users/chand/OneDrive/Desktop/AED%20FINAL%20PROJECT/AED_FINALPROJECT/EcoSystem/src/Business/WorkQueue/LabTestWorkRequest.java</file>
-            <file>file:/C:/Users/chand/OneDrive/Desktop/AED%20FINAL%20PROJECT/AED_FINALPROJECT/EcoSystem/src/userInterface/DeliveryManRole/ProcessWorkRequestJPanel.java</file>
-            <file>file:/C:/Users/chand/OneDrive/Desktop/AED%20FINAL%20PROJECT/AED_FINALPROJECT/EcoSystem/src/Business/role/UserRole.java</file>
-            <file>file:/C:/Users/chand/OneDrive/Desktop/AED%20FINAL%20PROJECT/AED_FINALPROJECT/EcoSystem/src/Business/role/PharmacyAdministrator.java</file>
->>>>>>> f5999108e5680f56f91e19be5eecedcb6c16ff49
+            <file>file:/C:/Users/chand/OneDrive/Desktop/AED%20FINAL%20PROJECT/AED_FINALPROJECT/EcoSystem/src/Business/Organization.java</file>
+            <file>file:/C:/Users/chand/OneDrive/Desktop/AED%20FINAL%20PROJECT/AED_FINALPROJECT/EcoSystem/src/Business/WorkQueue/MentalHealth.java</file>
         </group>
     </open-files>
 </project-private>

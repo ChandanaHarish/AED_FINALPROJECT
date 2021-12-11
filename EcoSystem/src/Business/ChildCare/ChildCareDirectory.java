@@ -12,21 +12,21 @@ import java.util.ArrayList;
  * @author preranaj
  */
 public class ChildCareDirectory {
-    ArrayList<ChildCareAdmin> a =new ArrayList<ChildCareAdmin>();
+    ArrayList<ChildCare> a =new ArrayList<ChildCare>();
     
-    public void addChild(ChildCareAdmin c)
+    public void addChild(ChildCare c)
     {        
        a.add(c);
     }
 
-    public ArrayList<ChildCareAdmin> getA() {
+    public ArrayList<ChildCare> getA() {
         return a;
     }
 
-    public void setA(ArrayList<ChildCareAdmin> a) {
+    public void setA(ArrayList<ChildCare> a) {
         this.a = a;
     }
-    public void removeChild(ChildCareAdmin customer){
+    public void removeChild(ChildCare customer){
         a.remove(customer);
     }
     
