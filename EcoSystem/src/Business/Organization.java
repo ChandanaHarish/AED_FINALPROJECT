@@ -144,12 +144,15 @@ public abstract class Organization {
         return OrderRequestDirectory;
     }
     
-    public OncologistsDirectory OncologistsDirectory() {
+    public OncologistsDirectory getOncologistsDirectory() {
         if(oncologistsDirectory==null)
         {
             oncologistsDirectory = new OncologistsDirectory();
         }
         return oncologistsDirectory;
+    }
+    public void setOncologistsDirectory(OncologistsDirectory oncologistsDirectory) {
+        this.oncologistsDirectory = oncologistsDirectory;
     }
     
     public OncologistAppointmentDirectory getoncologistAppointmentDirectory() {

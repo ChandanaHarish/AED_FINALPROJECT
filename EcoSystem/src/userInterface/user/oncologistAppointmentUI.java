@@ -73,7 +73,7 @@ public class oncologistAppointmentUI extends javax.swing.JPanel {
     public void table()
     {
         String spe=ddSpecialization.getSelectedItem().toString();
-        ArrayList<Oncologist> onc=ecosystem.getOncologistsDirectory().getOncDir();
+        ArrayList<Oncologist> onc= ecosystem.getOncologistsDirectory().getOncDir();
         int s=onc.size();
         ArrayList<String> spe1 =new ArrayList<String>();
         jTable1.setModel(new DefaultTableModel(null,new String[]{"Name","Hospital","Spealization","Phone Number"}));
