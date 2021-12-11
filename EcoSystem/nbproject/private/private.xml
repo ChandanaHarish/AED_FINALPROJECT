@@ -3,6 +3,27 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+            <file>file:/C:/Users/chand/OneDrive/Desktop/AED%20FINAL%20PROJECT/AED_FINALPROJECT/EcoSystem/src/userInterface/SystemAdminWorkArea/pharmacy.java</file>
+            <file>file:/C:/Users/chand/OneDrive/Desktop/AED%20FINAL%20PROJECT/AED_FINALPROJECT/EcoSystem/src/userInterface/SystemAdminWorkArea/Nci.java</file>
+            <file>file:/C:/Users/chand/OneDrive/Desktop/AED%20FINAL%20PROJECT/AED_FINALPROJECT/EcoSystem/src/userInterface/SystemAdminWorkArea/CustomerFrame.java</file>
+            <file>file:/C:/Users/chand/OneDrive/Desktop/AED%20FINAL%20PROJECT/AED_FINALPROJECT/EcoSystem/src/userInterface/SystemAdminWorkArea/ambulance.java</file>
+            <file>file:/C:/Users/chand/OneDrive/Desktop/AED%20FINAL%20PROJECT/AED_FINALPROJECT/EcoSystem/src/Business/Organization.java</file>
+            <file>file:/C:/Users/chand/OneDrive/Desktop/AED%20FINAL%20PROJECT/AED_FINALPROJECT/EcoSystem/src/userInterface/Pharmacy/pharmacyframe.java</file>
+            <file>file:/C:/Users/chand/OneDrive/Desktop/AED%20FINAL%20PROJECT/AED_FINALPROJECT/EcoSystem/src/Business/NCI/NCIDirectory.java</file>
+            <file>file:/C:/Users/chand/OneDrive/Desktop/AED%20FINAL%20PROJECT/AED_FINALPROJECT/EcoSystem/src/userInterface/Pharmacy/vaccine.java</file>
+            <file>file:/C:/Users/chand/OneDrive/Desktop/AED%20FINAL%20PROJECT/AED_FINALPROJECT/EcoSystem/src/Business/CancerHospitals/CancerHospitals.java</file>
+            <file>file:/C:/Users/chand/OneDrive/Desktop/AED%20FINAL%20PROJECT/AED_FINALPROJECT/EcoSystem/src/userInterface/SystemAdminWorkArea/childcare.java</file>
+            <file>file:/C:/Users/chand/OneDrive/Desktop/AED%20FINAL%20PROJECT/AED_FINALPROJECT/EcoSystem/src/userInterface/SystemAdminWorkArea/MedicineDel.java</file>
+            <file>file:/C:/Users/chand/OneDrive/Desktop/AED%20FINAL%20PROJECT/AED_FINALPROJECT/EcoSystem/src/userInterface/Ambulance/AmbulanceUI.java</file>
+            <file>file:/C:/Users/chand/OneDrive/Desktop/AED%20FINAL%20PROJECT/AED_FINALPROJECT/EcoSystem/src/userInterface/SystemAdminWorkArea/resturantframe.java</file>
+=======
+<<<<<<< HEAD
+            <file>file:/Users/ajay09/Desktop/AED_FINALPROJECT/EcoSystem/src/Business/UserAccount/UserAccount.java</file>
+            <file>file:/Users/ajay09/Desktop/AED_FINALPROJECT/EcoSystem/src/Business/ChildCare/ChildCare.java</file>
+>>>>>>> fd860cd697ea31995800e55b7aa129dd32d8641f
             <file>file:/Users/ajay09/Desktop/AED_FINALPROJECT/EcoSystem/src/Business/WorkQueue/OrderRequestDirectory.java</file>
             <file>file:/Users/ajay09/Desktop/AED_FINALPROJECT/EcoSystem/src/Business/user/userDirectory.java</file>
             <file>file:/Users/ajay09/Desktop/AED_FINALPROJECT/EcoSystem/src/Business/Oncologist/OncologistsDirectory.java</file>
@@ -32,6 +53,14 @@
             <file>file:/Users/ajay09/Desktop/AED_FINALPROJECT/EcoSystem/src/userInterface/userRegistration.java</file>
             <file>file:/Users/ajay09/Desktop/AED_FINALPROJECT/EcoSystem/src/Business/WorkQueue/OncologistAppointment.java</file>
             <file>file:/Users/ajay09/Desktop/AED_FINALPROJECT/EcoSystem/src/Business/EcoSystem.java</file>
+<<<<<<< HEAD
+=======
+=======
+            <file>file:/C:/Users/chand/OneDrive/Desktop/AED%20FINAL%20PROJECT/AED_FINALPROJECT/EcoSystem/src/Business/Organization.java</file>
+            <file>file:/C:/Users/chand/OneDrive/Desktop/AED%20FINAL%20PROJECT/AED_FINALPROJECT/EcoSystem/src/Business/WorkQueue/MentalHealth.java</file>
+>>>>>>> 7bcedf5b7a8d78036d74f906ceda3961453edc8a
+>>>>>>> 2c9cb6660b6cbea97a8eb132e7faa445561a88e9
+>>>>>>> fd860cd697ea31995800e55b7aa129dd32d8641f
         </group>
     </open-files>
 </project-private>
