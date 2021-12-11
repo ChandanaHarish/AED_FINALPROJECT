@@ -91,6 +91,10 @@ public class User extends UserAccount{
     public void setLocation(String location) {
         this.location = location;
     }
+
+    public String getOncologistName() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     
     
