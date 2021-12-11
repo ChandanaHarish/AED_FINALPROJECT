@@ -45,7 +45,7 @@ import userInterface.DeliveryManRole.ProcessWorkRequestJPanel;
 import userInterface.RestaurantAdminRole.AdminWorkAreaJPanel;
 import userInterface.SystemAdminWorkArea.SystemAdminWorkAreaJPanel;
 //import userInterface.SystemAdminWorkArea.systemadmin;
-//import userInterface.ambulance.Ambulanceframe;
+
 //import userinterface.bloodbankframe.bloodbankframe;
 //import userInterface.MentalHealthDirectory.covid19_mainframe;
 //import userinterface.doctor.Doctorframe;
@@ -57,7 +57,10 @@ import userInterface.SystemAdminWorkArea.SystemAdminWorkAreaJPanel;
 import java.awt.Color;
 import userInterface.Ambulance.AmbulanceUI;
 import userInterface.ChildCare.ChildCareUI;
+import userInterface.GeneralVitals.GVJPanel;
 import userInterface.MedicineDelivery.MedicineDeliveryUI;
+import userInterface.Pharmacy.pharmacyframe;
+import userInterface.SystemAdminWorkArea.CancerHospitalUI;
 //import userinterface.SystemAdminWorkArea.systemadminenterprise;
 //import userinterface.vaccination.vaccination;
 
@@ -488,7 +491,7 @@ public class loginPage extends javax.swing.JPanel {
                 CancerHospitals c1=c.get(i);
                 if(userAccount.getUsername().matches(c1.getUserID()))
                 {
-                callambulance1();
+                callGeneralVitals();
                 count+=1;
                 }            
                 }
@@ -534,9 +537,9 @@ public class loginPage extends javax.swing.JPanel {
         CardLayout layout = (CardLayout) container.getLayout();
         layout.next(container); 
     }
-    public void callambulance1()
+    public void callGeneralVitals()
     {
-        covid19_mainframe ur=new covid19_mainframe(container,system,userAccount);
+        GVJPanel ur=new GVJPanel(container,system,userAccount);
         container.add(ur);
         CardLayout layout = (CardLayout) container.getLayout();
         layout.next(container); 
@@ -569,7 +572,7 @@ public class loginPage extends javax.swing.JPanel {
         CardLayout layout = (CardLayout) container.getLayout();
         layout.next(container); 
     }
-    public void callgov()
+    public void callNCI()
     {
         government_main_frame ur=new government_main_frame(container,system,userAccount);
         container.add(ur);
