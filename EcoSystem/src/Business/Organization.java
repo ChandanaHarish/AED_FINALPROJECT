@@ -19,6 +19,7 @@ import Business.WorkQueue.WorkQueue;
 import Business.WorkQueue.appointmentCheck;
 import Business.user.userDirectory;
 import Business.Restaurant.RestaurantDirectory;
+import Business.WorkQueue.GeneralVitalsDirectory;
 import Business.role.Role;
 import java.util.ArrayList;
 
@@ -40,8 +41,12 @@ public abstract class Organization {
     private RestaurantDirectory restaurantDirectory;
     private EmployeeDirectory employeeDirectory;
     private UserAccountDirectory userAccountDirectory;
+<<<<<<< HEAD
     private PharmacyDirectory pharmacyDirectory;
     
+=======
+    private GeneralVitalsDirectory gvd;
+>>>>>>> 73e9e0b6e67f5ae7f6e48aeded690124e4bf5449
     private int organizationID;
     private static int counter=0;
     
@@ -76,6 +81,7 @@ public abstract class Organization {
         oncologistsDirectory = new OncologistsDirectory();
         appcheck = new appointmentCheck();
         oncologistAppointmentDirectory = new OncologistAppointmentDirectory();
+<<<<<<< HEAD
         pharmacyDirectory = new PharmacyDirectory();
     }
 
@@ -89,6 +95,10 @@ public abstract class Organization {
 
     public void setPharmacyDirectory(PharmacyDirectory pharmacyDirectory) {
         this.pharmacyDirectory = pharmacyDirectory;
+=======
+        gvd = new GeneralVitalsDirectory();
+        
+>>>>>>> 73e9e0b6e67f5ae7f6e48aeded690124e4bf5449
     }
     
     public userDirectory getUserDirectory() {
@@ -98,6 +108,18 @@ public abstract class Organization {
         }
             
         return userdirectory;
+    }
+
+    public GeneralVitalsDirectory getGvd() {
+        if(gvd==null)
+        {
+            gvd =new GeneralVitalsDirectory();
+        }
+        return gvd;
+    }
+
+    public void setGvd(GeneralVitalsDirectory gvd) {
+        this.gvd = gvd;
     }
 
     public void setUserDirectory(userDirectory userdirectory) {
@@ -168,6 +190,17 @@ public abstract class Organization {
     }
     public void setOncologistsDirectory(OncologistsDirectory oncologistsDirectory) {
         this.oncologistsDirectory = oncologistsDirectory;
+    }
+    
+    public EmployeeDirectory getEmployeeDirectory() {
+        if(employeeDirectory == null){
+            employeeDirectory = new EmployeeDirectory();
+        }
+        return employeeDirectory;
+    }
+    
+    public UserAccountDirectory getUserAccountDirectory() {
+        return userAccountDirectory;
     }
     
     public OncologistAppointmentDirectory getoncologistAppointmentDirectory() {
