@@ -3,6 +3,7 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/C:/Users/chand/OneDrive/Desktop/AED%20FINAL%20PROJECT/AED_FINALPROJECT/EcoSystem/src/userInterface/SystemAdminWorkArea/pharmacy.java</file>
             <file>file:/C:/Users/chand/OneDrive/Desktop/AED%20FINAL%20PROJECT/AED_FINALPROJECT/EcoSystem/src/userInterface/SystemAdminWorkArea/Nci.java</file>
             <file>file:/C:/Users/chand/OneDrive/Desktop/AED%20FINAL%20PROJECT/AED_FINALPROJECT/EcoSystem/src/userInterface/SystemAdminWorkArea/CustomerFrame.java</file>
@@ -16,6 +17,35 @@
             <file>file:/C:/Users/chand/OneDrive/Desktop/AED%20FINAL%20PROJECT/AED_FINALPROJECT/EcoSystem/src/userInterface/SystemAdminWorkArea/MedicineDel.java</file>
             <file>file:/C:/Users/chand/OneDrive/Desktop/AED%20FINAL%20PROJECT/AED_FINALPROJECT/EcoSystem/src/userInterface/Ambulance/AmbulanceUI.java</file>
             <file>file:/C:/Users/chand/OneDrive/Desktop/AED%20FINAL%20PROJECT/AED_FINALPROJECT/EcoSystem/src/userInterface/SystemAdminWorkArea/resturantframe.java</file>
+=======
+<<<<<<< HEAD
+            <file>file:/Users/ajay09/Desktop/AED_FINALPROJECT/EcoSystem/src/Business/UserAccount/UserAccount.java</file>
+            <file>file:/Users/ajay09/Desktop/AED_FINALPROJECT/EcoSystem/src/Business/ChildCare/ChildCare.java</file>
+            <file>file:/Users/ajay09/Desktop/AED_FINALPROJECT/EcoSystem/src/Business/WorkQueue/OrderRequestDirectory.java</file>
+            <file>file:/Users/ajay09/Desktop/AED_FINALPROJECT/EcoSystem/src/Business/Oncologist/Oncologist.java</file>
+            <file>file:/Users/ajay09/Desktop/AED_FINALPROJECT/EcoSystem/src/Business/user/userDirectory.java</file>
+            <file>file:/Users/ajay09/Desktop/AED_FINALPROJECT/EcoSystem/src/Business/Oncologist/OncologistsDirectory.java</file>
+            <file>file:/Users/ajay09/Desktop/AED_FINALPROJECT/EcoSystem/src/userInterface/user/oncologistAppointmentInterface.java</file>
+            <file>file:/Users/ajay09/Desktop/AED_FINALPROJECT/EcoSystem/src/Business/Organization.java</file>
+            <file>file:/Users/ajay09/Desktop/AED_FINALPROJECT/EcoSystem/src/Business/ConfigureASystem.java</file>
+            <file>file:/Users/ajay09/Desktop/AED_FINALPROJECT/EcoSystem/src/userInterface/loginPage.java</file>
+            <file>file:/Users/ajay09/Desktop/AED_FINALPROJECT/EcoSystem/src/userInterface/SystemAdminWorkArea/CustomerFrame.java</file>
+            <file>file:/Users/ajay09/Desktop/AED_FINALPROJECT/EcoSystem/src/userInterface/SystemAdminWorkArea/Delivarymanframe.java</file>
+            <file>file:/Users/ajay09/Desktop/AED_FINALPROJECT/EcoSystem/src/Business/DeliveryMan/DeliveryManDirectory.java</file>
+            <file>file:/Users/ajay09/Desktop/AED_FINALPROJECT/EcoSystem/src/Business/Pharmacy/Pharmacy.java</file>
+            <file>file:/Users/ajay09/Desktop/AED_FINALPROJECT/EcoSystem/src/Business/UserAccount/UserAccountDirectory.java</file>
+            <file>file:/Users/ajay09/Desktop/AED_FINALPROJECT/EcoSystem/src/Business/Customer/CustomerDirectory.java</file>
+            <file>file:/Users/ajay09/Desktop/AED_FINALPROJECT/EcoSystem/src/Business/Employee/Employee.java</file>
+            <file>file:/Users/ajay09/Desktop/AED_FINALPROJECT/EcoSystem/src/userInterface/userRegistration.java</file>
+            <file>file:/Users/ajay09/Desktop/AED_FINALPROJECT/EcoSystem/src/Business/Pharmacy/PharmacyDirectory.java</file>
+            <file>file:/Users/ajay09/Desktop/AED_FINALPROJECT/EcoSystem/src/Business/Customer/OrderDirectory.java</file>
+            <file>file:/Users/ajay09/Desktop/AED_FINALPROJECT/EcoSystem/src/Business/WorkQueue/OncologistAppointment.java</file>
+            <file>file:/Users/ajay09/Desktop/AED_FINALPROJECT/EcoSystem/src/Business/EcoSystem.java</file>
+=======
+            <file>file:/C:/Users/chand/OneDrive/Desktop/AED%20FINAL%20PROJECT/AED_FINALPROJECT/EcoSystem/src/Business/Organization.java</file>
+            <file>file:/C:/Users/chand/OneDrive/Desktop/AED%20FINAL%20PROJECT/AED_FINALPROJECT/EcoSystem/src/Business/WorkQueue/MentalHealth.java</file>
+>>>>>>> 7bcedf5b7a8d78036d74f906ceda3961453edc8a
+>>>>>>> 2c9cb6660b6cbea97a8eb132e7faa445561a88e9
         </group>
     </open-files>
 </project-private>
