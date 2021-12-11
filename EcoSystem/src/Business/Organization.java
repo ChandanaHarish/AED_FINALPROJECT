@@ -18,6 +18,7 @@ import Business.WorkQueue.WorkQueue;
 import Business.WorkQueue.appointmentCheck;
 import Business.user.userDirectory;
 import Business.Restaurant.RestaurantDirectory;
+import Business.WorkQueue.GeneralVitalsDirectory;
 import Business.role.Role;
 import java.util.ArrayList;
 
@@ -39,7 +40,7 @@ public abstract class Organization {
     private RestaurantDirectory restaurantDirectory;
     private EmployeeDirectory employeeDirectory;
     private UserAccountDirectory userAccountDirectory;
-    
+    private GeneralVitalsDirectory gvd;
     private int organizationID;
     private static int counter=0;
     
@@ -74,6 +75,8 @@ public abstract class Organization {
         oncologistsDirectory = new OncologistsDirectory();
         appcheck = new appointmentCheck();
         oncologistAppointmentDirectory = new OncologistAppointmentDirectory();
+        gvd = new GeneralVitalsDirectory();
+        
     }
     
     public userDirectory getUserDirectory() {
@@ -83,6 +86,18 @@ public abstract class Organization {
         }
             
         return userdirectory;
+    }
+
+    public GeneralVitalsDirectory getGvd() {
+        if(gvd==null)
+        {
+            gvd =new GeneralVitalsDirectory();
+        }
+        return gvd;
+    }
+
+    public void setGvd(GeneralVitalsDirectory gvd) {
+        this.gvd = gvd;
     }
 
     public void setUserDirectory(userDirectory userdirectory) {
@@ -153,6 +168,17 @@ public abstract class Organization {
     }
     public void setOncologistsDirectory(OncologistsDirectory oncologistsDirectory) {
         this.oncologistsDirectory = oncologistsDirectory;
+    }
+    
+    public EmployeeDirectory getEmployeeDirectory() {
+        if(employeeDirectory == null){
+            employeeDirectory = new EmployeeDirectory();
+        }
+        return employeeDirectory;
+    }
+    
+    public UserAccountDirectory getUserAccountDirectory() {
+        return userAccountDirectory;
     }
     
     public OncologistAppointmentDirectory getoncologistAppointmentDirectory() {
