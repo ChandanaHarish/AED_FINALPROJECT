@@ -13,8 +13,8 @@ import Business.DeliveryMan.DeliveryManDirectory;
 import Business.Oncologist.Oncologist;
 import Business.Oncologist.OncologistsDirectory;
 import Business.EcoSystem;
-//import Business.Lab.BloodBank;
-//import Business.Lab.bloodbank_directory;
+import Business.Lab.BloodBank;
+import Business.Lab.bloodbank_directory;
 import Business.Restaurant.Restaurant;
 import Business.Restaurant.RestaurantDirectory;
 import Business.UserAccount.UserAccount;
@@ -44,27 +44,30 @@ import userInterface.DeliveryManRole.DeliveryManWorkAreaJPanel;
 import userInterface.DeliveryManRole.ProcessWorkRequestJPanel;
 import userInterface.RestaurantAdminRole.AdminWorkAreaJPanel;
 import userInterface.SystemAdminWorkArea.SystemAdminWorkAreaJPanel;
-//import userInterface.SystemAdminWorkArea.systemadmin;
+import userInterface.SystemAdminWorkArea.systemadmin;
 
-//import userinterface.bloodbankframe.bloodbankframe;
+import userInterface.bloodbankframe.bloodbankframe;
 //import userInterface.MentalHealthDirectory.covid19_mainframe;
 //import userinterface.doctor.Doctorframe;
 //import userinterface.firedepartment.firedepartmentframe;
 //import userinterface.government.government_main_frame;
-//import userinterface.pharmacy.pharmacyframe;
+import userInterface.Pharmacy.pharmacyframe;
 //import userinterface.policeframe.police_frame;
-//import userinterface.user.usermainpannel;
+import userInterface.user.usermainpannel;
 import java.awt.Color;
 import userInterface.Ambulance.AmbulanceUI;
 import userInterface.ChildCare.ChildCareUI;
 import userInterface.GeneralVitals.GVJPanel;
 import userInterface.MedicineDelivery.MedicineDeliveryUI;
-import userInterface.Oncologist.OncologistUI;
+import userInterface.NCI.Nci_main_frame;
+import userInterface.Oncologist.OncologistFrame;
 import userInterface.Pharmacy.pharmacyframe;
 import userInterface.SystemAdminWorkArea.CancerHospitalUI;
+import userInterface.SystemAdminWorkArea.systemadminenterprise;
+
 import userInterface.user.usermainpannel;
-//import userinterface.SystemAdminWorkArea.systemadminenterprise;
-//import userinterface.vaccination.vaccination;
+import userInterface.SystemAdminWorkArea.systemadminenterprise;
+import userInterface.Therapy.therapy;
 
 /**
  *
@@ -103,7 +106,6 @@ public class loginPage extends javax.swing.JPanel {
 
         jScrollBar1 = new javax.swing.JScrollBar();
         jPanel1 = new javax.swing.JPanel();
-        jLabel12 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         jSeparator3 = new javax.swing.JSeparator();
         jLabel11 = new javax.swing.JLabel();
@@ -126,22 +128,15 @@ public class loginPage extends javax.swing.JPanel {
 
         jPanel1.setBackground(new java.awt.Color(216, 235, 228));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/MicrosoftTeams-image.png"))); // NOI18N
-        jLabel12.setPreferredSize(new java.awt.Dimension(150, 150));
-        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 130, -1, -1));
         jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 310, 280, 10));
         jPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 210, 280, 10));
 
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/x-button (2).png"))); // NOI18N
         jLabel11.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel11MouseClicked(evt);
             }
         });
         jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 40, 40));
-
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/MicrosoftTeams-image (2).png"))); // NOI18N
         jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 30, 100, 110));
 
         jPasswordField1.setBackground(new java.awt.Color(0, 0, 0));
@@ -181,14 +176,9 @@ public class loginPage extends javax.swing.JPanel {
             }
         });
         jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(586, 380, 160, -1));
-
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/key (2).png"))); // NOI18N
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 270, 32, 40));
-
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/user (3).png"))); // NOI18N
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 180, 32, 40));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/logo@2x (1).png"))); // NOI18N
         jLabel1.setPreferredSize(new java.awt.Dimension(300, 120));
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 290, -1, -1));
 
@@ -264,12 +254,12 @@ public class loginPage extends javax.swing.JPanel {
             System.out.println(userAccount.getRole());
             String a=(userAccount.getRole().toString());
             
-            if(a.equals("Business.Role.SystemAdminRole"))
+            if(a.equals("Business.role.SystemAdminRole"))
             {
                 callSystemAdminWorkAreaJPanel();
                 
             }
-            else if(a.equals("Business.Role.CustomerRole"))
+            else if(a.equals("Business.role.CustomerRole"))
             {
                 CustomerDirectory cd=system.getCustomerDirectory();
                 ArrayList<Customer> c=cd.getA();
@@ -289,7 +279,7 @@ public class loginPage extends javax.swing.JPanel {
                   JOptionPane.showMessageDialog(null, "Invalid credentials");  
                 }
             }
-            else if(a.equals("Business.Role.AdminRole"))
+            else if(a.equals("Business.role.AdminRole"))
             {
                 
                 RestaurantDirectory cd=system.getRestaurantDirectory();
@@ -310,7 +300,7 @@ public class loginPage extends javax.swing.JPanel {
                   JOptionPane.showMessageDialog(null, "Invalid credentials");  
                 }
             }
-            else if(a.equals("Business.Role.UserRole"))
+            else if(a.equals("Business.role.UserRole"))
             {
                 userDirectory cd=system.getUserDirectory();
                 ArrayList<User> c=cd.getUser();
@@ -331,7 +321,7 @@ public class loginPage extends javax.swing.JPanel {
                   JOptionPane.showMessageDialog(null, "Invalid credentials");  
                 }
             }
-            else if(a.equals("Business.Role.OncologistRole"))
+            else if(a.equals("Business.role.OncologistRole"))
             {
                 OncologistsDirectory cd=system.getOncologistsDirectory();
                 ArrayList<Oncologist> c=cd.getOncDir();
@@ -355,28 +345,28 @@ public class loginPage extends javax.swing.JPanel {
                   JOptionPane.showMessageDialog(null, "Invalid credentials");  
                 }
             }
-//            else if(a.equals("Business.Role.bloodbankadminrole"))
-//            {
-//                bloodbank_directory cd=system.getBloodbankdirectory();
-//                ArrayList<BloodBank> c=cd.getA();
-//                int size=c.size();
-//                System.out.println(c.size());
-//                int count=0;
-//                for(int i=0;i<size;i++)
-//                {
-//                BloodBank c1=c.get(i);
-//                if(userAccount.getUsername().matches(c1.getUserid()))
-//                {
-//                callbloodbank();
-//                count+=1;
-//                }            
-//                }
-//                if(count==0)
-//                {
-//                  JOptionPane.showMessageDialog(null, "Invalid credentials");  
-//                }
-//            }
-            else if(a.equals("Business.Role.PharmacyAdmin"))
+            else if(a.equals("Business.role.bloodbankadminrole"))
+            {
+                bloodbank_directory cd=system.getBbd();
+                ArrayList<BloodBank> c=cd.getA();
+                int size=c.size();
+                System.out.println(c.size());
+                int count=0;
+                for(int i=0;i<size;i++)
+                {
+                BloodBank c1=c.get(i);
+                if(userAccount.getUsername().matches(c1.getUserid()))
+                {
+                callbloodbank();
+                count+=1;
+                }            
+                }
+                if(count==0)
+                {
+                  JOptionPane.showMessageDialog(null, "Invalid credentials");  
+                }
+            }
+            else if(a.equals("Business.role.PharmacyAdmin"))
             {
                 PharmacyDirectory cd=system.getPharmacyDirectory();
                 ArrayList<Pharmacy> c=cd.getPh();
@@ -397,7 +387,7 @@ public class loginPage extends javax.swing.JPanel {
                   JOptionPane.showMessageDialog(null, "Invalid credentials");  
                 }
             }
-            else if(a.equals("Business.Role.ChildCareRole"))
+            else if(a.equals("Business.role.ChildCareRole"))
             {
                 ChildCareDirectory cd=system.getCcd();
                 ArrayList<ChildCare> c=cd.getA();
@@ -418,7 +408,7 @@ public class loginPage extends javax.swing.JPanel {
                   JOptionPane.showMessageDialog(null, "Invalid credentials");  
                 }
             }
-            else if(a.equals("Business.Role.MedicineDeliveryAdmin"))
+            else if(a.equals("Business.role.MedicineDeliveryAdmin"))
             {
                 MedicineDeliveryDirectory cd=system.getMedicineDelivery();
                 ArrayList<MedicineDelivery> c=cd.getA();
@@ -439,7 +429,7 @@ public class loginPage extends javax.swing.JPanel {
                   JOptionPane.showMessageDialog(null, "Invalid credentials");  
                 }
             }
-            else if(a.equals("Business.Role.NCI"))
+            else if(a.equals("Business.role.NCI"))
             {
                 NCIDirectory nd=system.getNciDirectory();
                 ArrayList<NCI> c=nd.getA();
@@ -460,7 +450,7 @@ public class loginPage extends javax.swing.JPanel {
                   JOptionPane.showMessageDialog(null, "Invalid credentials");  
                 }
             }
-            else if(a.equals("Business.Role.AmbulanceDriver"))
+            else if(a.equals("Business.role.AmbulanceDriver"))
             {
                 AmbulanceDirectory cd=system.getAmbulanceDirectory();
                 ArrayList<Ambulance> c=cd.getAmb();
@@ -481,7 +471,7 @@ public class loginPage extends javax.swing.JPanel {
                   JOptionPane.showMessageDialog(null, "Invalid credentials");  
                 }
             }
-            else if(a.equals("Business.Role.CancerHospitalsadmin"))
+            else if(a.equals("Business.role.CancerHospitalsadmin"))
             {
                 CancerHospitalsDirectory cd=system.getChd();
                 ArrayList<CancerHospitals> c=cd.getA();
@@ -502,7 +492,7 @@ public class loginPage extends javax.swing.JPanel {
                   JOptionPane.showMessageDialog(null, "Invalid credentials");  
                 }
             }
-            else if(a.equals("Business.Role.Vaccination_admin"))
+            else if(a.equals("Business.role.Vaccination_admin"))
             {
                 ConsultancyPageDirectory cd=system.getCpd();
                 ArrayList<ConsultancyPage> c=cd.getA();
@@ -534,7 +524,7 @@ public class loginPage extends javax.swing.JPanel {
 
     public void vaccination()
     {
-        vaccination ur=new vaccination(container,system,userAccount);
+        therapy ur=new therapy(container,system,userAccount);
         container.add(ur);
         CardLayout layout = (CardLayout) container.getLayout();
         layout.next(container); 
@@ -576,7 +566,7 @@ public class loginPage extends javax.swing.JPanel {
     }
     public void callNCI()
     {
-        government_main_frame ur=new government_main_frame(container,system,userAccount);
+        Nci_main_frame ur=new Nci_main_frame(container,system,userAccount);
         container.add(ur);
         CardLayout layout = (CardLayout) container.getLayout();
         layout.next(container); 
@@ -606,16 +596,16 @@ public class loginPage extends javax.swing.JPanel {
         layout.next(container); 
     }
     
-//    public void callbloodbank()
-//    {
-//        bloodbankframe ur=new bloodbankframe(container,system,userAccount);
-//        container.add(ur);
-//        CardLayout layout = (CardLayout) container.getLayout();
-//        layout.next(container); 
-//    }
+    public void callbloodbank()
+    {
+        bloodbankframe ur=new bloodbankframe(container,system,userAccount);
+        container.add(ur);
+        CardLayout layout = (CardLayout) container.getLayout();
+        layout.next(container); 
+    }
     public void callOncologist()
     {
-        OncologistUI ur=new OncologistUI(container,system,userAccount);
+        OncologistFrame ur=new OncologistFrame(container,system,userAccount);
         container.add(ur);
         CardLayout layout = (CardLayout) container.getLayout();
         layout.next(container); 
@@ -631,7 +621,7 @@ public class loginPage extends javax.swing.JPanel {
     
     public void calluserregisteration()
     {
-       userRegistration ur=new userRegistration(container,system);
+       User_register ur=new User_register(container,system);
         container.add(ur);
         CardLayout layout = (CardLayout) container.getLayout();
         layout.next(container); 
@@ -678,7 +668,6 @@ public class loginPage extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -695,6 +684,10 @@ public class loginPage extends javax.swing.JPanel {
     private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 
+//    private void callbloodbank() {
+//        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+//    }
+
 //    private void callChildCare() {
 //        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
 //    }
@@ -705,7 +698,7 @@ public class loginPage extends javax.swing.JPanel {
 //        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
 //    }
 
-    private void callNCI() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+//    private void callNCI() {
+//        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+//    }
 }
