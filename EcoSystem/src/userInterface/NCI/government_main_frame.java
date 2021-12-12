@@ -29,7 +29,7 @@ import userinterface.loginpage;
 
 /**
  *
- * @author raksh
+ * @author chand
  */
 public class government_main_frame extends javax.swing.JPanel {
 

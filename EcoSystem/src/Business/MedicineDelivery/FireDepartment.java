@@ -11,7 +11,7 @@ import Business.UserAccount.UserAccount;
 
 /**
  *
- * @author raksh
+ * @author preranaj
  */
 public class FireDepartment extends UserAccount{
     String name;

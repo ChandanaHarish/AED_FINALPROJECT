@@ -23,7 +23,7 @@ import userinterface.CustomerRole.customer_main;
 
 /**
  *
- * @author raksh
+ * @author ajay09
  */
 public class assigndeliverymanname extends javax.swing.JPanel {
 

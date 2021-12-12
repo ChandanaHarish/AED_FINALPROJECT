@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author raksh
+ * @author preranaj
  */
 public class ambulance_directory {
      ArrayList<Ambulance> a =new ArrayList<Ambulance>();

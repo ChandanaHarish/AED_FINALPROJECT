@@ -24,7 +24,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author raksh
+ * @author ajay09
  */
 public class Doctor_App extends javax.swing.JPanel {
 

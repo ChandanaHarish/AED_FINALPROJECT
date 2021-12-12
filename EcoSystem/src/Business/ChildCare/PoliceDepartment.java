@@ -11,7 +11,7 @@ import Business.UserAccount.UserAccount;
 
 /**
  *
- * @author raksh
+ * @author chand
  */
 public class PoliceDepartment extends UserAccount {
     

@@ -12,7 +12,7 @@ import userinterface.RestaurantAdminRole.*;
 
 /**
  *
- * @author raunak
+ * @author chand
  */
 public class AdminRole extends Role{
 

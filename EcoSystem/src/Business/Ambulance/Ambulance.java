@@ -11,7 +11,7 @@ import Business.UserAccount.UserAccount;
 
 /**
  *
- * @author raksh
+ * @author preranaj
  */
 public class Ambulance extends UserAccount{
     String ambulance_name;

@@ -13,7 +13,7 @@ import userinterface.loginpage;
 
 /**
  *
- * @author raksh
+ * @author ajay09
  */
 public class non_profit_org extends javax.swing.JPanel {
 

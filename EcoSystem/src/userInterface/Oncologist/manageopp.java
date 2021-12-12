@@ -24,7 +24,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author raksh
+ * @author preranaj
  */
 public class manageopp extends javax.swing.JPanel {
 

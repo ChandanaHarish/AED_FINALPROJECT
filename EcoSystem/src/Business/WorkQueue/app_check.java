@@ -11,7 +11,7 @@ import java.util.Map;
 
 /**
  *
- * @author raksh
+ * @author preranaj
  */
 public class app_check {
     Map<String, List<String>> peopleByForename = new HashMap<>(); 

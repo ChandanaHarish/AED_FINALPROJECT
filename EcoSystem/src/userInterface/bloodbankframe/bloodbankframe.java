@@ -17,7 +17,7 @@ import userinterface.user.Blood_bank;
 
 /**
  *
- * @author raksh
+ * @author ajay09
  */
 public class bloodbankframe extends javax.swing.JPanel {
 

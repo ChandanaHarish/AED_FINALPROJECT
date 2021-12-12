@@ -17,7 +17,7 @@ import userinterface.user.Blood_bank;
 
 /**
  *
- * @author raksh
+ * @author preranaj
  */
 public class Doctorframe extends javax.swing.JPanel {
 

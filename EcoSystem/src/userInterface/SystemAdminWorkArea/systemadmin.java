@@ -15,7 +15,7 @@ import userinterface.loginpage;
 
 /**
  *
- * @author raksh
+ * @author chand
  */
 public class systemadmin extends javax.swing.JPanel {
 

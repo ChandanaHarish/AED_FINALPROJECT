@@ -8,7 +8,7 @@ import java.util.ArrayList;
     import java.util.Date;
 /**
  *
- * @author css19
+ * @author chand
  */
 public class Covid19 {
     String first_name;

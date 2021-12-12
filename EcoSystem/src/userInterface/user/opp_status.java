@@ -18,7 +18,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author raksh
+ * @author preranaj
  */
 public class opp_status extends javax.swing.JPanel {
 

@@ -20,7 +20,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author raksh
+ * @author chand
  */
 public class Delivarymanframe extends javax.swing.JPanel {
 

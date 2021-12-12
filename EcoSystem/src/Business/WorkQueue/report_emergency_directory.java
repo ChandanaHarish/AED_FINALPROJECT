@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author raksh
+ * @author chand
  */
 public class report_emergency_directory {
     ArrayList<report_emergency> us = new ArrayList<report_emergency>();

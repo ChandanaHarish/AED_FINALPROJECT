@@ -13,7 +13,7 @@ import java.util.Map;
 
 /**
  *
- * @author raksh
+ * @author chand
  */
 public class BloodBank extends UserAccount{
     String name;

@@ -22,7 +22,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author raksh
+ * @author preranaj
  */
 public class pharmacydoc extends javax.swing.JPanel {
 

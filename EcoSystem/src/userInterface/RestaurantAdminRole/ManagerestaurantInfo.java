@@ -19,7 +19,7 @@ import userinterface.SystemAdminWorkArea.SystemAdminWorkAreaJPanel;
 
 /**
  *
- * @author raksh
+ * @author ajay09
  */
 public class ManagerestaurantInfo extends javax.swing.JPanel {
 

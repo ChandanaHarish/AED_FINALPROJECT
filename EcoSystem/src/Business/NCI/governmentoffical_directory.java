@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author raksh
+ * @author chand
  */
 public class governmentoffical_directory {
     ArrayList<governmentofficial> a =new ArrayList<governmentofficial>();

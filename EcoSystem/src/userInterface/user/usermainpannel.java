@@ -17,7 +17,7 @@ import userinterface.loginpage;
 
 /**
  *
- * @author raksh
+ * @author chand
  */
 public class usermainpannel extends javax.swing.JPanel {
 

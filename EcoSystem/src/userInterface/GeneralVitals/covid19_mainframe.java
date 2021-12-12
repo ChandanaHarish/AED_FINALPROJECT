@@ -32,7 +32,7 @@ import userinterface.loginpage;
 import userinterface.user.usermainpannel;
 /**
  *
- * @author raksh
+ * @author preranaj
  */
 public class covid19_mainframe extends javax.swing.JPanel {
 

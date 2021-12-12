@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author raksh
+ * @author ajay09
  */
 public class covidcenter_directory {
     ArrayList<covidcenter> a =new ArrayList<covidcenter>();

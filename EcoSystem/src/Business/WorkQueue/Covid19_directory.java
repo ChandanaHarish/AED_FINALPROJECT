@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Date;
 /**
  *
- * @author css19
+ * @author chand
  */
 public class Covid19_directory {
     ArrayList<Covid19> c = new ArrayList<Covid19>();

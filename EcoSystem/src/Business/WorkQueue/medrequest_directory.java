@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author raksh
+ * @author preranaj
  */
 public class medrequest_directory {
     ArrayList<medrequest> us = new ArrayList<medrequest>();

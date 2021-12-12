@@ -17,7 +17,7 @@ import userinterface.loginpage;
 
 /**
  *
- * @author raksh
+ * @author chand
  */
 public class pharmacyframe extends javax.swing.JPanel {
 

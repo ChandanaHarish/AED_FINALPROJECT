@@ -26,7 +26,7 @@ import userinterface.loginpage;
 
 /**
  *
- * @author raksh
+ * @author ajay09
  */
 public class customer_main extends javax.swing.JPanel {
 

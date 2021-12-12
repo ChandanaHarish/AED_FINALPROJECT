@@ -12,7 +12,7 @@ import userinterface.CustomerRole.CustomerAreaJPanel;
 
 /**
  *
- * @author raksh
+ * @author preranaj
  */
 public class Vaccination_admin extends Role {
     
