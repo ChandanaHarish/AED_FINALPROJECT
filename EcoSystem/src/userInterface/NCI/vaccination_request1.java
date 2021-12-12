@@ -107,7 +107,7 @@ public class vaccination_request1 extends javax.swing.JPanel {
 
             },
             new String [] {
-                "ID", "Name", "Covid -19", "Diabetes", "Medication", "Blood Tinner", "Status"
+                "ID", "Name", "Anxious?", "Sleep well?", "Content?", "Medication?", "Status"
             }
         ));
         jScrollPane1.setViewportView(jTable1);
@@ -140,7 +140,7 @@ public class vaccination_request1 extends javax.swing.JPanel {
 
         jLabel2.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(204, 204, 204));
-        jLabel2.setText("Vaccination :");
+        jLabel2.setText("Therapy :");
 
         jLabel3.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(204, 204, 204));
@@ -152,7 +152,7 @@ public class vaccination_request1 extends javax.swing.JPanel {
 
         jLabel5.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(204, 204, 204));
-        jLabel5.setText("Vaccination Portal");
+        jLabel5.setText("Mental Health Portal");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -174,7 +174,7 @@ public class vaccination_request1 extends javax.swing.JPanel {
                         .addComponent(jLabel1)
                         .addGap(18, 18, 18)
                         .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 68, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 92, Short.MAX_VALUE)
                         .addComponent(jLabel2)
                         .addGap(18, 18, 18)
                         .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)))
