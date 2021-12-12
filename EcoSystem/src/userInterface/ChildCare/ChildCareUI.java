@@ -5,15 +5,15 @@
  */
 package userInterface.ChildCare;
 
-import Business.ChildCare.ChildCare;
+import Business.Ambulance.Ambulance;
 import Business.DB4OUtil.DB4OUtil;
 import Business.EcoSystem;
 import Business.UserAccount.UserAccount;
 import Business.WorkQueue.EmergencyReport;
 import Business.WorkQueue.EmergencyReportDirectory;
+import Business.ChildCare.ChildCare;
 import java.awt.CardLayout;
 import java.awt.Component;
-import static java.time.Clock.system;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
@@ -22,20 +22,21 @@ import userInterface.loginPage;
 
 /**
  *
- * @author chand
+ * @author preranaj
  */
 public class ChildCareUI extends javax.swing.JPanel {
-     private final JPanel container;
-    private final EcoSystem ecoSystem;
+
+    private final JPanel container;
+    private final EcoSystem system;
     private final UserAccount userAccount;
 
     /**
      * Creates new form ChildCare
      */
-    public ChildCareUI(JPanel container,EcoSystem ecoSystem,UserAccount userAccount) {
+    public ChildCareUI(JPanel container,EcoSystem system,UserAccount userAccount) {
         initComponents();
         this.container=container;
-        this.ecoSystem=ecoSystem;
+        this.system=system;
         this.userAccount=userAccount;
         ChildCare p=(ChildCare)userAccount;
         jLabel4.setText(p.getUserName()+" Welcome!!");
@@ -51,13 +52,21 @@ public class ChildCareUI extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
-        btnRespondChildCare = new javax.swing.JButton();
-        btnFalseAlarmChildCare = new javax.swing.JButton();
-        btnCloseChildCare = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/police-car (1)_1.png"))); // NOI18N
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 30, -1, -1));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -69,225 +78,211 @@ public class ChildCareUI extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(jTable1);
 
-        btnRespondChildCare.setBackground(new java.awt.Color(195, 233, 245));
-        btnRespondChildCare.setText("Respond");
-        btnRespondChildCare.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnRespondChildCareActionPerformed(evt);
-            }
-        });
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 170, 794, 230));
 
-        btnFalseAlarmChildCare.setBackground(new java.awt.Color(195, 233, 245));
-        btnFalseAlarmChildCare.setText("False Alarm");
-        btnFalseAlarmChildCare.addActionListener(new java.awt.event.ActionListener() {
+        jButton1.setBackground(new java.awt.Color(195, 233, 245));
+        jButton1.setText("Respond");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnFalseAlarmChildCareActionPerformed(evt);
+                jButton1ActionPerformed(evt);
             }
         });
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 440, -1, -1));
 
-        btnCloseChildCare.setBackground(new java.awt.Color(195, 233, 245));
-        btnCloseChildCare.setText("Close Case");
-        btnCloseChildCare.addActionListener(new java.awt.event.ActionListener() {
+        jButton2.setBackground(new java.awt.Color(195, 233, 245));
+        jButton2.setText("False Alaram");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCloseChildCareActionPerformed(evt);
+                jButton2ActionPerformed(evt);
             }
         });
+        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 440, -1, -1));
+
+        jButton3.setBackground(new java.awt.Color(195, 233, 245));
+        jButton3.setText("Close Case");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 440, -1, -1));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/logout (1).png"))); // NOI18N
+        jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel2MouseClicked(evt);
+            }
+        });
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 20, -1, -1));
+
+        jLabel3.setBackground(new java.awt.Color(26, 39, 68));
+        jLabel3.setOpaque(true);
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 0, 1040, 540));
 
         jLabel4.setText("jLabel4");
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(451, 140, 130, -1));
 
-        jLabel1.setText("go back");
-        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
+        jLabel5.setText("go back");
+        jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel1MouseClicked(evt);
+                jLabel5MouseClicked(evt);
             }
         });
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(415, 415, 415))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(58, 58, 58)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 740, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(233, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(119, 119, 119)
-                .addComponent(btnRespondChildCare)
-                .addGap(18, 18, 18)
-                .addComponent(btnFalseAlarmChildCare)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnCloseChildCare)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(174, 174, 174))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(48, 48, 48)
-                .addComponent(jLabel4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 50, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(30, 30, 30)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnRespondChildCare)
-                    .addComponent(btnFalseAlarmChildCare)
-                    .addComponent(btnCloseChildCare))
-                .addGap(26, 26, 26))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addContainerGap())
-        );
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 30, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnRespondChildCareActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRespondChildCareActionPerformed
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         DefaultTableModel  t2 = (DefaultTableModel) jTable1.getModel();
         int selectedRow=jTable1.getSelectedRow();
         if(selectedRow>=0)
+        {       
+        int s=Integer.parseInt(t2.getValueAt(selectedRow, 0).toString());
+        System.out.println("id"+s);
+        EmergencyReportDirectory red=system.getErd();
+        ArrayList<EmergencyReport> ol=red.getUser();
+        int u=ol.size();
+        ChildCare a=(ChildCare)userAccount;
+        for(int i=0;i<u;i++)
         {
-            int s=Integer.parseInt(t2.getValueAt(selectedRow, 0).toString());
-            System.out.println("id"+s);
-            EmergencyReportDirectory red=ecoSystem.getErd();
-            ArrayList<EmergencyReport> ol=red.getUser();
-            int u=ol.size();
-            ChildCare a=(ChildCare)userAccount;
-            for(int i=0;i<u;i++)
+            EmergencyReport o=ol.get(i);
+            if(s==o.getId()/*&&o.getStatus().matches("Deliver Man Assigned")*/)
             {
-                EmergencyReport o=ol.get(i);
-                if(s==o.getId()/*&&o.getStatus().matches("Deliver Man Assigned")*/)
+                if(o.getStatus().matches("Closed"))
                 {
-                    if(o.getStatus().matches("Closed"))
-                    {
-                        JOptionPane.showMessageDialog(null, "Emergency Closed");
-                    }
-                    else if(o.getStatus().matches("False Alaram"))
-                    {
-                        JOptionPane.showMessageDialog(null, "Emergency is a false Alaram");
-                    }
-                    else if(o.getResponse().matches("No Response"))
-                    {
-                        o.setResponse(a.getUserName()+" "+"Responded");
-                    }
-                    else
-                    {
-                        JOptionPane.showMessageDialog(null, "Already Responded!!");
-                    }
-
+                    JOptionPane.showMessageDialog(null, "Emergency Closed");
                 }
+                else if(o.getStatus().matches("False Alaram"))
+                {
+                    JOptionPane.showMessageDialog(null, "Emergency is a false Alaram");
+                }
+                else if(o.getResponse().matches("No Response"))
+                {
+                    o.setResponse(a.getUserName()+" "+"Responded");
+                }
+                else
+                {
+                   JOptionPane.showMessageDialog(null, "Already Responded!!"); 
+                }
+                
 
             }
-            jTable1.setModel(new DefaultTableModel(null,new String[]{"ID","Name","Emergency","Location","Status","Response"}));
-            populate_table();
+
+        }
+        jTable1.setModel(new DefaultTableModel(null,new String[]{"ID","Name","Emergency","Location","Status","Response"}));
+        populate_table();
         }
         else
         {
             JOptionPane.showMessageDialog(null, "Select A Row!!");
         }
-    }//GEN-LAST:event_btnRespondChildCareActionPerformed
+    }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void btnFalseAlarmChildCareActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFalseAlarmChildCareActionPerformed
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
         DefaultTableModel t2 = (DefaultTableModel) jTable1.getModel();
         int selectedRow=jTable1.getSelectedRow();
         if(selectedRow>=0)
         {
-            int s=Integer.parseInt(t2.getValueAt(selectedRow, 0).toString());
-            System.out.println("id"+s);
-            EmergencyReportDirectory red=ecoSystem.getErd();
-            ArrayList<EmergencyReport> ol=red.getUser();
-            ChildCare a=(ChildCare)userAccount;
-            int u=ol.size();
-            for(int i=0;i<u;i++)
+        int s=Integer.parseInt(t2.getValueAt(selectedRow, 0).toString());
+        System.out.println("id"+s);
+        EmergencyReportDirectory red=system.getErd();
+        ArrayList<EmergencyReport> ol=red.getUser();
+        ChildCare a=(ChildCare)userAccount;
+        int u=ol.size();
+        for(int i=0;i<u;i++)
+        {
+            EmergencyReport o=ol.get(i);
+            if(s==o.getId()/*&&o.getStatus().matches("Deliver Man Assigned")*/)
             {
-                EmergencyReport o=ol.get(i);
-                if(s==o.getId()/*&&o.getStatus().matches("Deliver Man Assigned")*/)
+                if(o.getStatus().matches("Closed"))
                 {
-                    if(o.getStatus().matches("Closed"))
-                    {
-                        JOptionPane.showMessageDialog(null, "Emergency Closed");
-                    }
-                    else if(o.getStatus().matches("False Alaram"))
-                    {
-                        JOptionPane.showMessageDialog(null, "Emergency is a false Alaram");
-                    }
-                    else if(o.getResponse().matches("No Response"))
-                    {
-                        JOptionPane.showMessageDialog(null, "respond to emergency");
-                    }
-                    else
-                    {
-                        o.setStatus("False Alaram");
-                    }
-
+                    JOptionPane.showMessageDialog(null, "Emergency Closed");
                 }
+                else if(o.getStatus().matches("False Alaram"))
+                {
+                    JOptionPane.showMessageDialog(null, "Emergency is a false Alaram");
+                }
+                else if(o.getResponse().matches("No Response"))
+                {
+                    JOptionPane.showMessageDialog(null, "respond to emergency");
+                }
+                else
+                {
+                    o.setStatus("False Alaram");
+                }
+                
+                
 
             }
-            jTable1.setModel(new DefaultTableModel(null,new String[]{"ID","Name","Emergency","Location","Status","Response"}));
-            populate_table();
+
+        }
+        jTable1.setModel(new DefaultTableModel(null,new String[]{"ID","Name","Emergency","Location","Status","Response"}));
+        populate_table();
         }
         else
         {
             JOptionPane.showMessageDialog(null, "Select A Row!!");
         }
-    }//GEN-LAST:event_btnFalseAlarmChildCareActionPerformed
+    }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void btnCloseChildCareActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCloseChildCareActionPerformed
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
         DefaultTableModel t2 = (DefaultTableModel) jTable1.getModel();
         int selectedRow=jTable1.getSelectedRow();
         if(selectedRow>=0)
         {
-            int s=Integer.parseInt(t2.getValueAt(selectedRow, 0).toString());
-            System.out.println("id"+s);
-            EmergencyReportDirectory red=ecoSystem.getErd();
-            ArrayList<EmergencyReport> ol=red.getUser();
-            int u=ol.size();
-            for(int i=0;i<u;i++)
+        int s=Integer.parseInt(t2.getValueAt(selectedRow, 0).toString());
+        System.out.println("id"+s);
+        EmergencyReportDirectory red=system.getErd();
+        ArrayList<EmergencyReport> ol=red.getUser();
+        int u=ol.size();
+        for(int i=0;i<u;i++)
+        {
+            EmergencyReport o=ol.get(i);
+            if(s==o.getId()/*&&o.getStatus().matches("Deliver Man Assigned")*/)
             {
-                EmergencyReport o=ol.get(i);
-                if(s==o.getId()/*&&o.getStatus().matches("Deliver Man Assigned")*/)
+                if(o.getStatus().matches("Closed"))
                 {
-                    if(o.getStatus().matches("Closed"))
-                    {
-                        JOptionPane.showMessageDialog(null, "Emergency Closed");
-                    }
-                    else if(o.getStatus().matches("False Alaram"))
-                    {
-                        JOptionPane.showMessageDialog(null, "Emergency is a false Alaram");
-                    }
-                    else if(o.getResponse().matches("No Response"))
-                    {
-                        JOptionPane.showMessageDialog(null, "respond to emergency");
-                    }
-                    else
-                    {
-                        o.setStatus("Closed");
-                    }
-
+                    JOptionPane.showMessageDialog(null, "Emergency Closed");
+                }
+                else if(o.getStatus().matches("False Alaram"))
+                {
+                    JOptionPane.showMessageDialog(null, "Emergency is a false Alaram");
+                }
+                else if(o.getResponse().matches("No Response"))
+                {
+                    JOptionPane.showMessageDialog(null, "respond to emergency");
+                }
+                else
+                {
+                    o.setStatus("Closed");
                 }
 
             }
-            jTable1.setModel(new DefaultTableModel(null,new String[]{"ID","Name","Emergency","Location","Status","Response"}));
-            populate_table();
+
+        }
+        jTable1.setModel(new DefaultTableModel(null,new String[]{"ID","Name","Emergency","Location","Status","Response"}));
+        populate_table();
         }
         else
         {
             JOptionPane.showMessageDialog(null, "Select A Row!!");
         }
-    }//GEN-LAST:event_btnCloseChildCareActionPerformed
+    }//GEN-LAST:event_jButton3ActionPerformed
 
-    private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
+    private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
+        // TODO add your handling code here:
+//        backAction();
+//        DB4OUtil.dB4OUtil.storeSystem(system);
+    }//GEN-LAST:event_jLabel2MouseClicked
+
+    private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
         // TODO add your handling code here:
         backAction();
-        DB4OUtil.dB4OUtil.storeSystem(ecoSystem);
-    }//GEN-LAST:event_jLabel1MouseClicked
-    
+        DB4OUtil.dB4OUtil.storeSystem(system);
+    }//GEN-LAST:event_jLabel5MouseClicked
+
     private void backAction() {
         container.remove(this);
         Component[] componentArray = container.getComponents();
@@ -298,14 +293,14 @@ public class ChildCareUI extends javax.swing.JPanel {
     }
     public void populate_table()
     {
-        EmergencyReportDirectory red=ecoSystem.getErd();
+        EmergencyReportDirectory red=system.getErd();
         ArrayList<EmergencyReport> ol=red.getUser();
         int u=ol.size();
         System.out.println(u);
         for(int i=0;i<u;i++)
         {
             EmergencyReport o=ol.get(i);
-            if(o.getEmergency().matches("Crime"))
+            if(o.getEmergency().matches("ChildCare"))
             {
             
                 DefaultTableModel t2 = (DefaultTableModel) jTable1.getModel();
@@ -321,11 +316,14 @@ public class ChildCareUI extends javax.swing.JPanel {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnCloseChildCare;
-    private javax.swing.JButton btnFalseAlarmChildCare;
-    private javax.swing.JButton btnRespondChildCare;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables
