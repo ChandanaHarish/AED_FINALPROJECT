@@ -5,6 +5,7 @@
  */
 package userInterface.SystemAdminWorkArea;
 
+import Business.DB4OUtil.DB4OUtil;
 import Business.EcoSystem;
 import java.awt.CardLayout;
 import java.awt.Component;
@@ -44,6 +45,7 @@ public class hospital_org extends javax.swing.JPanel {
         jLabel1 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
 
         setLayout(new java.awt.CardLayout());
 
@@ -79,6 +81,13 @@ public class hospital_org extends javax.swing.JPanel {
             }
         });
 
+        jLabel10.setText("go back");
+        jLabel10.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel10MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -101,9 +110,13 @@ public class hospital_org extends javax.swing.JPanel {
                                     .addGap(37, 37, 37)))
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(jLabel1)
-                                .addComponent(jLabel2)))))
-                .addGap(53, 53, 53)
-                .addComponent(container1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(jLabel2))))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(87, 87, 87)
+                        .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(container1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(49, 49, 49))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -119,6 +132,8 @@ public class hospital_org extends javax.swing.JPanel {
                 .addComponent(jLabel5)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel2)
+                .addGap(100, 100, 100)
+                .addComponent(jLabel10)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -140,14 +155,20 @@ public class hospital_org extends javax.swing.JPanel {
 //        backAction();
     }//GEN-LAST:event_jLabel3MouseClicked
 
-//    private void backAction() {
-//        container.remove(this);
-//        Component[] componentArray = container.getComponents();
-//        Component component = componentArray[componentArray.length - 1];
-//        systemadminenterprise manageSuppliersJPanel = (systemadminenterprise) component;        
-//        CardLayout layout = (CardLayout) container.getLayout();
-//        layout.previous(container);
-//    }
+    private void jLabel10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MouseClicked
+        // TODO add your handling code here:
+        backAction();
+        DB4OUtil.dB4OUtil.storeSystem(ecosystem);
+    }//GEN-LAST:event_jLabel10MouseClicked
+
+         private void backAction() {
+        container.remove(this);
+        Component[] componentArray = container.getComponents();
+        Component component = componentArray[componentArray.length - 1];
+        systemadminenterprise manageSuppliersJPanel = (systemadminenterprise) component;        
+        CardLayout layout = (CardLayout) container.getLayout();
+        layout.previous(container);
+    }
     public void Cancer()
     {
         CancerHospitalUI ur=new CancerHospitalUI(container,ecosystem);
@@ -167,6 +188,7 @@ public class hospital_org extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel container1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
