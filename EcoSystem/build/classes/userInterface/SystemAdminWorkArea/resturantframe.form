@@ -23,11 +23,7 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-<<<<<<< HEAD
               <Component id="tblRestaurant" max="32767" attributes="0"/>
-=======
-              <Component id="jScrollPane1" max="32767" attributes="0"/>
->>>>>>> 0a957d8e8765793f9e90ac0740a280f9c2f86886
               <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
           </Group>
           <Group type="102" alignment="1" attributes="0">
@@ -41,7 +37,6 @@
               </Group>
               <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-<<<<<<< HEAD
                   <Component id="txtRName" alignment="0" max="32767" attributes="0"/>
                   <Component id="txtLoc" alignment="0" max="32767" attributes="0"/>
                   <Component id="txtUserName" alignment="0" max="32767" attributes="0"/>
@@ -54,20 +49,6 @@
                   <Group type="103" alignment="0" groupAlignment="1" attributes="0">
                       <Component id="btnDelete" linkSize="1" min="-2" max="-2" attributes="0"/>
                       <Component id="btnUpdate" linkSize="1" min="-2" max="-2" attributes="0"/>
-=======
-                  <Component id="jTextField1" alignment="0" max="32767" attributes="0"/>
-                  <Component id="jTextField2" alignment="0" max="32767" attributes="0"/>
-                  <Component id="jTextField3" alignment="0" max="32767" attributes="0"/>
-                  <Component id="jTextField4" alignment="0" max="32767" attributes="0"/>
-                  <Component id="jTextField5" alignment="0" min="-2" pref="99" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="66" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jButton1" linkSize="1" min="-2" pref="99" max="-2" attributes="0"/>
-                  <Group type="103" alignment="0" groupAlignment="1" attributes="0">
-                      <Component id="jButton3" linkSize="1" min="-2" max="-2" attributes="0"/>
-                      <Component id="jButton2" linkSize="1" min="-2" max="-2" attributes="0"/>
->>>>>>> 0a957d8e8765793f9e90ac0740a280f9c2f86886
                   </Group>
               </Group>
               <EmptySpace min="-2" pref="123" max="-2" attributes="0"/>
@@ -80,61 +61,34 @@
           <Group type="102" alignment="0" attributes="0">
               <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
-<<<<<<< HEAD
               <Component id="tblRestaurant" min="-2" pref="193" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="txtRName" alignment="3" min="-2" max="-2" attributes="0"/>
-=======
-              <Component id="jScrollPane1" min="-2" pref="193" max="-2" attributes="0"/>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField1" alignment="3" min="-2" max="-2" attributes="0"/>
->>>>>>> 0a957d8e8765793f9e90ac0740a280f9c2f86886
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
-<<<<<<< HEAD
                   <Component id="txtLoc" alignment="3" min="-2" max="-2" attributes="0"/>
-=======
-                  <Component id="jTextField2" alignment="3" min="-2" max="-2" attributes="0"/>
->>>>>>> 0a957d8e8765793f9e90ac0740a280f9c2f86886
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
-<<<<<<< HEAD
                   <Component id="txtUserName" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="btnAdd" alignment="3" min="-2" max="-2" attributes="0"/>
-=======
-                  <Component id="jTextField3" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
->>>>>>> 0a957d8e8765793f9e90ac0740a280f9c2f86886
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
-<<<<<<< HEAD
                   <Component id="txtPwd" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="btnUpdate" alignment="3" min="-2" max="-2" attributes="0"/>
-=======
-                  <Component id="jTextField4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton2" alignment="3" min="-2" max="-2" attributes="0"/>
->>>>>>> 0a957d8e8765793f9e90ac0740a280f9c2f86886
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
-<<<<<<< HEAD
                   <Component id="txtPhNo" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="btnDelete" alignment="3" min="-2" max="-2" attributes="0"/>
-=======
-                  <Component id="jTextField5" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton3" alignment="3" min="-2" max="-2" attributes="0"/>
->>>>>>> 0a957d8e8765793f9e90ac0740a280f9c2f86886
               </Group>
               <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
           </Group>
@@ -147,17 +101,10 @@
         <Property name="text" type="java.lang.String" value="Resturant Name :"/>
       </Properties>
     </Component>
-<<<<<<< HEAD
     <Component class="javax.swing.JTextField" name="txtRName">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtRNameActionPerformed"/>
         <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtRNameKeyPressed"/>
-=======
-    <Component class="javax.swing.JTextField" name="jTextField1">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField1ActionPerformed"/>
-        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTextField1KeyPressed"/>
->>>>>>> 0a957d8e8765793f9e90ac0740a280f9c2f86886
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">
@@ -165,17 +112,10 @@
         <Property name="text" type="java.lang.String" value="Location :"/>
       </Properties>
     </Component>
-<<<<<<< HEAD
     <Component class="javax.swing.JTextField" name="txtLoc">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtLocActionPerformed"/>
         <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtLocKeyPressed"/>
-=======
-    <Component class="javax.swing.JTextField" name="jTextField2">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField2ActionPerformed"/>
-        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTextField2KeyPressed"/>
->>>>>>> 0a957d8e8765793f9e90ac0740a280f9c2f86886
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel3">
@@ -183,56 +123,32 @@
         <Property name="text" type="java.lang.String" value="User Name:"/>
       </Properties>
     </Component>
-<<<<<<< HEAD
     <Component class="javax.swing.JTextField" name="txtUserName">
-=======
-    <Component class="javax.swing.JTextField" name="jTextField3">
->>>>>>> 0a957d8e8765793f9e90ac0740a280f9c2f86886
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel4">
       <Properties>
         <Property name="text" type="java.lang.String" value="Password:"/>
       </Properties>
     </Component>
-<<<<<<< HEAD
     <Component class="javax.swing.JTextField" name="txtPwd">
     </Component>
     <Component class="javax.swing.JButton" name="btnAdd">
-=======
-    <Component class="javax.swing.JTextField" name="jTextField4">
-    </Component>
-    <Component class="javax.swing.JButton" name="jButton1">
->>>>>>> 0a957d8e8765793f9e90ac0740a280f9c2f86886
       <Properties>
         <Property name="text" type="java.lang.String" value="Add"/>
       </Properties>
       <Events>
-<<<<<<< HEAD
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAddActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnUpdate">
-=======
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JButton" name="jButton2">
->>>>>>> 0a957d8e8765793f9e90ac0740a280f9c2f86886
       <Properties>
         <Property name="text" type="java.lang.String" value="Update"/>
       </Properties>
       <Events>
-<<<<<<< HEAD
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnUpdateActionPerformed"/>
       </Events>
     </Component>
     <Container class="javax.swing.JScrollPane" name="tblRestaurant">
-=======
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
-      </Events>
-    </Component>
-    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
->>>>>>> 0a957d8e8765793f9e90ac0740a280f9c2f86886
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
       <SubComponents>
@@ -291,30 +207,17 @@
         <Property name="text" type="java.lang.String" value="Phone Number:"/>
       </Properties>
     </Component>
-<<<<<<< HEAD
     <Component class="javax.swing.JTextField" name="txtPhNo">
       <Events>
         <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtPhNoKeyPressed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnDelete">
-=======
-    <Component class="javax.swing.JTextField" name="jTextField5">
-      <Events>
-        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTextField5KeyPressed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JButton" name="jButton3">
->>>>>>> 0a957d8e8765793f9e90ac0740a280f9c2f86886
       <Properties>
         <Property name="text" type="java.lang.String" value="Delete"/>
       </Properties>
       <Events>
-<<<<<<< HEAD
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDeleteActionPerformed"/>
-=======
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton3ActionPerformed"/>
->>>>>>> 0a957d8e8765793f9e90ac0740a280f9c2f86886
       </Events>
     </Component>
     <Container class="javax.swing.JPanel" name="jPanel1">

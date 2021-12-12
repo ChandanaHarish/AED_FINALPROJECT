@@ -57,11 +57,6 @@
                               </Group>
                           </Group>
                       </Group>
-<<<<<<< HEAD
-                  </Group>
-                  <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
-                  <Component id="container1" min="-2" max="-2" attributes="0"/>
-=======
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="87" max="-2" attributes="0"/>
                           <Component id="jLabel10" min="-2" pref="87" max="-2" attributes="0"/>
@@ -70,7 +65,6 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="container1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
->>>>>>> 0a957d8e8765793f9e90ac0740a280f9c2f86886
               </Group>
           </Group>
         </DimensionLayout>
@@ -88,11 +82,8 @@
                   <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-<<<<<<< HEAD
-=======
                   <EmptySpace min="-2" pref="100" max="-2" attributes="0"/>
                   <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
->>>>>>> 0a957d8e8765793f9e90ac0740a280f9c2f86886
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -150,8 +141,6 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel5">
         </Component>
-<<<<<<< HEAD
-=======
         <Component class="javax.swing.JLabel" name="jLabel10">
           <Properties>
             <Property name="text" type="java.lang.String" value="go back"/>
@@ -160,7 +149,6 @@
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabel10MouseClicked"/>
           </Events>
         </Component>
->>>>>>> 0a957d8e8765793f9e90ac0740a280f9c2f86886
       </SubComponents>
     </Container>
   </SubComponents>
