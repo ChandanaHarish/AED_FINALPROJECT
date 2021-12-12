@@ -5,12 +5,15 @@
  */
 package userInterface.Oncologist;
 
-import Business.EcoSystem;
 import Business.Oncologist.Oncologist;
+import Business.EcoSystem;
 import Business.UserAccount.UserAccount;
 import Business.WorkQueue.OncologistAppointment;
 import Business.WorkQueue.OncologistAppointmentDirectory;
 import Business.WorkQueue.appointmentCheck;
+import Business.WorkQueue.EmergencyReport;
+import Business.WorkQueue.EmergencyReportDirectory;
+import Business.user.User;
 import java.awt.CardLayout;
 import java.util.ArrayList;
 import java.util.List;
@@ -21,16 +24,16 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author chand
+ * @author preranaj
  */
 public class ManageAppointment extends javax.swing.JPanel {
-    
-     private final JPanel container;
+
+    private final JPanel container;
     private final UserAccount userAccount;
     private final EcoSystem ecosystem;
 
     /**
-     * Creates new form ManageAppointment
+     * Creates new form manageappointment
      */
     public ManageAppointment(JPanel container,EcoSystem ecosystem,UserAccount userAccount) {
         initComponents();
@@ -39,7 +42,7 @@ public class ManageAppointment extends javax.swing.JPanel {
         this.userAccount=userAccount;
         populate_table();
     }
-    
+
     public void populate_table()
     {
         OncologistAppointmentDirectory dad=ecosystem.getOncologistAppointmentDirectory();
@@ -50,7 +53,7 @@ public class ManageAppointment extends javax.swing.JPanel {
         {
             OncologistAppointment o=ol.get(i);
             Oncologist d=(Oncologist)userAccount;
-            System.out.println("o.getOncologistName()");
+            System.out.println("o.getDoctor_name()");
              System.out.println("d.getFirstname()");
             if(o.getOncologistName().matches(d.getFirstname()))
             {
@@ -75,12 +78,18 @@ public class ManageAppointment extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
-        btnConsult = new javax.swing.JButton();
-        btnCancel = new javax.swing.JButton();
-        btnPrescription = new javax.swing.JButton();
-        jPanel1 = new javax.swing.JPanel();
+        jButton3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+
+        setBackground(new java.awt.Color(26, 39, 68));
+        setPreferredSize(new java.awt.Dimension(770, 539));
+
+        jPanel1.setLayout(new java.awt.CardLayout());
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -92,31 +101,29 @@ public class ManageAppointment extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(jTable1);
 
-        btnConsult.setBackground(new java.awt.Color(195, 233, 245));
-        btnConsult.setText("Consult");
-        btnConsult.addActionListener(new java.awt.event.ActionListener() {
+        jButton3.setBackground(new java.awt.Color(195, 233, 245));
+        jButton3.setText("Consult");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnConsultActionPerformed(evt);
+                jButton3ActionPerformed(evt);
             }
         });
 
-        btnCancel.setBackground(new java.awt.Color(195, 233, 245));
-        btnCancel.setText("Cancel Appointment");
-        btnCancel.addActionListener(new java.awt.event.ActionListener() {
+        jButton4.setBackground(new java.awt.Color(195, 233, 245));
+        jButton4.setText("Prescription");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCancelActionPerformed(evt);
+                jButton4ActionPerformed(evt);
             }
         });
 
-        btnPrescription.setBackground(new java.awt.Color(195, 233, 245));
-        btnPrescription.setText("Prescription");
-        btnPrescription.addActionListener(new java.awt.event.ActionListener() {
+        jButton1.setBackground(new java.awt.Color(195, 233, 245));
+        jButton1.setText("Cancel Appointment");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnPrescriptionActionPerformed(evt);
+                jButton1ActionPerformed(evt);
             }
         });
-
-        jPanel1.setLayout(new java.awt.CardLayout());
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -125,161 +132,164 @@ public class ManageAppointment extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(87, 87, 87)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 545, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(105, 105, 105)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 545, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(jButton3)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jButton1)
+                                    .addGap(72, 72, 72)
+                                    .addComponent(jButton4)))))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(75, 75, 75)
-                        .addComponent(btnConsult)
-                        .addGap(89, 89, 89)
-                        .addComponent(btnCancel)
-                        .addGap(79, 79, 79)
-                        .addComponent(btnPrescription)))
-                .addContainerGap(183, Short.MAX_VALUE))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(407, 407, 407)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(408, Short.MAX_VALUE)))
+                        .addGap(333, 333, 333)
+                        .addComponent(jLabel1)))
+                .addContainerGap(62, Short.MAX_VALUE))
         );
+
+        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jButton1, jButton3, jButton4});
+
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(47, 47, 47)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(31, 31, 31)
+                .addComponent(jLabel1)
+                .addGap(50, 50, 50)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(68, 68, 68)
+                .addGap(52, 52, 52)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnConsult)
-                    .addComponent(btnCancel)
-                    .addComponent(btnPrescription))
-                .addContainerGap(228, Short.MAX_VALUE))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(236, 236, 236)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(236, Short.MAX_VALUE)))
+                    .addComponent(jButton3)
+                    .addComponent(jButton1)
+                    .addComponent(jButton4))
+                .addContainerGap(277, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnConsultActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConsultActionPerformed
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
         DefaultTableModel  t2 = (DefaultTableModel) jTable1.getModel();
         int selectedRow=jTable1.getSelectedRow();
         if(selectedRow>=0)
         {
-            int s=Integer.parseInt(t2.getValueAt(selectedRow, 0).toString());
-            System.out.println("id"+s);
-            OncologistAppointmentDirectory dad=ecosystem.getOncologistAppointmentDirectory();
-            ArrayList<OncologistAppointment> ol=dad.getArray();
-            int u=ol.size();
-
-            for(int i=0;i<u;i++)
+        int s=Integer.parseInt(t2.getValueAt(selectedRow, 0).toString());
+        System.out.println("id"+s);
+        OncologistAppointmentDirectory dad=ecosystem.getOncologistAppointmentDirectory();
+        ArrayList<OncologistAppointment> ol=dad.getArray();
+        int u=ol.size();
+        
+        for(int i=0;i<u;i++)
+        {
+            OncologistAppointment o=ol.get(i);
+            if(s==o.getOncologistID()/*&&o.getStatus().matches("Deliver Man Assigned")*/)
             {
-                OncologistAppointment o=ol.get(i);
-                if(s==o.getOncologistID()/*&&o.getStatus().matches("Deliver Man Assigned")*/)
+                if(o.getStatus().matches("Done"))
                 {
-                    if(o.getStatus().matches("Appointment Booked"))
-                    {
-                        o.setStatus("Done");
-                        JOptionPane.showMessageDialog(null, "Processed!!");
-                    }
-                    else
-                    {
-                        JOptionPane.showMessageDialog(null,"Wrong move!!");
-
-                    }
+                    
+                PharmacyDoctor ur=new PharmacyDoctor(container,ecosystem,userAccount,o.getUserName());
+                jPanel1.add(ur);
+                CardLayout layout = (CardLayout) jPanel1.getLayout();
+                layout.next(jPanel1);
+                
+            }
+                else
+                {
+                     JOptionPane.showMessageDialog(null,"Wrong Move!!");
                 }
             }
-            jTable1.setModel(new DefaultTableModel(null,new String[]{"ID","Name","Status","Date","Time"}));
-            populate_table();
+        }
+           jTable1.setModel(new DefaultTableModel(null,new String[]{"ID","Name","Status","Date","Time"}));
+        populate_table();     
         }
         else
         {
-            JOptionPane.showMessageDialog(null,"Select a Row!!");
+            JOptionPane.showMessageDialog(null,"Select a Row!!");  
         }
+    }//GEN-LAST:event_jButton4ActionPerformed
 
-    }//GEN-LAST:event_btnConsultActionPerformed
-
-    private void btnCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelActionPerformed
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
         DefaultTableModel  t2 = (DefaultTableModel) jTable1.getModel();
         int selectedRow=jTable1.getSelectedRow();
         if(selectedRow>=0)
         {
-            int s=Integer.parseInt(t2.getValueAt(selectedRow, 0).toString());
-            System.out.println("id"+s);
-            OncologistAppointmentDirectory dad=ecosystem.getOncologistAppointmentDirectory();
-            ArrayList<OncologistAppointment> ol=dad.getArray();
-            int u=ol.size();
-
-            for(int i=0;i<u;i++)
+        int s=Integer.parseInt(t2.getValueAt(selectedRow, 0).toString());
+        System.out.println("id"+s);
+        OncologistAppointmentDirectory dad=ecosystem.getOncologistAppointmentDirectory();
+        ArrayList<OncologistAppointment> ol=dad.getArray();
+        int u=ol.size();
+        
+        for(int i=0;i<u;i++)
+        {
+            OncologistAppointment o=ol.get(i);
+            if(s==o.getOncologistID()/*&&o.getStatus().matches("Deliver Man Assigned")*/)
             {
-                OncologistAppointment o=ol.get(i);
-                if(s==o.getOncologistID()/*&&o.getStatus().matches("Deliver Man Assigned")*/)
+                if(o.getStatus().matches("Appointment Booked"))
                 {
-                    if(o.getStatus().matches("Appointment Booked"))
-                    {
-                        o.setStatus("Canceled");
-                        check(o.getOncologistName(),o.getDate(),o.getTime());
-                    }
-                    else
-                    {
-                        JOptionPane.showMessageDialog(null,"Appointment Canceled");
+                o.setStatus("Done");
+                 JOptionPane.showMessageDialog(null, "Processed!!");
+                }
+                else
+                {
+                                JOptionPane.showMessageDialog(null,"Wrong move!!");  
 
-                    }
                 }
             }
-            jTable1.setModel(new DefaultTableModel(null,new String[]{"ID","Name","Status","Date","Time"}));
-            populate_table();
+        }
+           jTable1.setModel(new DefaultTableModel(null,new String[]{"ID","Name","Status","Date","Time"}));
+        populate_table();     
         }
         else
         {
-            JOptionPane.showMessageDialog(null,"Select a Row!!");
+            JOptionPane.showMessageDialog(null,"Select a Row!!");  
         }
-
-    }//GEN-LAST:event_btnCancelActionPerformed
-
-    private void btnPrescriptionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPrescriptionActionPerformed
-        // TODO add your handling code here:
-        DefaultTableModel  t2 = (DefaultTableModel) jTable1.getModel();
-        int selectedRow=jTable1.getSelectedRow();
-        if(selectedRow>=0)
-        {
-            int s=Integer.parseInt(t2.getValueAt(selectedRow, 0).toString());
-            System.out.println("id"+s);
-            OncologistAppointmentDirectory dad=ecosystem.getOncologistAppointmentDirectory();
-            ArrayList<OncologistAppointment> ol=dad.getArray();
-            int u=ol.size();
-
-            for(int i=0;i<u;i++)
-            {
-                OncologistAppointment o=ol.get(i);
-                if(s==o.getOncologistID()/*&&o.getStatus().matches("Deliver Man Assigned")*/)
-                {
-                    if(o.getStatus().matches("Done"))
-                    {
-
-                        PharmacyDoctor ur=new PharmacyDoctor(container,ecosystem,userAccount,o.getUserName());
-                        jPanel1.add(ur);
-                        CardLayout layout = (CardLayout) jPanel1.getLayout();
-                        layout.next(jPanel1);
-
-                    }
-                    else
-                    {
-                        JOptionPane.showMessageDialog(null,"Wrong Move!!");
-                    }
-                }
-            }
-            jTable1.setModel(new DefaultTableModel(null,new String[]{"ID","Name","Status","Date","Time"}));
-            populate_table();
-        }
-        else
-        {
-            JOptionPane.showMessageDialog(null,"Select a Row!!");
-        }
-    }//GEN-LAST:event_btnPrescriptionActionPerformed
     
-    public void check(String s,String d1,String date)
+        
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        DefaultTableModel  t2 = (DefaultTableModel) jTable1.getModel();
+        int selectedRow=jTable1.getSelectedRow();
+        if(selectedRow>=0)
+        {
+        int s=Integer.parseInt(t2.getValueAt(selectedRow, 0).toString());
+        System.out.println("id"+s);
+        OncologistAppointmentDirectory dad=ecosystem.getOncologistAppointmentDirectory();
+        ArrayList<OncologistAppointment> ol=dad.getArray();
+        int u=ol.size();
+        
+        for(int i=0;i<u;i++)
+        {
+            OncologistAppointment o=ol.get(i);
+            if(s==o.getOncologistID()/*&&o.getStatus().matches("Deliver Man Assigned")*/)
+            {
+                if(o.getStatus().matches("Appointment Booked"))
+                {
+                o.setStatus("Canceled");
+                check(o.getOncologistName(),o.getDate(),o.getTime());
+                }
+                else
+                {
+                                JOptionPane.showMessageDialog(null,"Appointment Canceled");  
+
+                }
+            }
+        }
+           jTable1.setModel(new DefaultTableModel(null,new String[]{"ID","Name","Status","Date","Time"}));
+        populate_table();     
+        }
+        else
+        {
+            JOptionPane.showMessageDialog(null,"Select a Row!!");  
+        }
+    
+        
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+public void check(String s,String d1,String date)
     {
         boolean r=false;
         appointmentCheck check= ecosystem.getAppcheck();
@@ -301,11 +311,12 @@ public class ManageAppointment extends javax.swing.JPanel {
            
         }
     }
-
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnCancel;
-    private javax.swing.JButton btnConsult;
-    private javax.swing.JButton btnPrescription;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
