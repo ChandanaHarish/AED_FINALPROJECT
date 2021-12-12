@@ -82,8 +82,10 @@ public class appointmentStatus extends javax.swing.JPanel {
         jTable1 = new javax.swing.JTable();
         btnCancelApp = new javax.swing.JButton();
 
+        setBackground(new java.awt.Color(216, 235, 228));
+
         lblStatus.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
-        lblStatus.setForeground(new java.awt.Color(204, 204, 204));
+        lblStatus.setForeground(new java.awt.Color(0, 51, 153));
         lblStatus.setText("Appointment Status");
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
@@ -97,6 +99,7 @@ public class appointmentStatus extends javax.swing.JPanel {
         tblStatus.setViewportView(jTable1);
 
         btnCancelApp.setBackground(new java.awt.Color(195, 233, 245));
+        btnCancelApp.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         btnCancelApp.setText("Cancel Appointment");
         btnCancelApp.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
