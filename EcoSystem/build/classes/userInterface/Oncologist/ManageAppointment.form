@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 17965b3310d5ad90c6483347e4c43b787a3d9b21
+>>>>>>> f94dbb84f7645a423666e18e335d7e2c8e01c634
+>>>>>>> aba02f338bfa8a9d9c41f81726cbdc9b1b0ffcdc
   <AuxValues>
     <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
     <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
@@ -34,6 +41,13 @@
               <EmptySpace pref="183" max="32767" attributes="0"/>
           </Group>
           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 17965b3310d5ad90c6483347e4c43b787a3d9b21
+>>>>>>> f94dbb84f7645a423666e18e335d7e2c8e01c634
+>>>>>>> aba02f338bfa8a9d9c41f81726cbdc9b1b0ffcdc
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="407" max="-2" attributes="0"/>
                   <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
@@ -56,6 +70,13 @@
               <EmptySpace pref="228" max="32767" attributes="0"/>
           </Group>
           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 17965b3310d5ad90c6483347e4c43b787a3d9b21
+>>>>>>> f94dbb84f7645a423666e18e335d7e2c8e01c634
+>>>>>>> aba02f338bfa8a9d9c41f81726cbdc9b1b0ffcdc
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="236" max="-2" attributes="0"/>
                   <Component id="jPanel1" min="-2" max="-2" attributes="0"/>

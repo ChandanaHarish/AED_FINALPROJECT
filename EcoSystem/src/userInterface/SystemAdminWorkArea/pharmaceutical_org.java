@@ -41,6 +41,7 @@ public class pharmaceutical_org extends javax.swing.JPanel {
         jLabel3 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(195, 233, 245));
 
@@ -74,21 +75,34 @@ public class pharmaceutical_org extends javax.swing.JPanel {
             }
         });
 
+        jLabel4.setText("go back");
+        jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel4MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel3))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(77, 77, 77)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(88, 88, 88)
+                            .addGroup(layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(jLabel3))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(77, 77, 77)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGap(88, 88, 88))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addComponent(jLabel4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
                 .addComponent(container1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
@@ -97,7 +111,9 @@ public class pharmaceutical_org extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel3)
-                .addGap(59, 59, 59)
+                .addGap(16, 16, 16)
+                .addComponent(jLabel4)
+                .addGap(27, 27, 27)
                 .addComponent(jLabel1)
                 .addGap(149, 149, 149)
                 .addComponent(jLabel2)
@@ -119,15 +135,20 @@ public class pharmaceutical_org extends javax.swing.JPanel {
         // TODO add your handling code here:
 //        backAction();
     }//GEN-LAST:event_jLabel3MouseClicked
+
+    private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
+        // TODO add your handling code here:
+        backAction();
+    }//GEN-LAST:event_jLabel4MouseClicked
     
-//    private void backAction() {
-//        container.remove(this);
-//        Component[] componentArray = container.getComponents();
-//        Component component = componentArray[componentArray.length - 1];
-//        systemadminenterprise manageSuppliersJPanel = (systemadminenterprise) component;        
-//        CardLayout layout = (CardLayout) container.getLayout();
-//        layout.previous(container);
-//    }
+    private void backAction() {
+        container.remove(this);
+        Component[] componentArray = container.getComponents();
+        Component component = componentArray[componentArray.length - 1];
+        systemadminenterprise manageSuppliersJPanel = (systemadminenterprise) component;        
+        CardLayout layout = (CardLayout) container.getLayout();
+        layout.previous(container);
+    }
     
     
     public void Consultancy()
@@ -151,5 +172,6 @@ public class pharmaceutical_org extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     // End of variables declaration//GEN-END:variables
 }

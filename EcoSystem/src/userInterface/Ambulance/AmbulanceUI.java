@@ -78,7 +78,7 @@ public class AmbulanceUI extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(jTable1);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 190, 794, 230));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 190, 794, 230));
 
         jButton1.setBackground(new java.awt.Color(189, 195, 199));
         jButton1.setText("Respond");
@@ -116,8 +116,14 @@ public class AmbulanceUI extends javax.swing.JPanel {
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 20, -1, -1));
 
         jLabel3.setBackground(new java.awt.Color(26, 39, 68));
+        jLabel3.setText("go back");
         jLabel3.setOpaque(true);
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1040, 540));
+        jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel3MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 90, 70, 60));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -300,6 +306,12 @@ public class AmbulanceUI extends javax.swing.JPanel {
         backAction();
         DB4OUtil.dB4OUtil.storeSystem(system);
     }//GEN-LAST:event_jLabel1MouseClicked
+
+    private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
+        // TODO add your handling code here:
+        backAction();
+        DB4OUtil.dB4OUtil.storeSystem(system);
+    }//GEN-LAST:event_jLabel3MouseClicked
 
     private void backAction() {
         container.remove(this);
