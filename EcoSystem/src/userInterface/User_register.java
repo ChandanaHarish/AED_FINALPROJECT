@@ -22,7 +22,7 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 /**
  *
- * @author raksh
+ * @author preranaj
  */
 public class User_register extends javax.swing.JPanel {
 

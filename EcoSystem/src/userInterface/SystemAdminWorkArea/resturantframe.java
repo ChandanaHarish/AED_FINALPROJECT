@@ -21,7 +21,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author raksh
+ * @author chand
  */
 public class resturantframe extends javax.swing.JPanel {
 

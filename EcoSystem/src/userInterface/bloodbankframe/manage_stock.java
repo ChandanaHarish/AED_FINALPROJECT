@@ -21,7 +21,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author raksh
+ * @author ajay09
  */
 public class manage_stock extends javax.swing.JPanel {
 

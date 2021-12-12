@@ -57,7 +57,7 @@ import userinterface.Therapy.vaccination;
 
 /**
  *
- * @author raksh
+ * @author preranaj
  */
 public class loginpage extends javax.swing.JPanel {
 

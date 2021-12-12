@@ -17,7 +17,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author raksh
+ * @author chand
  */
 public class Doctorregistration extends javax.swing.JPanel {
 

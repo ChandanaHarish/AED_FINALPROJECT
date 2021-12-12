@@ -7,7 +7,7 @@ package Business.WorkQueue;
 
 /**
  *
- * @author raksh
+ * @author preranaj
  */
 public class vaccination_request {
     String first_name;

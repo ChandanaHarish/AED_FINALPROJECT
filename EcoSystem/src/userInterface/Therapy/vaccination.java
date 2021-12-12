@@ -32,7 +32,7 @@ import userinterface.loginpage;
 
 /**
  *
- * @author raksh
+ * @author preranaj
  */
 public class vaccination extends javax.swing.JPanel {
 

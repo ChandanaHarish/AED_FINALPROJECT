@@ -19,7 +19,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author MyPC1
+ * @author chand
  */
 public class EcoSystem extends Organization{
     

@@ -24,7 +24,7 @@ import userinterface.loginpage;
 
 /**
  *
- * @author raunak
+ * @author chand
  */
 public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
 

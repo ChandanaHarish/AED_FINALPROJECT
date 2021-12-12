@@ -16,7 +16,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author raksh
+ * @author chand
  */
 public class manage_medicines extends javax.swing.JPanel {
 

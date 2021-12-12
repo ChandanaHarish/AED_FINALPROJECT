@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author raksh
+ * @author chand
  */
 public class PoliceDepartment_Directory {
     ArrayList<PoliceDepartment> a =new ArrayList<PoliceDepartment>();

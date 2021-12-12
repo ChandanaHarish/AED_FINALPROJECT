@@ -10,7 +10,7 @@ import Business.UserAccount.UserAccount;
 
 /**
  *
- * @author raksh
+ * @author ajay09
  */
 public class vaccination_org extends UserAccount {
     String name;

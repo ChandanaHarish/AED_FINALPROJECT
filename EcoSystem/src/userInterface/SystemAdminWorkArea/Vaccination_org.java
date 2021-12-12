@@ -17,7 +17,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author raksh
+ * @author preranaj
  */
 public class Vaccination_org extends javax.swing.JPanel {
 

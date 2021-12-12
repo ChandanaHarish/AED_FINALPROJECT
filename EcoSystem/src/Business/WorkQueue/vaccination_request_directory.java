@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author raksh
+ * @author preranaj
  */
 public class vaccination_request_directory {
     ArrayList<vaccination_request> us = new ArrayList<vaccination_request>();

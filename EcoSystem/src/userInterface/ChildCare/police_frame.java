@@ -22,7 +22,7 @@ import userinterface.loginpage;
 
 /**
  *
- * @author raksh
+ * @author ajay09
  */
 public class police_frame extends javax.swing.JPanel {
 

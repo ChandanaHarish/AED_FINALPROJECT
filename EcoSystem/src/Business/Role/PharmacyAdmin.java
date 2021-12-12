@@ -12,7 +12,7 @@ import userinterface.CustomerRole.CustomerAreaJPanel;
 
 /**
  *
- * @author raksh
+ * @author chand
  */
 public class PharmacyAdmin extends Role {
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, EcoSystem business) {

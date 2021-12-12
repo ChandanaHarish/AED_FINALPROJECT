@@ -21,7 +21,7 @@ import userinterface.SystemAdminWorkArea.SystemAdminWorkAreaJPanel;
 
 /**
  *
- * @author Lingfeng
+ * @author preranaj
  */
 public class MainJFrame extends javax.swing.JFrame {
 

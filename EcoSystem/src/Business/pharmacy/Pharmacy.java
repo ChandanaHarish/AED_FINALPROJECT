@@ -18,7 +18,7 @@ import java.util.Map;
 
 /**
  *
- * @author raksh
+ * @author ajay09
  */
 public class Pharmacy extends UserAccount {
 

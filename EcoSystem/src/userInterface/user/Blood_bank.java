@@ -34,7 +34,7 @@ import userinterface.loginpage;
 
 /**
  *
- * @author raksh
+ * @author ajay09
  */
 public class Blood_bank extends javax.swing.JPanel {
 

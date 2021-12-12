@@ -32,7 +32,7 @@ import userinterface.loginpage;
 
 /**
  *
- * @author css19
+ * @author preranaj
  */
 public class Snapshot extends javax.swing.JPanel {
     private DaemonThread myThread = null;

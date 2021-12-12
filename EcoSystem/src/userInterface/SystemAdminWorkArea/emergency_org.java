@@ -12,7 +12,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author raksh
+ * @author preranaj
  */
 public class emergency_org extends javax.swing.JPanel {
 

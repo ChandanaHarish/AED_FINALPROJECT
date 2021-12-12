@@ -22,7 +22,7 @@ import userinterface.loginpage;
 
 /**
  *
- * @author raksh
+ * @author preranaj
  */
 public class Ambulanceframe extends javax.swing.JPanel {
 

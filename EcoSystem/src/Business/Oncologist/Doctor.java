@@ -11,7 +11,7 @@ import Business.UserAccount.UserAccount;
 
 /**
  *
- * @author raksh
+ * @author ajay09
  */
 public class Doctor extends UserAccount{
     String firstname;

@@ -19,7 +19,7 @@ import javax.swing.table.DefaultTableModel;
 import userinterface.MainJFrame;
 /**
  *
- * @author raksh
+ * @author chand
  */
 public class CustomerFrame extends javax.swing.JPanel {
 

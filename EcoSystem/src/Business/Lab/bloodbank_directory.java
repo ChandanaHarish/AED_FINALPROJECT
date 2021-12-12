@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author raksh
+ * @author chand
  */
 public class bloodbank_directory {
     ArrayList<BloodBank> a =new ArrayList<BloodBank>();
