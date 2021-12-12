@@ -3,14 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package userInterface.user;
+package userinterface.user;
 
 import Business.EcoSystem;
 import Business.UserAccount.UserAccount;
-import Business.WorkQueue.OrderRequestDirectory;
-import Business.WorkQueue.OrderRequestDirectory;
-import Business.Pharmacy.Pharmacy;
-import Business.WorkQueue.OrderMedicine;
+import Business.WorkQueue.medrequest;
+import Business.WorkQueue.medrequest_directory;
+import Business.pharmacy.Pharmacy;
 import Business.user.User;
 import java.util.ArrayList;
 import java.util.Map;
@@ -20,7 +19,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author ajay09
+ * @author raksh
  */
 public class pharmacy_user extends javax.swing.JPanel {
 
@@ -41,20 +40,20 @@ public class pharmacy_user extends javax.swing.JPanel {
 
     public void populateordertable()
     {
-        OrderRequestDirectory dire=ecosystem.getOrderRequestDirectory();
-        ArrayList<OrderMedicine> order=dire.getUser();
+        medrequest_directory dire=ecosystem.getMedrequest_directory();
+        ArrayList<medrequest> order=dire.getUser();
         int u=order.size();
         User r=(User)userAccount;
         for(int i=0;i<u;i++)
         {
-            OrderMedicine o=order.get(i);
-            if(o.getPatientID().matches(r.getUserID()))
+            medrequest o=order.get(i);
+            if(o.getPatientid().matches(r.getUser_id()))
             {
                 DefaultTableModel t2 = (DefaultTableModel) jTable1.getModel();
-                String s1=String.valueOf(o.getID());
+                String s1=String.valueOf(o.getId());
                 
                 
-                String s[]={s1,o.getOncologistName(),o.getPharmacyName(),o.getOrderStatus()};
+                String s[]={s1,o.getDocname(),o.getPharmacyname(),o.getStatus()};
                 t2.addRow(s);
             
             
@@ -83,7 +82,7 @@ public class pharmacy_user extends javax.swing.JPanel {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(216, 235, 228));
+        setBackground(new java.awt.Color(26, 39, 68));
 
         jScrollPane1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -133,13 +132,15 @@ public class pharmacy_user extends javax.swing.JPanel {
         jScrollPane3.setViewportView(jTextArea2);
 
         jLabel1.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(204, 204, 204));
         jLabel1.setText("Cost :");
 
         jLabel2.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(204, 204, 204));
         jLabel2.setText("Medicines :");
 
         jLabel3.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 51, 153));
+        jLabel3.setForeground(new java.awt.Color(204, 204, 204));
         jLabel3.setText("Pharmacy");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -147,62 +148,57 @@ public class pharmacy_user extends javax.swing.JPanel {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                     .addGap(145, 145, 145)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(267, 393, Short.MAX_VALUE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(jLabel1)
-                            .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                            .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(57, 57, 57)
+                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(layout.createSequentialGroup()
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(195, 195, 195)
-                            .addComponent(jLabel2))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(140, 140, 140)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 490, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGap(0, 0, Short.MAX_VALUE)))
+                    .addGap(195, 195, 195)
+                    .addComponent(jLabel2)
+                    .addGap(237, 237, 237)
+                    .addComponent(jLabel1))
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(140, 140, 140)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 490, javax.swing.GroupLayout.PREFERRED_SIZE)))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(181, 181, 181)
+                .addComponent(jButton1)
+                .addGap(162, 162, 162)
+                .addComponent(jButton2))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel3)
                 .addGap(218, 218, 218))
         );
+
+        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jButton1, jButton2});
+
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(19, 19, 19)
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel1))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jLabel1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(115, 115, 115))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 81, Short.MAX_VALUE)
-                        .addGap(4, 4, 4)
-                        .addComponent(jButton2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton1)
-                        .addGap(214, 214, 214))))
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(28, 28, 28)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1)
+                    .addComponent(jButton2))
+                .addGap(184, 184, 184))
         );
 
         layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jButton1, jButton2});
+
+        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jScrollPane2, jScrollPane3});
 
     }// </editor-fold>//GEN-END:initComponents
 
@@ -214,18 +210,18 @@ public class pharmacy_user extends javax.swing.JPanel {
         {
         int s=Integer.parseInt(t2.getValueAt(selectedRow, 0).toString());
         System.out.println("id"+s);
-        OrderRequestDirectory dire=ecosystem.getOrderRequestDirectory();
-        ArrayList<OrderMedicine> order=dire.getUser();
+        medrequest_directory dire=ecosystem.getMedrequest_directory();
+        ArrayList<medrequest> order=dire.getUser();
         int u=order.size();
         
         for(int i=0;i<u;i++)
         {
-            OrderMedicine o=order.get(i);
-            if(s==o.getID()/*&&o.getStatus().matches("Deliver Man Assigned")*/)
+            medrequest o=order.get(i);
+            if(s==o.getId()/*&&o.getStatus().matches("Deliver Man Assigned")*/)
             {
-                if(o.getOrderStatus().matches("Ready for pickup"))
+                if(o.getStatus().matches("Ready for pickup"))
                 {
-                o.setOrderStatus("Order Recieved");
+                o.setStatus("Order Recieved");
                 }
                 else
                 {
@@ -251,18 +247,18 @@ public class pharmacy_user extends javax.swing.JPanel {
         {
         int s=Integer.parseInt(t2.getValueAt(selectedRow, 0).toString());
         System.out.println("id"+s);
-        OrderRequestDirectory dire=ecosystem.getOrderRequestDirectory();
-        ArrayList<OrderMedicine> order=dire.getUser();
+        medrequest_directory dire=ecosystem.getMedrequest_directory();
+        ArrayList<medrequest> order=dire.getUser();
         int u=order.size();
         
         for(int i=0;i<u;i++)
         {
-            OrderMedicine o=order.get(i);
-            if(s==o.getID()/*&&o.getStatus().matches("Deliver Man Assigned")*/)
+            medrequest o=order.get(i);
+            if(s==o.getId()/*&&o.getStatus().matches("Deliver Man Assigned")*/)
             {
-                if(!o.getOrderStatus().matches("Order Recieved"))
+                if(!o.getStatus().matches("Order Recieved"))
                 {
-                o.setOrderStatus("Canceled");
+                o.setStatus("Canceled");
                 }
                 else
                 {
@@ -296,22 +292,22 @@ public class pharmacy_user extends javax.swing.JPanel {
         int selectedRow=jTable1.getSelectedRow();
         int s=Integer.parseInt(t2.getValueAt(selectedRow, 0).toString());
         System.out.println("id"+s);
-        OrderRequestDirectory dire=ecosystem.getOrderRequestDirectory();
-        ArrayList<OrderMedicine> order=dire.getUser();
+        medrequest_directory dire=ecosystem.getMedrequest_directory();
+        ArrayList<medrequest> order=dire.getUser();
         int u=order.size();
         for(int i=0;i<u;i++)
         {
-            OrderMedicine o=order.get(i);
-            if(s==o.getID())
+            medrequest o=order.get(i);
+            if(s==o.getId())
             {
-                Map<String,String> f=o.getListOfOrders();
+                Map<String,String> f=o.getOrderlist();
                 int count =0;
                 for (String key: f.keySet()) {
                     jTextArea1.append("Item "+ count+ " : "+key+" Quantity : "+f.get(key)+"\n");
                     count++;
                    
             }
-                Map<String,String> f1=o.getListOfCost();
+                Map<String,String> f1=o.getCostlist();
                 int a=0;
                 for (String key: f1.keySet()) {
                      System.out.println(Integer.parseInt(f1.get(key)));

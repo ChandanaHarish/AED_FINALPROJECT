@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package userInterface.CustomerRole;
+package userinterface.CustomerRole;
 
 import Business.Customer.Order;
 import Business.Customer.OrderDirectory;
@@ -14,11 +14,11 @@ import java.awt.Component;
 import java.util.ArrayList;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
-//import userinterface.SystemAdminWorkArea.SystemAdminWorkAreaJPanel;
+import userinterface.SystemAdminWorkArea.SystemAdminWorkAreaJPanel;
 
 /**
  *
- * @author chand
+ * @author raksh
  */
 public class orderstatus extends javax.swing.JPanel {
 

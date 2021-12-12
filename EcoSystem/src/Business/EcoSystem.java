@@ -5,75 +5,55 @@
  */
 package Business;
 
-import Business.Ambulance.AmbulanceDirectory;
+
+import Business.Ambulance.ambulance_directory;
 import Business.Customer.CustomerDirectory;
 import Business.Customer.OrderDirectory;
 import Business.DeliveryMan.DeliveryManDirectory;
 import Business.Restaurant.RestaurantDirectory;
-import Business.WorkQueue.EmergencyReportDirectory;
-import Business.WorkQueue.OncologistAppointmentDirectory;
-import Business.WorkQueue.OrderRequestDirectory;
-import Business.user.userDirectory;
-import Business.role.Role;
-import Business.role.SystemAdminRole;
+import Business.Role.Role;
+import Business.Role.SystemAdminRole;
+import Business.WorkQueue.Covid19_directory;
+import Business.user.User_directory;
 import java.util.ArrayList;
-
-
 
 /**
  *
- * @author ajay09
+ * @author MyPC1
  */
-public class EcoSystem extends Organization {
+public class EcoSystem extends Organization{
+    
     private static EcoSystem business;
     private RestaurantDirectory restaurantDirectory;
     private CustomerDirectory customerDirectory;
     private DeliveryManDirectory deliveryManDirectory;
     private OrderDirectory orderdirectory;
-    private userDirectory userdirectory;
     
     
-    /**
-     *
-     * @param restaurantDirectory
-     * @param customerDirectory
-     * @param deliveryManDirectory
-     * @param orderdirectory
-     * @param userdirectory
-     */
-    
-//    public EcoSystem(RestaurantDirectory restaurantDirectory, CustomerDirectory customerDirectory, DeliveryManDirectory deliveryManDirectory, OrderDirectory orderdirectory, userDirectory userdirectory) {
-//        
-//        this.restaurantDirectory = restaurantDirectory;
-//        this.customerDirectory = customerDirectory;
-//        this.deliveryManDirectory = deliveryManDirectory;
-//        this.orderdirectory=orderdirectory;
-//        this.userdirectory=userdirectory;
-//    }
 
-    public EcoSystem(RestaurantDirectory restaurantDirectory, CustomerDirectory customerDirectory, DeliveryManDirectory deliveryManDirectory, OrderDirectory orderdirectory, userDirectory userdirectory, String name) {
-        super(name);
+    public EcoSystem(RestaurantDirectory restaurantDirectory, CustomerDirectory customerDirectory, DeliveryManDirectory deliveryManDirectory,OrderDirectory orderdirectory, User_directory userdirectory) {
+
         this.restaurantDirectory = restaurantDirectory;
         this.customerDirectory = customerDirectory;
         this.deliveryManDirectory = deliveryManDirectory;
-        this.orderdirectory = orderdirectory;
-        this.userdirectory = userdirectory;
+        this.orderdirectory=orderdirectory;
+        this.userdirectory=userdirectory;
     }
     
     
     public static EcoSystem getInstance(){
         if(business==null){
-            business= new EcoSystem();
+            business=new EcoSystem();
         }
         return business;
     }
     
+    @Override
     public ArrayList<Role> getSupportedRole() {
         ArrayList<Role> roleList=new ArrayList<Role>();
         roleList.add(new SystemAdminRole());
         return roleList;
     }
-    
     private EcoSystem(){
         super(null);
        // networkList=new ArrayList<Network>();
@@ -85,52 +65,6 @@ public class EcoSystem extends Organization {
        return false;
     }
 
-//    public OrderRequestDirectory getOrderRequestDirectory() {
-//        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-//    }
-//
-//    public EmergencyReportDirectory getEmergencyReportDirectory() {
-//        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-//    }
-
-    public OrderDirectory getOrderdirectory() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public DeliveryManDirectory getDeliveryManDirectory() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-//    public void getRestaurantDirectory() {
-//        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-//    }
-
-    public OncologistAppointmentDirectory getOncologistAppointmentDirectory() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-//    public Object getOncologistsDirectory() {
-//        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-//    }
-
-//    public Object getOncologistsDirectory() {
-//        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-//    }
-//
-//    public Object getOncologistsDirectory() {
-//        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-//    }
-
-//    Object getEmployeeDirectory() {
-//        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-//    }
-//
-//    Object getUserAccountDirectory() {
-//        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-//    }
-
-   
-   
+    
+    
 }
-   
-

@@ -3,15 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package userInterface.bloodbankframe;
+package userinterface.bloodbankframe;
 
 import Business.DB4OUtil.DB4OUtil;
-import Business.Oncologist.Oncologist;
+import Business.Doctor.Doctor;
 import Business.EcoSystem;
 import Business.Lab.BloodBank;
 import Business.Lab.bloodbank_directory;
 import Business.UserAccount.UserAccount;
-import Business.WorkQueue.EmergencyReport;
+import Business.WorkQueue.report_emergency;
 import static java.awt.PageAttributes.MediaType.A;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -21,7 +21,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author chand
+ * @author raksh
  */
 public class manage_stock extends javax.swing.JPanel {
 
@@ -47,7 +47,7 @@ public class manage_stock extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null, "please enter all mandatory fields");
             return;
         }
-        bloodbank_directory bbd=ecosystem.getBbd();
+        bloodbank_directory bbd=ecosystem.getBloodbankdirectory();
         ArrayList<BloodBank> bb=bbd.getA();
         int u=bb.size();
         System.out.println(u);

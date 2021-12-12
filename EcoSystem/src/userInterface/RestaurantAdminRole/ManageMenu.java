@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package userInterface.RestaurantAdminRole;
+package userinterface.RestaurantAdminRole;
 
-//import Business.Customer.Customer;
+import Business.Customer.Customer;
 import Business.EcoSystem;
 import Business.Restaurant.Restaurant;
 import Business.UserAccount.UserAccount;
@@ -18,7 +18,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Chand
+ * @author raksh
  */
 public class ManageMenu extends javax.swing.JPanel {
 

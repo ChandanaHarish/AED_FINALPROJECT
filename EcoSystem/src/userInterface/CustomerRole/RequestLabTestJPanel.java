@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package userInterface.CustomerRole;
+package userinterface.CustomerRole;
 
 import Business.EcoSystem;
 import Business.Organization;
@@ -16,7 +16,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author chand
+ * @author raunak
  */
 public class RequestLabTestJPanel extends javax.swing.JPanel {
 

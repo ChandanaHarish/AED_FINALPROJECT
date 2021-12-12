@@ -3,11 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package userInterface.SystemAdminWorkArea;
+package userinterface.SystemAdminWorkArea;
 
 import Business.EcoSystem;
-import Business.Pharmacy.Pharmacy;
-import Business.Pharmacy.PharmacyDirectory;
+import Business.Lab.BloodBank;
+import Business.Lab.bloodbank_directory;
+import Business.pharmacy.Pharmacy;
+import Business.pharmacy.Pharmacy_directory;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
@@ -15,7 +17,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author chand
+ * @author raksh
  */
 public class pharmacy extends javax.swing.JPanel {
 
@@ -42,21 +44,21 @@ public class pharmacy extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        txtPwd = new javax.swing.JTextField();
-        tblPharmacy = new javax.swing.JScrollPane();
+        jTextField5 = new javax.swing.JTextField();
+        jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
-        btnAdd = new javax.swing.JButton();
-        btnUpdate = new javax.swing.JButton();
-        btnDelete = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        txtName = new javax.swing.JTextField();
-        txtLoc = new javax.swing.JTextField();
-        txtPhNo = new javax.swing.JTextField();
-        txtID = new javax.swing.JTextField();
+        jTextField1 = new javax.swing.JTextField();
+        jTextField2 = new javax.swing.JTextField();
+        jTextField3 = new javax.swing.JTextField();
+        jTextField4 = new javax.swing.JTextField();
 
         setBackground(new java.awt.Color(26, 39, 68));
 
@@ -73,26 +75,26 @@ public class pharmacy extends javax.swing.JPanel {
                 jTable1MouseClicked(evt);
             }
         });
-        tblPharmacy.setViewportView(jTable1);
+        jScrollPane1.setViewportView(jTable1);
 
-        btnAdd.setText("Add");
-        btnAdd.addActionListener(new java.awt.event.ActionListener() {
+        jButton1.setText("Add");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAddActionPerformed(evt);
+                jButton1ActionPerformed(evt);
             }
         });
 
-        btnUpdate.setText("Update");
-        btnUpdate.addActionListener(new java.awt.event.ActionListener() {
+        jButton2.setText("Update");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnUpdateActionPerformed(evt);
+                jButton2ActionPerformed(evt);
             }
         });
 
-        btnDelete.setText("Delete");
-        btnDelete.addActionListener(new java.awt.event.ActionListener() {
+        jButton3.setText("Delete");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnDeleteActionPerformed(evt);
+                jButton3ActionPerformed(evt);
             }
         });
 
@@ -116,9 +118,9 @@ public class pharmacy extends javax.swing.JPanel {
         jLabel5.setForeground(new java.awt.Color(204, 204, 204));
         jLabel5.setText("password :");
 
-        txtName.addKeyListener(new java.awt.event.KeyAdapter() {
+        jTextField1.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
-                txtNameKeyPressed(evt);
+                jTextField1KeyPressed(evt);
             }
         });
 
@@ -132,11 +134,11 @@ public class pharmacy extends javax.swing.JPanel {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel4)
                         .addGap(18, 18, 18)
-                        .addComponent(txtID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel5)
                         .addGap(18, 18, 18)
-                        .addComponent(txtPwd, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel2)
@@ -144,55 +146,55 @@ public class pharmacy extends javax.swing.JPanel {
                             .addComponent(jLabel1))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtPhNo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtLoc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtName, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(368, 368, 368))
             .addGroup(layout.createSequentialGroup()
                 .addGap(487, 487, 487)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnUpdate)
-                    .addComponent(btnAdd)
-                    .addComponent(btnDelete))
+                    .addComponent(jButton2)
+                    .addComponent(jButton1)
+                    .addComponent(jButton3))
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addGap(47, 47, 47)
-                .addComponent(tblPharmacy, javax.swing.GroupLayout.PREFERRED_SIZE, 605, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 605, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {txtID, txtLoc, txtName, txtPhNo, txtPwd});
+        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jTextField1, jTextField2, jTextField3, jTextField4, jTextField5});
 
-        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {btnAdd, btnDelete, btnUpdate});
+        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jButton1, jButton2, jButton3});
 
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(21, 21, 21)
-                .addComponent(tblPharmacy, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
-                    .addComponent(txtName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnAdd))
+                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton1))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(txtLoc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
-                    .addComponent(txtPhNo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnUpdate))
+                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton2))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
-                    .addComponent(txtID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
-                    .addComponent(txtPwd, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnDelete))
+                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton3))
                 .addContainerGap(189, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
@@ -201,46 +203,46 @@ public class pharmacy extends javax.swing.JPanel {
         // TODO add your handling code here:
         DefaultTableModel t = (DefaultTableModel) jTable1.getModel();
         int t1=jTable1.getSelectedRow();
-        txtName.setText(t.getValueAt(t1,0).toString());
-        txtLoc.setText(t.getValueAt(t1,1).toString());
-        txtPhNo.setText(t.getValueAt(t1,2).toString());
-        txtID.setText(t.getValueAt(t1,3).toString());
-        txtPwd.setText(t.getValueAt(t1,4).toString());
+        jTextField1.setText(t.getValueAt(t1,0).toString());
+        jTextField2.setText(t.getValueAt(t1,1).toString());
+        jTextField3.setText(t.getValueAt(t1,2).toString());
+        jTextField4.setText(t.getValueAt(t1,3).toString());
+        jTextField5.setText(t.getValueAt(t1,4).toString());
     }//GEN-LAST:event_jTable1MouseClicked
 
-    private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        if( txtName.getText().isEmpty()||txtLoc.getText().isEmpty()|| txtPhNo.getText().isEmpty() || txtPwd.getText().isEmpty() || txtID.getText().isEmpty())
+        if( jTextField1.getText().isEmpty()||jTextField2.getText().isEmpty()|| jTextField3.getText().isEmpty() || jTextField5.getText().isEmpty() || jTextField4.getText().isEmpty())
         {
             JOptionPane.showMessageDialog(null, "please enter all mandatory fields");
             return;
         }
 
-        if(system.getUserAccountDirectory().checkIfUsernameIsUnique(txtID.getText())){
-            if(!txtPhNo.getText().matches("[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]"))
+        if(system.getUserAccountDirectory().checkIfUsernameIsUnique(jTextField4.getText())){
+            if(!jTextField3.getText().matches("[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]"))
             {
                 JOptionPane.showMessageDialog(null, " 10 digit phone number");
-                txtPhNo.setText("");
+                jTextField3.setText("");
                 return;
             }
 
-            Pharmacy customer = new Pharmacy(txtName.getText(),txtID.getText(), txtPwd.getText(),  txtPhNo.getText(),txtLoc.getText() );
+            Pharmacy customer = new Pharmacy(jTextField1.getText(),jTextField4.getText(), jTextField5.getText(),  jTextField3.getText(),jTextField2.getText() );
             system.getUserAccountDirectory().addAccount(customer);
-            system.getPharmacyDirectory().addPharmacy(customer);
+            system.getPharmacy_directory().addpharmacy(customer);
             populateTable();
-            txtName.setText("");
-            txtLoc.setText("");
-            txtPhNo.setText("");
-            txtID.setText("");
-            txtPwd.setText("");
+            jTextField1.setText("");
+            jTextField2.setText("");
+            jTextField3.setText("");
+            jTextField4.setText("");
+            jTextField5.setText("");
         }else{
-            JOptionPane.showMessageDialog(null, "Username " + txtID.getText() + " already exists !!!, Please try a new one");
+            JOptionPane.showMessageDialog(null, "Username " + jTextField4.getText() + " already exists !!!, Please try a new one");
         }
-    }//GEN-LAST:event_btnAddActionPerformed
+    }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void btnUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUpdateActionPerformed
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        String username=txtID.getText();
+        String username=jTextField4.getText();
         DefaultTableModel t = (DefaultTableModel) jTable1.getModel();
         int t1=jTable1.getSelectedRow();
         if(t1>=0)
@@ -248,8 +250,8 @@ public class pharmacy extends javax.swing.JPanel {
             
             {
         String a=(String)t.getValueAt(t1, 3);
-        PharmacyDirectory pd = system.getPharmacyDirectory();
-        ArrayList<Pharmacy> cd1=pd.getPh();
+        Pharmacy_directory pd = system.getPharmacy_directory();
+        ArrayList<Pharmacy> cd1=pd.getA();
         int z=cd1.size();
         for(int i=0;i<z;i++)
         {
@@ -257,38 +259,38 @@ public class pharmacy extends javax.swing.JPanel {
             c.getUsername();
             if(c.getUsername().matches(a))
             {
-                if(!txtPhNo.getText().matches("[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]"))
+                if(!jTextField3.getText().matches("[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]"))
             {
                 JOptionPane.showMessageDialog(null, " 10 digit phone number");
-                txtPhNo.setText("");
+                jTextField3.setText("");
                 return;
             }
 
-                c.setName(txtName.getText());
-                c.setLocation(txtLoc.getText());
-                c.setPhoneNumber(txtPhNo.getText());
-                c.setUserID(txtID.getText());
-                c.setPassword(txtPwd.getText());
+                c.setName(jTextField1.getText());
+                c.setLocation(jTextField2.getText());
+                c.setPhonenumber(jTextField3.getText());
+                c.setUserid(jTextField4.getText());
+                c.setPassword(jTextField5.getText());
             }
         }
         populateTable();
-    }//GEN-LAST:event_btnUpdateActionPerformed
+    }//GEN-LAST:event_jButton2ActionPerformed
         }
             else
         {
             JOptionPane.showMessageDialog(null, "Please Select a Row!!");
     }
     }
-    private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-        String username=txtID.getText();
+        String username=jTextField4.getText();
         DefaultTableModel t = (DefaultTableModel) jTable1.getModel();
         int t1=jTable1.getSelectedRow();
         if(t1>=0)
         {
         String a=(String)t.getValueAt(t1, 3);
-        PharmacyDirectory pd = system.getPharmacyDirectory();
-        ArrayList<Pharmacy> cd1=pd.getPh();
+        Pharmacy_directory pd = system.getPharmacy_directory();
+        ArrayList<Pharmacy> cd1=pd.getA();
         int z=cd1.size();
         for(int i=0;i<z;i++)
         {
@@ -297,49 +299,49 @@ public class pharmacy extends javax.swing.JPanel {
             if(c.getUsername().matches(a))
             {
                 cd1.remove(c);
-                system.getUserAccountDirectory().removeAccount(c);
+                system.getUserAccountDirectory().removeccount(c);
                 System.out.println("delete");
                  break;
             }
         }
         populateTable();
-        txtName.setText("");
-        txtLoc.setText("");
-        txtPhNo.setText("");
-        txtID.setText("");
-        txtPwd.setText("");
+        jTextField1.setText("");
+        jTextField2.setText("");
+        jTextField3.setText("");
+        jTextField4.setText("");
+        jTextField5.setText("");
 
-    }//GEN-LAST:event_btnDeleteActionPerformed
+    }//GEN-LAST:event_jButton3ActionPerformed
 else
         {
             JOptionPane.showMessageDialog(null, "Please Select a Row!!");
         }
     }
-    private void txtNameKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtNameKeyPressed
+    private void jTextField1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyPressed
         // TODO add your handling code here:char c=evt.getKeyChar();
         char c=evt.getKeyChar();
 
         if(Character.isDigit(c))
         {
-            txtName.setEditable(false);
+            jTextField1.setEditable(false);
             JOptionPane.showMessageDialog(null, "enter Alphabets");
         }
         else
         {
-            txtName.setEditable(true);
+            jTextField1.setEditable(true);
         }
 
-    }//GEN-LAST:event_txtNameKeyPressed
+    }//GEN-LAST:event_jTextField1KeyPressed
     
     private void populateTable() {
-        PharmacyDirectory pd = system.getPharmacyDirectory();
+        Pharmacy_directory pd = system.getPharmacy_directory();
         DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
         model.setRowCount(0);
-        for (Pharmacy customer : pd.getPh()) {
+        for (Pharmacy customer : pd.getA()) {
                     Object[] row = new Object[5];
                     row[0] = customer.getName();
                     row[1] = customer.getLocation();                    
-                    row[2] = customer.getPhoneNumber();
+                    row[2] = customer.getPhonenumber();
                     row[3] = customer.getUsername();
                     row[4] = customer.getPassword();
 
@@ -350,20 +352,20 @@ else
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnAdd;
-    private javax.swing.JButton btnDelete;
-    private javax.swing.JButton btnUpdate;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
-    private javax.swing.JScrollPane tblPharmacy;
-    private javax.swing.JTextField txtID;
-    private javax.swing.JTextField txtLoc;
-    private javax.swing.JTextField txtName;
-    private javax.swing.JTextField txtPhNo;
-    private javax.swing.JTextField txtPwd;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextField5;
     // End of variables declaration//GEN-END:variables
 }

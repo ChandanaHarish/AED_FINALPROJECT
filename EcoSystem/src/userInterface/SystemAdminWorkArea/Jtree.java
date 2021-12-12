@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package userInterface.SystemAdminWorkArea;
+package userinterface.SystemAdminWorkArea;
 
 import Business.Customer.Customer;
 import Business.Customer.CustomerDirectory;
@@ -21,7 +21,7 @@ import javax.swing.tree.DefaultTreeModel;
 
 /**
  *
- * @author chand
+ * @author raksh
  */
 public class Jtree extends javax.swing.JPanel {
 

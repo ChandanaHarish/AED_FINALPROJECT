@@ -3,20 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package userInterface.user;
+package userinterface.user;
 
-import Business.Oncologist.Oncologist;
+import Business.Doctor.Doctor;
 import Business.EcoSystem;
 import Business.UserAccount.UserAccount;
-import Business.WorkQueue.OncologistAppointment;
-import Business.WorkQueue.OncologistAppointmentDirectory;
+import Business.WorkQueue.Doctor_appointment;
+import Business.WorkQueue.Doctor_appointment_directory;
 import java.util.ArrayList;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author ajay09
+ * @author raksh
  */
 public class status extends javax.swing.JPanel {
 
@@ -36,22 +36,22 @@ public class status extends javax.swing.JPanel {
 
     public void populate_table()
     {
-        OncologistAppointmentDirectory dad=ecosystem.getOncologistAppointmentDirectory();
-        ArrayList<OncologistAppointment> ol=dad.getArray();
+        Doctor_appointment_directory dad=ecosystem.getDoctor_appointment_directory();
+        ArrayList<Doctor_appointment> ol=dad.getarray();
         int u=ol.size();
         System.out.println(u);
         for(int i=0;i<u;i++)
         {
-            OncologistAppointment o=ol.get(i);
-            Oncologist d=(Oncologist)userAccount;
+            Doctor_appointment o=ol.get(i);
+            Doctor d=(Doctor)userAccount;
             System.out.println("o.getDoctor_name()");
              System.out.println("d.getFirstname()");
-            if(o.getUserID().matches(userAccount.getUsername()))
+            if(o.getUser_id().matches(userAccount.getUsername()))
             {
             
                 DefaultTableModel t2 = (DefaultTableModel) jTable1.getModel();
-                String s1=String.valueOf(o.getOncologistID());
-                String s[]={s1,o.getOncologistName(),o.getLastName(),o.getStatus(),o.getDate(),o.getTime()};
+                String s1=String.valueOf(o.getId());
+                String s[]={s1,o.getDoctor_name(),o.getLast_name(),o.getStatus(),o.getDate(),o.getTime()};
                 t2.addRow(s);
             }
             

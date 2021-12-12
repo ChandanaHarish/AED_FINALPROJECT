@@ -10,7 +10,7 @@ import java.util.Date;
 
 /**
  *
- * @author preranaj
+ * @author raksh
  */
 public class Donate_blood_Directory {
     ArrayList<Donate_blood> us = new ArrayList<Donate_blood>();

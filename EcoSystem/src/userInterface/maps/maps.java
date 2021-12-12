@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package userInterface.maps;
+package userinterface.maps;
 
 import java.awt.CardLayout;
 import java.awt.Component;
@@ -12,7 +12,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author preranaj
+ * @author raksh
  */
 public class maps extends javax.swing.JPanel {
 

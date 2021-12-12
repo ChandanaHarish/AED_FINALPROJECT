@@ -1,42 +1,41 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
  */
 package Business.Employee;
 
 /**
  *
- * @author preranaj
+ * @author raunak
  */
 public class Employee {
-    private String employeeName;
-    private int employeeID;
-    private static int eCount = 1;
     
+    private String name;
+    private int id;
+    private static int count = 1;
+
     public Employee() {
-        employeeID = eCount;
-        eCount++;
+        id = count;
+        count++;
     }
 
-    public String getEmployeeName() {
-        return employeeName;
+    public int getId() {
+        return id;
     }
 
-    public void setEmployeeName(String employeeName) {
-        this.employeeName = employeeName;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public int getEmployeeID() {
-        return employeeID;
-    }
-
-    public void setEmployeeID(int employeeID) {
-        this.employeeID = employeeID;
-    }
     
+    public String getName() {
+        return name;
+    }
+
     @Override
     public String toString() {
-        return employeeName;
+        return name;
     }
-
+    
+    
 }

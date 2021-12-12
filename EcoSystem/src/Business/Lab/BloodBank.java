@@ -5,15 +5,15 @@
  */
 package Business.Lab;
 
-import Business.role.OncologistRole;
-import Business.role.bloodbankadminrole;
+import Business.Role.DoctorRole;
+import Business.Role.bloodbankadminrole;
 import Business.UserAccount.UserAccount;
 import java.util.HashMap;
 import java.util.Map;
 
 /**
  *
- * @author preranaj
+ * @author raksh
  */
 public class BloodBank extends UserAccount{
     String name;

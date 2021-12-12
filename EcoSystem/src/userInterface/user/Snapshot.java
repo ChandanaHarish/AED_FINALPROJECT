@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package userInterface.user;
+package userinterface.user;
 
 import Business.DB4OUtil.DB4OUtil;
 import Business.EcoSystem;
 import Business.UserAccount.UserAccount;
-import Business.WorkQueue.GeneralVitals;
-import Business.WorkQueue.GeneralVitalsDirectory;
+import Business.WorkQueue.Covid19;
+import Business.WorkQueue.Covid19_directory;
 import java.awt.CardLayout;
 import java.awt.Component;
 import java.awt.Graphics;
@@ -28,11 +28,11 @@ import org.opencv.core.Mat;
 import org.opencv.core.MatOfByte;
 import org.opencv.highgui.Highgui;
 import org.opencv.highgui.VideoCapture;
-import userInterface.loginPage;
+import userinterface.loginpage;
 
 /**
  *
- * @author preranaj
+ * @author css19
  */
 public class Snapshot extends javax.swing.JPanel {
     private DaemonThread myThread = null;
@@ -130,7 +130,7 @@ public class Snapshot extends javax.swing.JPanel {
 
         setLayout(new java.awt.CardLayout());
 
-        jPanel2.setBackground(new java.awt.Color(216, 235, 228));
+        jPanel2.setBackground(new java.awt.Color(26, 39, 68));
 
         jButton1.setBackground(new java.awt.Color(195, 233, 245));
         jButton1.setText("Start");
@@ -159,6 +159,7 @@ public class Snapshot extends javax.swing.JPanel {
             .addGap(0, 284, Short.MAX_VALUE)
         );
 
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/logout (1).png"))); // NOI18N
         jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel1MouseClicked(evt);
@@ -166,6 +167,7 @@ public class Snapshot extends javax.swing.JPanel {
         });
 
         jLabel2.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(204, 204, 204));
         jLabel2.setText("Temperature");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -186,11 +188,9 @@ public class Snapshot extends javax.swing.JPanel {
                         .addGap(17, 17, 17)
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(tempf, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(150, Short.MAX_VALUE))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addComponent(tempf, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(187, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -205,7 +205,7 @@ public class Snapshot extends javax.swing.JPanel {
                     .addComponent(jButton1)
                     .addComponent(jLabel2)
                     .addComponent(tempf, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(156, Short.MAX_VALUE))
+                .addContainerGap(110, Short.MAX_VALUE))
         );
 
         add(jPanel2, "card2");
@@ -233,13 +233,13 @@ public static float getRandomInteger(int maximum, int minimum){
         // TODO add your handling code here:
   try
   {
-      generalVitalsUI cc = new generalVitalsUI( container,ecosystem, userAccount);
+      C19 cc = new C19( container,ecosystem, userAccount);
         myThread.runnable = false;
             jButton2.setEnabled(false);   
             jButton1.setEnabled(true);
            
             float s;
-            GeneralVitals covid = new GeneralVitals(); 
+            Covid19 covid = new Covid19(); 
              s = getRandomInteger(103, 97);
             webSource.release();
              Random random = new Random();
@@ -247,7 +247,7 @@ public static float getRandomInteger(int maximum, int minimum){
     k = tempf.getText();
      tempf.setText(Float.toString((s)));
       
-        covid.setTemperature(k);
+        covid.setTemp(k);
  
   }
   catch(Exception e)

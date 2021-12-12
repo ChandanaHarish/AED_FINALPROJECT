@@ -3,14 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package userInterface.user;
+package userinterface.user;
 
 import Business.DB4OUtil.DB4OUtil;
-import Business.Oncologist.Oncologist;
+import Business.Doctor.Doctor;
 import Business.EcoSystem;
 import Business.UserAccount.UserAccount;
-import Business.WorkQueue.OncologistAppointment;
-import Business.WorkQueue.OncologistAppointmentDirectory;
+import Business.WorkQueue.Doctor_appointment;
+import Business.WorkQueue.Doctor_appointment_directory;
 import Business.WorkQueue.Donate_blood_Directory;
 import Business.user.User;
 import java.awt.CardLayout;
@@ -45,12 +45,12 @@ public class Doctor_App extends javax.swing.JPanel {
 
     public void combobox()
     {
-        ArrayList<Oncologist> d=ecosystem.getOncologistsDirectory().getOncDir();
+        ArrayList<Doctor> d=ecosystem.getDoctordirectory().getA();
         int s=d.size();
         ArrayList<String> spe =new ArrayList<String>();
         for(int i=0;i<s;i++)
         {
-            Oncologist d1=d.get(i);
+            Doctor d1=d.get(i);
             if(!spe.contains(d1.getSpealization()))
                     {
                         spe.add(d1.getSpealization());
@@ -67,17 +67,17 @@ public class Doctor_App extends javax.swing.JPanel {
     public void table()
     {
         String spe=jComboBox1.getSelectedItem().toString();
-         ArrayList<Oncologist> d=ecosystem.getOncologistsDirectory().getOncDir();
+         ArrayList<Doctor> d=ecosystem.getDoctordirectory().getA();
         int s=d.size();
         ArrayList<String> spe1 =new ArrayList<String>();
         jTable1.setModel(new DefaultTableModel(null,new String[]{"Name","Hospital","Spealization","Phone Number"}));
         for(int i=0;i<s;i++)
         {
-            Oncologist d1=d.get(i);
+            Doctor d1=d.get(i);
             if(d1.getSpealization().matches(spe))
             {
                 DefaultTableModel t2 = (DefaultTableModel) jTable1.getModel();    
-                String s1[]={d1.getFirstname(),d1.getLastname(),d1.getSpealization(),d1.getPhoneNumber()};
+                String s1[]={d1.getFirstname(),d1.getLastname(),d1.getSpealization(),d1.getPhonenumber()};
                 t2.addRow(s1);
             }
         }
@@ -205,20 +205,20 @@ public class Doctor_App extends javax.swing.JPanel {
                 DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd");
                 LocalDateTime d2 = LocalDateTime.now();
                 if(d1.compareTo(d2.toString()) >= 0) {
-                    OncologistAppointment d=new OncologistAppointment();
-                    d.setOncologistID(x);
+                    Doctor_appointment d=new Doctor_appointment();
+                    d.setId(x);
                     String s=(t.getValueAt(t1, 0).toString());
-                    d.setOncologistName(s);
+                    d.setDoctor_name(s);
                     String s1=(t.getValueAt(t1, 1).toString());
-                    d.setLastName(s1);
+                    d.setLast_name(s1);
                     d.setDate(d1);
                     d.setStatus("Appointment Booked");
                     d.setTime(jComboBox2.getSelectedItem().toString());
                     User u=(User)(userAccount);
-                    d.setUserID(u.getUserID());
-                    d.setUserName(u.getFirstName());
-                    OncologistAppointmentDirectory dad=ecosystem.getOncologistAppointmentDirectory();
-                    dad.addRequest(d);
+                    d.setUser_id(u.getUser_id());
+                    d.setUser_name(u.getFirst_name());
+                    Doctor_appointment_directory dad=ecosystem.getDoctor_appointment_directory();
+                    dad.addrequest(d);
                     DB4OUtil.dB4OUtil.storeSystem(ecosystem);
                     JOptionPane.showMessageDialog(null,"Appointment booked!!");
                     
@@ -243,7 +243,7 @@ public class Doctor_App extends javax.swing.JPanel {
 
     public void blood_bank()
     {
-        appointmentStatus ur=new appointmentStatus(container,ecosystem,userAccount);
+        opp_status ur=new opp_status(container,ecosystem,userAccount);
         container.add(ur);
         CardLayout layout = (CardLayout) container.getLayout();
         layout.next(container); 

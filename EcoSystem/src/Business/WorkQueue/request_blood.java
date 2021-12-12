@@ -7,7 +7,7 @@ package Business.WorkQueue;
 
 /**
  *
- * @author preranaj
+ * @author raksh
  */
 public class request_blood {
     String first_name;
