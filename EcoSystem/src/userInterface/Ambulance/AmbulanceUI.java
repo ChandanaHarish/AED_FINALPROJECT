@@ -6,14 +6,19 @@
 package userInterface.Ambulance;
 
 import Business.Ambulance.Ambulance;
+import Business.DB4OUtil.DB4OUtil;
 import Business.EcoSystem;
 import Business.UserAccount.UserAccount;
 import Business.WorkQueue.EmergencyReport;
 import Business.WorkQueue.EmergencyReportDirectory;
+import java.awt.CardLayout;
+import java.awt.Component;
+import static java.time.Clock.system;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
+import userInterface.loginPage;
 
 /**
  *
@@ -70,6 +75,9 @@ public class AmbulanceUI extends javax.swing.JPanel {
         btnAmbulanceRespond = new javax.swing.JButton();
         btnAmbulanceFalseAlarm = new javax.swing.JButton();
         btnCloseAmbulance = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+
+        setBackground(new java.awt.Color(204, 204, 255));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -81,7 +89,7 @@ public class AmbulanceUI extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(jTable1);
 
-        btnAmbulanceRespond.setBackground(new java.awt.Color(189, 195, 199));
+        btnAmbulanceRespond.setBackground(new java.awt.Color(0, 51, 51));
         btnAmbulanceRespond.setText("Respond");
         btnAmbulanceRespond.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -89,7 +97,7 @@ public class AmbulanceUI extends javax.swing.JPanel {
             }
         });
 
-        btnAmbulanceFalseAlarm.setBackground(new java.awt.Color(189, 195, 199));
+        btnAmbulanceFalseAlarm.setBackground(new java.awt.Color(0, 51, 51));
         btnAmbulanceFalseAlarm.setText("False Alarm");
         btnAmbulanceFalseAlarm.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -97,11 +105,18 @@ public class AmbulanceUI extends javax.swing.JPanel {
             }
         });
 
-        btnCloseAmbulance.setBackground(new java.awt.Color(189, 195, 199));
+        btnCloseAmbulance.setBackground(new java.awt.Color(0, 51, 51));
         btnCloseAmbulance.setText("Close Case");
         btnCloseAmbulance.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCloseAmbulanceActionPerformed(evt);
+            }
+        });
+
+        jLabel1.setText("go back");
+        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel1MouseClicked(evt);
             }
         });
 
@@ -115,25 +130,31 @@ public class AmbulanceUI extends javax.swing.JPanel {
                         .addGap(31, 31, 31)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 794, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(70, 70, 70)
-                        .addComponent(btnAmbulanceRespond)
-                        .addGap(167, 167, 167)
+                        .addGap(93, 93, 93)
                         .addComponent(btnAmbulanceFalseAlarm)
-                        .addGap(137, 137, 137)
+                        .addGap(185, 185, 185)
+                        .addComponent(btnAmbulanceRespond)
+                        .addGap(161, 161, 161)
                         .addComponent(btnCloseAmbulance)))
                 .addContainerGap(181, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addGap(72, 72, 72))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(37, 37, 37)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(48, 48, 48)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnAmbulanceRespond)
+                .addGap(45, 45, 45)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnAmbulanceFalseAlarm)
+                    .addComponent(btnAmbulanceRespond)
                     .addComponent(btnCloseAmbulance))
-                .addContainerGap(159, Short.MAX_VALUE))
+                .addGap(57, 57, 57)
+                .addComponent(jLabel1)
+                .addContainerGap(85, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -300,11 +321,26 @@ public class AmbulanceUI extends javax.swing.JPanel {
 
     }//GEN-LAST:event_btnCloseAmbulanceActionPerformed
 
+    private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
+        // TODO add your handling code here:
+         backAction();
+        DB4OUtil.dB4OUtil.storeSystem(ecoSystem);
+    }//GEN-LAST:event_jLabel1MouseClicked
+
+    private void backAction() {
+        container.remove(this);
+        Component[] componentArray = container.getComponents();
+        Component component = componentArray[componentArray.length - 1];
+        loginPage manageSuppliersJPanel = (loginPage) component;        
+        CardLayout layout = (CardLayout) container.getLayout();
+        layout.previous(container);
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAmbulanceFalseAlarm;
     private javax.swing.JButton btnAmbulanceRespond;
     private javax.swing.JButton btnCloseAmbulance;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables
