@@ -174,6 +174,8 @@ public class covid19_mainframe extends javax.swing.JPanel {
             }
         });
 
+        jScrollPane2.setBackground(new java.awt.Color(255, 255, 255));
+
         tbl1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -187,7 +189,8 @@ public class covid19_mainframe extends javax.swing.JPanel {
         jComboBox1.setBackground(new java.awt.Color(153, 153, 255));
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Positive", "Negative" }));
 
-        jButton1.setBackground(new java.awt.Color(204, 188, 85));
+        jButton1.setBackground(new java.awt.Color(0, 102, 102));
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Set Result");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
