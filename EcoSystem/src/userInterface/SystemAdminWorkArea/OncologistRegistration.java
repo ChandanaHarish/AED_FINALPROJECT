@@ -280,7 +280,7 @@ public class OncologistRegistration extends javax.swing.JPanel {
                 return;
             }
 
-            Oncologist customer = new Oncologist(txtName.getText(), txtHosp.getText(), txtSpec.getText(), txtUserID.getText(),txtPwd.getText(), txtPhNo.getText());
+            Oncologist customer = new Oncologist(txtName.getText(), txtHosp.getText(),  txtUserID.getText(),txtPwd.getText(), txtPhNo.getText(), txtSpec.getText());
             system.getUserAccountDirectory().addAccount(customer);
             system.getOncologistsDirectory().addOncologist(customer);
             populateTable();
