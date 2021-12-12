@@ -64,7 +64,11 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
+<<<<<<< HEAD
                               <Component id="jLabel4" max="32767" attributes="0"/>
+=======
+                              <Component id="jLabel4" pref="125" max="32767" attributes="0"/>
+>>>>>>> 17965b3310d5ad90c6483347e4c43b787a3d9b21
                               <Component id="jLabel5" pref="117" max="32767" attributes="0"/>
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>

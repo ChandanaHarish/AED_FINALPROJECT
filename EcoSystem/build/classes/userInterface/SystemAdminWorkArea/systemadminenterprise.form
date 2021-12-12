@@ -35,9 +35,15 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace min="-2" pref="105" max="-2" attributes="0"/>
+<<<<<<< HEAD
                           <Component id="jButton2" linkSize="1" max="32767" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
                           <Component id="jButton3" linkSize="1" max="32767" attributes="0"/>
+=======
+                          <Component id="btnHospEnt" linkSize="1" max="32767" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="btnNPE" linkSize="1" max="32767" attributes="0"/>
+>>>>>>> 17965b3310d5ad90c6483347e4c43b787a3d9b21
                           <EmptySpace min="-2" pref="173" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" attributes="0">
@@ -48,15 +54,25 @@
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="258" max="-2" attributes="0"/>
+<<<<<<< HEAD
                                   <Component id="jButton6" linkSize="1" max="32767" attributes="0"/>
                                   <EmptySpace min="-2" pref="182" max="-2" attributes="0"/>
                                   <Component id="jButton5" linkSize="1" max="32767" attributes="0"/>
+=======
+                                  <Component id="btnGovEnt" linkSize="1" max="32767" attributes="0"/>
+                                  <EmptySpace min="-2" pref="182" max="-2" attributes="0"/>
+                                  <Component id="btnEmergEnt" linkSize="1" max="32767" attributes="0"/>
+>>>>>>> 17965b3310d5ad90c6483347e4c43b787a3d9b21
                               </Group>
                           </Group>
                           <EmptySpace pref="9" max="32767" attributes="0"/>
                       </Group>
                   </Group>
+<<<<<<< HEAD
                   <Component id="jButton4" linkSize="1" max="32767" attributes="0"/>
+=======
+                  <Component id="btnPharmaEnt" linkSize="1" max="32767" attributes="0"/>
+>>>>>>> 17965b3310d5ad90c6483347e4c43b787a3d9b21
                   <EmptySpace min="-2" pref="155" max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -68,6 +84,7 @@
                   <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="83" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
+<<<<<<< HEAD
                       <Component id="jButton2" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jButton3" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jButton4" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -76,6 +93,16 @@
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jButton6" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jButton5" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+=======
+                      <Component id="btnHospEnt" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnNPE" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnPharmaEnt" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="282" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="btnGovEnt" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnEmergEnt" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+>>>>>>> 17965b3310d5ad90c6483347e4c43b787a3d9b21
                   </Group>
                   <EmptySpace min="-2" pref="121" max="-2" attributes="0"/>
               </Group>
@@ -83,7 +110,11 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
+<<<<<<< HEAD
         <Component class="javax.swing.JButton" name="jButton2">
+=======
+        <Component class="javax.swing.JButton" name="btnHospEnt">
+>>>>>>> 17965b3310d5ad90c6483347e4c43b787a3d9b21
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="f5" green="e9" red="c3" type="rgb"/>
@@ -91,10 +122,17 @@
             <Property name="text" type="java.lang.String" value="Hospital Enterprise"/>
           </Properties>
           <Events>
+<<<<<<< HEAD
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="jButton3">
+=======
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnHospEntActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnNPE">
+>>>>>>> 17965b3310d5ad90c6483347e4c43b787a3d9b21
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="f5" green="e9" red="c3" type="rgb"/>
@@ -102,10 +140,17 @@
             <Property name="text" type="java.lang.String" value="Non Profit Enterprise"/>
           </Properties>
           <Events>
+<<<<<<< HEAD
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton3ActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="jButton4">
+=======
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnNPEActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnPharmaEnt">
+>>>>>>> 17965b3310d5ad90c6483347e4c43b787a3d9b21
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="f5" green="e9" red="c3" type="rgb"/>
@@ -113,10 +158,17 @@
             <Property name="text" type="java.lang.String" value="Pharmaceutical Enterprise"/>
           </Properties>
           <Events>
+<<<<<<< HEAD
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton4ActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="jButton5">
+=======
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnPharmaEntActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnEmergEnt">
+>>>>>>> 17965b3310d5ad90c6483347e4c43b787a3d9b21
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="f5" green="e9" red="c3" type="rgb"/>
@@ -124,10 +176,17 @@
             <Property name="text" type="java.lang.String" value="Emergency Enterprise"/>
           </Properties>
           <Events>
+<<<<<<< HEAD
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton5ActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="jButton6">
+=======
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnEmergEntActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnGovEnt">
+>>>>>>> 17965b3310d5ad90c6483347e4c43b787a3d9b21
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="f5" green="e9" red="c3" type="rgb"/>
@@ -135,7 +194,11 @@
             <Property name="text" type="java.lang.String" value="Government Enterprise"/>
           </Properties>
           <Events>
+<<<<<<< HEAD
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton6ActionPerformed"/>
+=======
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnGovEntActionPerformed"/>
+>>>>>>> 17965b3310d5ad90c6483347e4c43b787a3d9b21
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel1">
