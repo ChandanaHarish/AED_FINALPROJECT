@@ -1,6 +1,6 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
  */
 package Business.Employee;
 
@@ -8,25 +8,24 @@ import java.util.ArrayList;
 
 /**
  *
- * @author preranaj
+ * @author raunak
  */
 public class EmployeeDirectory {
-    private ArrayList<Employee> empList;
+    
+    private ArrayList<Employee> employeeList;
 
     public EmployeeDirectory() {
-        empList = new ArrayList();
+        employeeList = new ArrayList();
     }
 
-    public ArrayList<Employee> getEmpList() {
-        return empList;
+    public ArrayList<Employee> getEmployeeList() {
+        return employeeList;
     }
-
     
-    public Employee createEmployee(String employeeName){
+    public Employee createEmployee(String name){
         Employee employee = new Employee();
-        employee.setEmployeeName(employeeName);
-        empList.add(employee);
+        employee.setName(name);
+        employeeList.add(employee);
         return employee;
     }
-    
 }

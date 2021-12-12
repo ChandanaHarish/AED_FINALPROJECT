@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package userInterface.DeliveryManRole;
+package userinterface.DeliveryManRole;
 
 import Business.Customer.Order;
 import Business.Customer.OrderDirectory;
@@ -11,13 +11,16 @@ import Business.DeliveryMan.DeliveryMan;
 import Business.EcoSystem;
 
 import Business.UserAccount.UserAccount;
+import Business.WorkQueue.LabTestWorkRequest;
+import Business.WorkQueue.WorkRequest;
 import java.awt.CardLayout;
 import java.awt.Component;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
-//import userinterface.loginpage;
+import userinterface.SystemAdminWorkArea.SystemAdminWorkAreaJPanel;
+import userinterface.loginpage;
 
 /**
  *
@@ -206,7 +209,7 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
         userProcessContainer.remove(this);
         Component[] componentArray = userProcessContainer.getComponents();
         Component component = componentArray[componentArray.length - 1];
-        //loginpage manageSuppliersJPanel = (loginpage) component;        
+        loginpage manageSuppliersJPanel = (loginpage) component;        
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.previous(userProcessContainer);
         DB4OUtil.dB4OUtil.storeSystem(business);

@@ -9,9 +9,10 @@ import java.util.ArrayList;
 
 /**
  *
- * @author chand
+ * @author harold
  */
 public class RestaurantDirectory {
+    
     ArrayList<Restaurant> rl = new ArrayList<Restaurant>();
     
     public void addRestaurant(Restaurant restaurant){

@@ -10,7 +10,7 @@ import java.util.Date;
 
 /**
  *
- * @author preranaj
+ * @author raksh
  */
 public class Donate_blood {
     String first_name;

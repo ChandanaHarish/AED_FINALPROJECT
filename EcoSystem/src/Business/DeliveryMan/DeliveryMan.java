@@ -5,7 +5,7 @@
  */
 package Business.DeliveryMan;
 
-import Business.role.DeliverManRole;
+import Business.Role.DeliverManRole;
 import Business.UserAccount.UserAccount;
 
 /**

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package userInterface.CustomerRole;
+package userinterface.CustomerRole;
 
 import Business.Customer.Order;
 import Business.Customer.OrderDirectory;
@@ -21,12 +21,12 @@ import java.util.Random;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
-//import userinterface.SystemAdminWorkArea.SystemAdminWorkAreaJPanel;
-//import userinterface.loginpage;
+import userinterface.SystemAdminWorkArea.SystemAdminWorkAreaJPanel;
+import userinterface.loginpage;
 
 /**
  *
- * @author chand
+ * @author raksh
  */
 public class customer_main extends javax.swing.JPanel {
 
@@ -326,7 +326,7 @@ public class customer_main extends javax.swing.JPanel {
         userProcessContainer.remove(this);
         Component[] componentArray = userProcessContainer.getComponents();
         Component component = componentArray[componentArray.length - 1];
-//        loginpage manageSuppliersJPanel = (loginpage) component;        
+        loginpage manageSuppliersJPanel = (loginpage) component;        
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.previous(userProcessContainer);
         DB4OUtil.dB4OUtil.storeSystem(ecosystem);

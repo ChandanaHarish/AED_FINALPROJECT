@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package userInterface.bloodbankframe;
+package userinterface.bloodbankframe;
 
 import Business.EcoSystem;
 import Business.Lab.BloodBank;
@@ -20,7 +20,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author chand
+ * @author raksh
  */
 public class Doctor_request extends javax.swing.JPanel {
 

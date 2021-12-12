@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package userInterface.SystemAdminWorkArea;
+package userinterface.SystemAdminWorkArea;
 
 import Business.Customer.Customer;
 import Business.Customer.CustomerDirectory;
@@ -52,20 +52,20 @@ public class resturantframe extends javax.swing.JPanel {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        txtRName = new javax.swing.JTextField();
+        jTextField1 = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
-        txtLoc = new javax.swing.JTextField();
+        jTextField2 = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
-        txtUserName = new javax.swing.JTextField();
+        jTextField3 = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
-        txtPwd = new javax.swing.JTextField();
-        btnAdd = new javax.swing.JButton();
-        btnUpdate = new javax.swing.JButton();
-        tblRestaurant = new javax.swing.JScrollPane();
+        jTextField4 = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         jLabel5 = new javax.swing.JLabel();
-        txtPhNo = new javax.swing.JTextField();
-        btnDelete = new javax.swing.JButton();
+        jTextField5 = new javax.swing.JTextField();
+        jButton3 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
@@ -74,27 +74,27 @@ public class resturantframe extends javax.swing.JPanel {
 
         jLabel1.setText("Resturant Name :");
 
-        txtRName.addActionListener(new java.awt.event.ActionListener() {
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtRNameActionPerformed(evt);
+                jTextField1ActionPerformed(evt);
             }
         });
-        txtRName.addKeyListener(new java.awt.event.KeyAdapter() {
+        jTextField1.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
-                txtRNameKeyPressed(evt);
+                jTextField1KeyPressed(evt);
             }
         });
 
         jLabel2.setText("Location :");
 
-        txtLoc.addActionListener(new java.awt.event.ActionListener() {
+        jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtLocActionPerformed(evt);
+                jTextField2ActionPerformed(evt);
             }
         });
-        txtLoc.addKeyListener(new java.awt.event.KeyAdapter() {
+        jTextField2.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
-                txtLocKeyPressed(evt);
+                jTextField2KeyPressed(evt);
             }
         });
 
@@ -102,17 +102,17 @@ public class resturantframe extends javax.swing.JPanel {
 
         jLabel4.setText("Password:");
 
-        btnAdd.setText("Add");
-        btnAdd.addActionListener(new java.awt.event.ActionListener() {
+        jButton1.setText("Add");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAddActionPerformed(evt);
+                jButton1ActionPerformed(evt);
             }
         });
 
-        btnUpdate.setText("Update");
-        btnUpdate.addActionListener(new java.awt.event.ActionListener() {
+        jButton2.setText("Update");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnUpdateActionPerformed(evt);
+                jButton2ActionPerformed(evt);
             }
         });
 
@@ -129,20 +129,20 @@ public class resturantframe extends javax.swing.JPanel {
                 jTable1MouseClicked(evt);
             }
         });
-        tblRestaurant.setViewportView(jTable1);
+        jScrollPane1.setViewportView(jTable1);
 
         jLabel5.setText("Phone Number:");
 
-        txtPhNo.addKeyListener(new java.awt.event.KeyAdapter() {
+        jTextField5.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
-                txtPhNoKeyPressed(evt);
+                jTextField5KeyPressed(evt);
             }
         });
 
-        btnDelete.setText("Delete");
-        btnDelete.addActionListener(new java.awt.event.ActionListener() {
+        jButton3.setText("Delete");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnDeleteActionPerformed(evt);
+                jButton3ActionPerformed(evt);
             }
         });
 
@@ -184,7 +184,7 @@ public class resturantframe extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(tblRestaurant)
+                .addComponent(jScrollPane1)
                 .addGap(30, 30, 30))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(0, 166, Short.MAX_VALUE)
@@ -196,87 +196,87 @@ public class resturantframe extends javax.swing.JPanel {
                     .addComponent(jLabel5))
                 .addGap(38, 38, 38)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(txtRName)
-                    .addComponent(txtLoc)
-                    .addComponent(txtUserName)
-                    .addComponent(txtPwd)
-                    .addComponent(txtPhNo, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTextField1)
+                    .addComponent(jTextField2)
+                    .addComponent(jTextField3)
+                    .addComponent(jTextField4)
+                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(66, 66, 66)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnAdd, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(btnDelete)
-                        .addComponent(btnUpdate)))
+                        .addComponent(jButton3)
+                        .addComponent(jButton2)))
                 .addGap(123, 123, 123))
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {btnAdd, btnDelete, btnUpdate});
+        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jButton1, jButton2, jButton3});
 
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(42, 42, 42)
-                .addComponent(tblRestaurant, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
-                    .addComponent(txtRName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(txtLoc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
-                    .addComponent(txtUserName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnAdd))
+                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton1))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
-                    .addComponent(txtPwd, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnUpdate))
+                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton2))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
-                    .addComponent(txtPhNo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnDelete))
+                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton3))
                 .addGap(30, 30, 30))
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtRNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtRNameActionPerformed
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtRNameActionPerformed
+    }//GEN-LAST:event_jTextField1ActionPerformed
 
-    private void txtLocActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtLocActionPerformed
+    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtLocActionPerformed
+    }//GEN-LAST:event_jTextField2ActionPerformed
 
-    private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        if (txtRName.getText().isEmpty() || txtLoc.getText().isEmpty() || txtUserName.getText().isEmpty() || txtPwd.getText().isEmpty()
-              || txtPhNo.getText().isEmpty()  ) {
+        if (jTextField1.getText().isEmpty() || jTextField2.getText().isEmpty() || jTextField3.getText().isEmpty() || jTextField4.getText().isEmpty()
+              || jTextField5.getText().isEmpty()  ) {
             JOptionPane.showMessageDialog(null, "please enter all mandatory fields");
             return;
         }
 
-        if (system.getUserAccountDirectory().checkIfUsernameIsUnique(txtUserName.getText())) {
-            Restaurant restaurant = new Restaurant(txtRName.getText(),txtLoc.getText(), txtUserName.getText(),txtPwd.getText(),txtPhNo.getText());
+        if (system.getUserAccountDirectory().checkIfUsernameIsUnique(jTextField3.getText())) {
+            Restaurant restaurant = new Restaurant(jTextField1.getText(),jTextField2.getText(), jTextField3.getText(),jTextField4.getText(),jTextField5.getText());
             system.getUserAccountDirectory().addAccount(restaurant);
             system.getRestaurantDirectory().addRestaurant(restaurant);
             populateTable();            
-            txtRName.setText("");
-            txtLoc.setText("");
-            txtUserName.setText("");
-            txtPwd.setText("");
-            txtPhNo.setText("");
+            jTextField1.setText("");
+            jTextField2.setText("");
+            jTextField3.setText("");
+            jTextField4.setText("");
+            jTextField5.setText("");
 
         } else {
-            JOptionPane.showMessageDialog(null, "Username " + txtUserName.getText() + " already exists !!!, Please try a new one");
+            JOptionPane.showMessageDialog(null, "Username " + jTextField3.getText() + " already exists !!!, Please try a new one");
         }
-    }//GEN-LAST:event_btnAddActionPerformed
+    }//GEN-LAST:event_jButton1ActionPerformed
 private void populateTable() {
         RestaurantDirectory delivaryman = system.getRestaurantDirectory();
         DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
@@ -295,9 +295,9 @@ private void populateTable() {
             }
         
     }
-    private void btnUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUpdateActionPerformed
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        String username=txtUserName.getText();
+        String username=jTextField3.getText();
         DefaultTableModel t = (DefaultTableModel) jTable1.getModel();
         int t1=jTable1.getSelectedRow();
         String a=(String)t.getValueAt(t1, 2);
@@ -309,30 +309,30 @@ private void populateTable() {
             Restaurant c=cd1.get(i);
             if(c.getUsername().matches(a))
                     {
-                        c.setName(txtRName.getText());
-                        c.setAddress(txtLoc.getText());
-                        c.setUsername(txtUserName.getText());
-                        c.setPassword(txtPwd.getText());
-                        c.setPhone(txtPhNo.getText());
+                        c.setName(jTextField1.getText());
+                        c.setAddress(jTextField2.getText());
+                        c.setUsername(jTextField3.getText());
+                        c.setPassword(jTextField4.getText());
+                        c.setPhone(jTextField5.getText());
                     }
         }
         populateTable();
-    }//GEN-LAST:event_btnUpdateActionPerformed
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable1MouseClicked
         // TODO add your handling code here:
         DefaultTableModel t = (DefaultTableModel) jTable1.getModel();
         int t1=jTable1.getSelectedRow();
-        txtRName.setText(t.getValueAt(t1,0).toString());
-        txtLoc.setText(t.getValueAt(t1,1).toString());
-        txtUserName.setText(t.getValueAt(t1,2).toString());
-        txtPwd.setText(t.getValueAt(t1,3).toString());
-        txtPhNo.setText(t.getValueAt(t1,4).toString());
+        jTextField1.setText(t.getValueAt(t1,0).toString());
+        jTextField2.setText(t.getValueAt(t1,1).toString());
+        jTextField3.setText(t.getValueAt(t1,2).toString());
+        jTextField4.setText(t.getValueAt(t1,3).toString());
+        jTextField5.setText(t.getValueAt(t1,4).toString());
     }//GEN-LAST:event_jTable1MouseClicked
 
-    private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-        String username=txtUserName.getText();
+        String username=jTextField3.getText();
         DefaultTableModel t = (DefaultTableModel) jTable1.getModel();
         int t1=jTable1.getSelectedRow();
         String a=(String)t.getValueAt(t1, 2);
@@ -349,59 +349,59 @@ private void populateTable() {
                     }
         }
         populateTable();
-            txtRName.setText("");
-            txtLoc.setText("");
-            txtUserName.setText("");
-            txtPwd.setText("");
-            txtPhNo.setText("");
-    }//GEN-LAST:event_btnDeleteActionPerformed
+            jTextField1.setText("");
+            jTextField2.setText("");
+            jTextField3.setText("");
+            jTextField4.setText("");
+            jTextField5.setText("");
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jLabel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseClicked
         // TODO add your handling code here:
         backAction();
     }//GEN-LAST:event_jLabel7MouseClicked
 
-    private void txtPhNoKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtPhNoKeyPressed
+    private void jTextField5KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField5KeyPressed
         // TODO add your handling code here:
         char c=evt.getKeyChar();
         if(Character.isLetter(c))
         {
-            txtPhNo.setEditable(false);
+            jTextField5.setEditable(false);
             JOptionPane.showMessageDialog(null, "enter number");
         }
         else
         {
-            txtPhNo.setEditable(true);
+            jTextField5.setEditable(true);
         }
-    }//GEN-LAST:event_txtPhNoKeyPressed
+    }//GEN-LAST:event_jTextField5KeyPressed
 
-    private void txtRNameKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtRNameKeyPressed
+    private void jTextField1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyPressed
         // TODO add your handling code here:
         char c=evt.getKeyChar();
         if(Character.isDigit(c))
         {
-            txtRName.setEditable(false);
+            jTextField1.setEditable(false);
             JOptionPane.showMessageDialog(null, "enter Alphabets");
         }
         else
         {
-            txtRName.setEditable(true);
+            jTextField1.setEditable(true);
         }
-    }//GEN-LAST:event_txtRNameKeyPressed
+    }//GEN-LAST:event_jTextField1KeyPressed
 
-    private void txtLocKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtLocKeyPressed
+    private void jTextField2KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField2KeyPressed
         // TODO add your handling code here:
         char c=evt.getKeyChar();
         if(Character.isDigit(c))
         {
-            txtLoc.setEditable(false);
+            jTextField2.setEditable(false);
             JOptionPane.showMessageDialog(null, "enter Alphabets");
         }
         else
         {
-            txtLoc.setEditable(true);
+            jTextField2.setEditable(true);
         }
-    }//GEN-LAST:event_txtLocKeyPressed
+    }//GEN-LAST:event_jTextField2KeyPressed
     
     private void backAction() {
         container.remove(this);
@@ -413,9 +413,9 @@ private void populateTable() {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnAdd;
-    private javax.swing.JButton btnDelete;
-    private javax.swing.JButton btnUpdate;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -424,12 +424,12 @@ private void populateTable() {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
-    private javax.swing.JScrollPane tblRestaurant;
-    private javax.swing.JTextField txtLoc;
-    private javax.swing.JTextField txtPhNo;
-    private javax.swing.JTextField txtPwd;
-    private javax.swing.JTextField txtRName;
-    private javax.swing.JTextField txtUserName;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextField5;
     // End of variables declaration//GEN-END:variables
 }

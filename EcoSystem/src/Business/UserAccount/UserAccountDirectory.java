@@ -1,19 +1,19 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
+ * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
 package Business.UserAccount;
 
 import Business.Employee.Employee;
-import Business.role.Role;
+import Business.Role.Role;
 import java.util.ArrayList;
 
 /**
  *
- * @author ajay09
+ * @author raunak
  */
 public class UserAccountDirectory {
+    
     private ArrayList<UserAccount> userAccountList;
 
     public UserAccountDirectory() {
@@ -46,7 +46,7 @@ public class UserAccountDirectory {
         userAccountList.add(userAccount);
         return userAccount;
     }
-    public UserAccount removeAccount(UserAccount userAccount){
+    public UserAccount removeccount(UserAccount userAccount){
         userAccountList.remove(userAccount);
         return userAccount;
     }

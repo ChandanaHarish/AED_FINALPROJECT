@@ -5,14 +5,14 @@
  */
 package Business.Restaurant;
 
+import Business.Role.AdminRole;
 import Business.UserAccount.UserAccount;
-import Business.role.AdminRole;
 import java.util.HashMap;
 import java.util.Map;
 
 /**
  *
- * @author chand
+ * @author harold
  */
 public class Restaurant extends UserAccount{
     private String name;
@@ -72,4 +72,3 @@ public class Restaurant extends UserAccount{
         return this.name;
     }
 }
-

@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package userInterface.CustomerRole;
+package userinterface.CustomerRole;
 
 import Business.EcoSystem;
 
@@ -15,7 +15,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author chand
+ * @author raunak
  */
 public class CustomerAreaJPanel extends javax.swing.JPanel {
 

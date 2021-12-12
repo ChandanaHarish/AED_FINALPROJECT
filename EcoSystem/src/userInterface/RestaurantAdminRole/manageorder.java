@@ -3,10 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package userInterface.RestaurantAdminRole;
+package userinterface.RestaurantAdminRole;
 
 import Business.Customer.Order;
 import Business.Customer.OrderDirectory;
+import Business.DeliveryMan.DeliveryMan;
+import Business.DeliveryMan.DeliveryManDirectory;
 import Business.EcoSystem;
 import Business.Restaurant.Restaurant;
 import Business.UserAccount.UserAccount;
@@ -20,7 +22,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Chand
+ * @author raksh
  */
 public class manageorder extends javax.swing.JPanel {
 

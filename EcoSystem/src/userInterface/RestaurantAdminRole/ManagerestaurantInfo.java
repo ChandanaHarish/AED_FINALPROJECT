@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package userInterface.RestaurantAdminRole;
+package userinterface.RestaurantAdminRole;
 
 import Business.Customer.Customer;
 import Business.Customer.CustomerDirectory;
@@ -15,11 +15,11 @@ import java.awt.CardLayout;
 import java.awt.Component;
 import java.util.ArrayList;
 import javax.swing.JPanel;
-//import userinterface.SystemAdminWorkArea.SystemAdminWorkAreaJPanel;
+import userinterface.SystemAdminWorkArea.SystemAdminWorkAreaJPanel;
 
 /**
  *
- * @author Chand
+ * @author raksh
  */
 public class ManagerestaurantInfo extends javax.swing.JPanel {
 

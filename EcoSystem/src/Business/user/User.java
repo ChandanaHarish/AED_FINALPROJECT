@@ -5,75 +5,75 @@
  */
 package Business.user;
 
-import Business.UserAccount.UserAccount;
-import Business.role.UserRole;
+import Business.Role.CustomerRole;
+import Business.Role.UserRole;
 import Business.UserAccount.UserAccount;
 
 /**
  *
- * @author ajay09
+ * @author raksh
  */
 public class User extends UserAccount{
-    String firstName;
-    String lastName;
-    String emailID;
-    String phoneNumber;
-    String userID;
+    String first_name;
+    String last_name;
+    String email;
+    String phone_number;
+    String user_id;
     String password;
     String location;
     
-    public User(String firstName, String lastName, String emailID, String userID, String password, String phoneNumber,String location) {
-        setUsername(userID);
+    public User(String firstname, String lastname, String userid, String password, String phonenumber,String location,String email) {
+        setUsername(userid);
         setPassword(password);
         setRole(new UserRole());
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.userID= userID;
-        this.password= password;        
-        this.phoneNumber = phoneNumber;
-        this.location= location;
-        this.emailID= emailID;
+        this.first_name = firstname;
+        this.last_name = lastname;
+        this.user_id=userid;
+        this.password=password;        
+        this.phone_number = phonenumber;
+        this.location=location;
+        this.email=email;
         
     }
 
-    public String getFirstName() {
-        return firstName;
+    public String getFirst_name() {
+        return first_name;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setFirst_name(String first_name) {
+        this.first_name = first_name;
     }
 
-    public String getLastName() {
-        return lastName;
+    public String getLast_name() {
+        return last_name;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setLast_name(String last_name) {
+        this.last_name = last_name;
     }
 
-    public String getEmailID() {
-        return emailID;
+    public String getEmail() {
+        return email;
     }
 
-    public void setEmailID(String emailID) {
-        this.emailID = emailID;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
-    public String getPhoneNumber() {
-        return phoneNumber;
+    public String getPhone_number() {
+        return phone_number;
     }
 
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
+    public void setPhone_number(String phone_number) {
+        this.phone_number = phone_number;
     }
 
-    public String getUserID() {
-        return userID;
+    public String getUser_id() {
+        return user_id;
     }
 
-    public void setUserID(String userID) {
-        this.userID = userID;
+    public void setUser_id(String user_id) {
+        this.user_id = user_id;
     }
 
     public String getPassword() {
@@ -90,10 +90,6 @@ public class User extends UserAccount{
 
     public void setLocation(String location) {
         this.location = location;
-    }
-
-    public String getOncologistName() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
     

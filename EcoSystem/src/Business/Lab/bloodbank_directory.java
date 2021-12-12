@@ -5,12 +5,12 @@
  */
 package Business.Lab;
 
-import Business.Oncologist.Oncologist;
+import Business.Doctor.Doctor;
 import java.util.ArrayList;
 
 /**
  *
- * @author preranaj
+ * @author raksh
  */
 public class bloodbank_directory {
     ArrayList<BloodBank> a =new ArrayList<BloodBank>();

@@ -3,15 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package userInterface.user;
+package userinterface.user;
 
 import Business.DB4OUtil.DB4OUtil;
 import Business.EcoSystem;
 import Business.UserAccount.UserAccount;
-import Business.WorkQueue.MentalHealth;
-import Business.WorkQueue.MentalHealthDirectory;
+import Business.WorkQueue.vaccination_request;
+import Business.WorkQueue.vaccination_request_directory;
 import Business.user.User;
-import Business.user.userDirectory;
+import Business.user.User_directory;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
@@ -28,7 +28,7 @@ public class vaccination_regd extends javax.swing.JPanel {
     private final UserAccount userAccount;
 
     /**
-     * Creates new form Mental Health
+     * Creates new form vaccination_regd
      */
     public vaccination_regd(JPanel container,EcoSystem ecosystem,UserAccount userAccount) {
         initComponents();
@@ -79,35 +79,40 @@ public class vaccination_regd extends javax.swing.JPanel {
         jButton2 = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(216, 235, 228));
+        setBackground(new java.awt.Color(26, 39, 68));
         setPreferredSize(new java.awt.Dimension(770, 539));
 
         jLabel1.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
-        jLabel1.setText("Are you feeling anxious today?");
+        jLabel1.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel1.setText("ever diagonised with covid-19??");
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
             new String [] {
-                "ID", "Status", "Pharmacy", "Therapy", "Date", "Time"
+                "ID", "Status", "Pharmacy", "Vaccination", "Date", "Time"
             }
         ));
         jScrollPane1.setViewportView(jTable1);
 
         buttonGroup1.add(jRadioButton1);
         jRadioButton1.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jRadioButton1.setForeground(new java.awt.Color(204, 204, 204));
         jRadioButton1.setText("Yes");
 
         buttonGroup1.add(jRadioButton2);
         jRadioButton2.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jRadioButton2.setForeground(new java.awt.Color(204, 204, 204));
         jRadioButton2.setText("No");
 
         jLabel2.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
-        jLabel2.setText("Are you sleeping well?");
+        jLabel2.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel2.setText("Do you have diabetese ??");
 
         buttonGroup2.add(jRadioButton3);
         jRadioButton3.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jRadioButton3.setForeground(new java.awt.Color(204, 204, 204));
         jRadioButton3.setText("Yes");
         jRadioButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -117,6 +122,7 @@ public class vaccination_regd extends javax.swing.JPanel {
 
         buttonGroup2.add(jRadioButton4);
         jRadioButton4.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jRadioButton4.setForeground(new java.awt.Color(204, 204, 204));
         jRadioButton4.setText("No");
         jRadioButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -125,14 +131,17 @@ public class vaccination_regd extends javax.swing.JPanel {
         });
 
         jLabel3.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
-        jLabel3.setText("Are you feeling content?");
+        jLabel3.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel3.setText("Are you uner any medication ??");
 
         buttonGroup3.add(jRadioButton5);
         jRadioButton5.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jRadioButton5.setForeground(new java.awt.Color(204, 204, 204));
         jRadioButton5.setText("Yes");
 
         buttonGroup3.add(jRadioButton6);
         jRadioButton6.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jRadioButton6.setForeground(new java.awt.Color(204, 204, 204));
         jRadioButton6.setText("No");
         jRadioButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -141,14 +150,17 @@ public class vaccination_regd extends javax.swing.JPanel {
         });
 
         jLabel4.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
-        jLabel4.setText("Are you under any medication?");
+        jLabel4.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel4.setText("Blood thinner??");
 
         buttonGroup4.add(jRadioButton7);
         jRadioButton7.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jRadioButton7.setForeground(new java.awt.Color(204, 204, 204));
         jRadioButton7.setText("Yes ");
 
         buttonGroup4.add(jRadioButton8);
         jRadioButton8.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jRadioButton8.setForeground(new java.awt.Color(204, 204, 204));
         jRadioButton8.setText("No");
         jRadioButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -157,7 +169,6 @@ public class vaccination_regd extends javax.swing.JPanel {
         });
 
         jButton1.setBackground(new java.awt.Color(195, 233, 245));
-        jButton1.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         jButton1.setText("Register ");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -166,7 +177,6 @@ public class vaccination_regd extends javax.swing.JPanel {
         });
 
         jButton2.setBackground(new java.awt.Color(195, 233, 245));
-        jButton2.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         jButton2.setText("Cancel ");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -175,8 +185,8 @@ public class vaccination_regd extends javax.swing.JPanel {
         });
 
         jLabel5.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 51, 153));
-        jLabel5.setText("Mental Health Registration");
+        jLabel5.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel5.setText("Vaccination Registration");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -185,42 +195,57 @@ public class vaccination_regd extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGap(50, 50, 50)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 655, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 655, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(65, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel2)
                             .addComponent(jLabel1)
                             .addComponent(jLabel3)
-                            .addComponent(jLabel4))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(26, 26, 26)
+                            .addComponent(jLabel4)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addGap(42, 42, 42)
+                                .addComponent(jRadioButton5)
+                                .addGap(18, 18, 18)
+                                .addComponent(jRadioButton6)
+                                .addGap(68, 68, 68))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                            .addComponent(jRadioButton3)
-                                            .addGap(26, 26, 26)
-                                            .addComponent(jRadioButton4))
-                                        .addGroup(layout.createSequentialGroup()
-                                            .addComponent(jRadioButton1)
-                                            .addGap(26, 26, 26)
-                                            .addComponent(jRadioButton2))
-                                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                            .addComponent(jRadioButton5)
-                                            .addGap(24, 24, 24)
-                                            .addComponent(jRadioButton6)))
                                     .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addGap(36, 36, 36)
+                                                .addComponent(jRadioButton1))
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addGap(37, 37, 37)
+                                                .addComponent(jRadioButton3)))
+                                        .addGap(26, 26, 26)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jRadioButton4)
+                                            .addComponent(jRadioButton2)))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(39, 39, 39)
                                         .addComponent(jRadioButton7)
                                         .addGap(18, 18, 18)
-                                        .addComponent(jRadioButton8))))
-                            .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 241, Short.MAX_VALUE)
-                            .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addContainerGap(65, Short.MAX_VALUE))
+                                        .addComponent(jRadioButton8)))
+                                .addGap(65, 65, 65)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jButton2)
+                                .addGap(127, 127, 127))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(jButton1)
+                                .addGap(212, 212, 212))))))
             .addGroup(layout.createSequentialGroup()
                 .addGap(290, 290, 290)
                 .addComponent(jLabel5)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
+
+        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jButton1, jButton2});
+
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
@@ -229,55 +254,53 @@ public class vaccination_regd extends javax.swing.JPanel {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel2))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jRadioButton1)
-                            .addComponent(jRadioButton2))
-                        .addGap(10, 10, 10)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jRadioButton3)
-                            .addComponent(jRadioButton4))))
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jRadioButton1)
+                    .addComponent(jRadioButton2))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jRadioButton6)
-                        .addComponent(jRadioButton5))
-                    .addComponent(jLabel3))
+                    .addComponent(jLabel2)
+                    .addComponent(jButton1))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jRadioButton3)
+                    .addComponent(jRadioButton4))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel4))
+                        .addComponent(jLabel3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jRadioButton6)
+                            .addComponent(jRadioButton5)))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(16, 16, 16)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jRadioButton7)
-                            .addComponent(jRadioButton8))
-                        .addGap(52, 52, 52)
-                        .addComponent(jButton1)))
+                        .addGap(35, 35, 35)
+                        .addComponent(jButton2)))
                 .addGap(18, 18, 18)
-                .addComponent(jButton2)
-                .addContainerGap(94, Short.MAX_VALUE))
+                .addComponent(jLabel4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jRadioButton7)
+                    .addComponent(jRadioButton8))
+                .addContainerGap(62, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        MentalHealthDirectory vrd=ecosystem.getMhd();
-        ArrayList<MentalHealth> ol=vrd.getarray();
+        vaccination_request_directory vrd=ecosystem.getVrd();
+        ArrayList<vaccination_request> ol=vrd.getarray();
         int u=ol.size();
         System.out.println(u);
         boolean r=true;
         for(int i=0;i<u;i++)
         {
-            MentalHealth o=ol.get(i);
+            vaccination_request o=ol.get(i);
             System.out.println(userAccount.getUsername());
-            System.out.println(o.getUserID());
-            if(userAccount.getUsername().matches(o.getUserID()))
+            System.out.println(o.getUser_id());
+            if(userAccount.getUsername().matches(o.getUser_id()))
             {
                 if(o.getStatus().equals("In progress")||o.getStatus().equals("Done")||o.getStatus().equals("Approved"))
                 {
@@ -293,21 +316,21 @@ public class vaccination_regd extends javax.swing.JPanel {
         {
             if((jRadioButton1.isSelected()||jRadioButton2.isSelected())&&(jRadioButton3.isSelected()||jRadioButton4.isSelected())&&(jRadioButton5.isSelected()||jRadioButton6.isSelected())&&(jRadioButton7.isSelected()||jRadioButton8.isSelected())){
                 int x = 1 + (int) (Math.random() * 100);
-                        MentalHealth vr= new MentalHealth();
-                        vr.setID(x);
-                        vr.setAnxious(buttonGroup1.getSelection().getActionCommand());
-                        vr.setSleep(buttonGroup2.getSelection().getActionCommand());
+                        vaccination_request vr= new vaccination_request();
+                        vr.setId(x);
+                        vr.setCovid_19(buttonGroup1.getSelection().getActionCommand());
+                        vr.setDiabetese(buttonGroup2.getSelection().getActionCommand());
                         vr.setMedication(buttonGroup3.getSelection().getActionCommand());
-                        vr.setContent(buttonGroup4.getSelection().getActionCommand());
+                        vr.setBlood_thinner(buttonGroup4.getSelection().getActionCommand());
                         System.out.println(buttonGroup1.getSelection().getActionCommand());
                         vr.setStatus("In progress");
                         vr.setPharmacy("NA");
-                        vr.setConsultant("NA");
+                        vr.setVaccination("NA");
                         vr.setDate("NA");
                         vr.setTime("NA");
                         User u1=(User)(userAccount);
-                        vr.setFirstName(u1.getFirstName());
-                        vr.setUserID(u1.getUserID());
+                        vr.setFirst_name(u1.getFirst_name());
+                        vr.setUser_id(u1.getUser_id());
                         vrd.addrequest(vr);
                          JOptionPane.showMessageDialog(null, "Registered!!");
                         jTable1.setModel(new DefaultTableModel(null,new String[]{"ID","Status","Pharmacy","Vaccination","Date","Time"}));
@@ -350,14 +373,14 @@ public class vaccination_regd extends javax.swing.JPanel {
         {
         int s=Integer.parseInt(t2.getValueAt(selectedRow, 0).toString());
         System.out.println("id"+s);
-        MentalHealthDirectory vrd=ecosystem.getMhd();
-        ArrayList<MentalHealth> ol=vrd.getarray();
+        vaccination_request_directory vrd=ecosystem.getVrd();
+        ArrayList<vaccination_request> ol=vrd.getarray();
         int u=ol.size();
         User bb=(User)(userAccount);
         for(int i=0;i<u;i++)
         {
-            MentalHealth o=ol.get(i);
-            if(s==o.getID()/*&&o.getStatus().matches("Deliver Man Assigned")*/)
+            vaccination_request o=ol.get(i);
+            if(s==o.getId()/*&&o.getStatus().matches("Deliver Man Assigned")*/)
             {
                 if(o.getStatus().equals("Cancel")||o.getStatus().equals("Done")||o.getStatus().equals("Approved"))
                 {
@@ -424,20 +447,20 @@ else
 
     public void populate_table()
     {
-        MentalHealthDirectory vrd=ecosystem.getMhd();
-        ArrayList<MentalHealth> ol=vrd.getarray();
+        vaccination_request_directory vrd=ecosystem.getVrd();
+        ArrayList<vaccination_request> ol=vrd.getarray();
         int u=ol.size();
         System.out.println(u);
         for(int i=0;i<u;i++)
         {
-            MentalHealth o=ol.get(i);
+            vaccination_request o=ol.get(i);
             System.out.println(userAccount.getUsername());
-            System.out.println(o.getUserID());
-            if(userAccount.getUsername().matches(o.getUserID()))
+            System.out.println(o.getUser_id());
+            if(userAccount.getUsername().matches(o.getUser_id()))
             {
                 DefaultTableModel t2 = (DefaultTableModel) jTable1.getModel();
-                String s1=String.valueOf(o.getID());    
-                String s[]={s1,o.getStatus(),o.getPharmacy(),o.getConsultant(),o.getDate(),o.getTime()};
+                String s1=String.valueOf(o.getId());    
+                String s[]={s1,o.getStatus(),o.getPharmacy(),o.getVaccination(),o.getDate(),o.getTime()};
                 t2.addRow(s);
             }
         }

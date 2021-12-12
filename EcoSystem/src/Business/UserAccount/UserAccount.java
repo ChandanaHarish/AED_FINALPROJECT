@@ -1,25 +1,29 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
+ * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
 package Business.UserAccount;
 
 import Business.Employee.Employee;
+import Business.Role.Role;
 import Business.WorkQueue.WorkQueue;
-import Business.role.Role;
-//import com.sun.corba.se.spi.orbutil.threadpool.WorkQueue;
 
 /**
  *
- * @author ajay09
+ * @author raunak
  */
 public class UserAccount {
+    
     private String username;
-    private String password;  
+    private String password;
     private Employee employee;
     private Role role;
     private WorkQueue workQueue;
+
+    public UserAccount() {
+        workQueue = new WorkQueue();
+    }
+    
     
     
     public String getUsername() {
@@ -38,35 +42,33 @@ public class UserAccount {
         this.password = password;
     }
 
-    public Employee getEmployee() {
-        return employee;
+    public Role getRole() {
+        return role;
     }
 
     public void setEmployee(Employee employee) {
         this.employee = employee;
     }
 
-    public Role getRole() {
-        return role;
-    }
-
     public void setRole(Role role) {
         this.role = role;
+    }
+
+    public Employee getEmployee() {
+        return employee;
     }
 
     public WorkQueue getWorkQueue() {
         return workQueue;
     }
 
-    public void setWorkQueue(WorkQueue workQueue) {
-        this.workQueue = workQueue;
-    }
-    
     
     
     @Override
     public String toString() {
         return username;
     }
+    
+    
     
 }

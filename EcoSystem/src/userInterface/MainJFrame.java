@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package userInterface;
+package userinterface;
 
 import Business.Customer.Customer;
 import Business.EcoSystem;
@@ -16,7 +16,7 @@ import Business.UserAccount.UserAccountDirectory;
 import java.awt.CardLayout;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import userInterface.SystemAdminWorkArea.SystemAdminWorkAreaJPanel;
+import userinterface.SystemAdminWorkArea.SystemAdminWorkAreaJPanel;
 
 
 /**
@@ -96,7 +96,6 @@ public class MainJFrame extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(MainJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -110,7 +109,7 @@ public class MainJFrame extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
 
     private void setadminpage() {
-        loginPage wa=new loginPage(container,system);
+        loginpage wa=new loginpage(container,system);
         container.add(wa);
         CardLayout layout = (CardLayout) container.getLayout();
         layout.next(container);

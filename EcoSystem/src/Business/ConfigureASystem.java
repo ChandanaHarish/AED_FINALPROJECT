@@ -1,17 +1,16 @@
 package Business;
 
 import Business.Employee.Employee;
+import Business.Role.SystemAdminRole;
 import Business.UserAccount.UserAccount;
-import Business.role.SystemAdminRole;
-
 
 /**
  *
- * @author ajay09
+ * @author rrheg
  */
 public class ConfigureASystem {
     
-   public static EcoSystem configure(){
+    public static EcoSystem configure(){
         
         EcoSystem system = EcoSystem.getInstance();
         
@@ -28,9 +27,5 @@ public class ConfigureASystem {
         
         return system;
     }
-         
-        
- 
-    
     
 }
