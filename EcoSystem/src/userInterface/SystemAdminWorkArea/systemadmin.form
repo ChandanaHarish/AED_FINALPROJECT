@@ -151,7 +151,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Berlin Sans FB" size="16" style="0"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Doctor"/>
+        <Property name="text" type="java.lang.String" value="Oncologist"/>
       </Properties>
       <Events>
         <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabel1MouseClicked"/>
@@ -184,7 +184,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Berlin Sans FB" size="16" style="0"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Police Department"/>
+        <Property name="text" type="java.lang.String" value="Child Care"/>
       </Properties>
       <Events>
         <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabel4MouseClicked"/>
@@ -195,7 +195,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Berlin Sans FB" size="16" style="0"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Fire Department"/>
+        <Property name="text" type="java.lang.String" value="Medicine Delivery"/>
       </Properties>
       <Events>
         <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabel5MouseClicked"/>
@@ -206,7 +206,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Berlin Sans FB" size="16" style="0"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Government Official"/>
+        <Property name="text" type="java.lang.String" value="NCI Director"/>
       </Properties>
       <Events>
         <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabel7MouseClicked"/>
@@ -217,7 +217,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Berlin Sans FB" size="16" style="0"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Ambulance "/>
+        <Property name="text" type="java.lang.String" value="Medical Emergency"/>
       </Properties>
       <Events>
         <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabel8MouseClicked"/>
@@ -228,7 +228,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Berlin Sans FB" size="16" style="0"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="COVID 19"/>
+        <Property name="text" type="java.lang.String" value="General Vitals"/>
       </Properties>
       <Events>
         <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabel9MouseClicked"/>
@@ -239,7 +239,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Berlin Sans FB" size="16" style="0"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Vaccination"/>
+        <Property name="text" type="java.lang.String" value="Therapy"/>
       </Properties>
       <Events>
         <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabel10MouseClicked"/>

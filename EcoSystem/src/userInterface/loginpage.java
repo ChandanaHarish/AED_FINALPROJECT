@@ -52,6 +52,7 @@ import userinterface.pharmacy.pharmacyframe;
 import userinterface.ChildCare.police_frame;
 import userinterface.user.usermainpannel;
 import java.awt.Color;
+import javax.swing.JFrame;
 import userinterface.SystemAdminWorkArea.systemadminenterprise;
 import userinterface.Therapy.vaccination;
 
@@ -79,6 +80,7 @@ public class loginpage extends javax.swing.JPanel {
         this.setBackground(new Color(0,0,0,0));
         jTextField1.setBackground(new Color(0,0,0,0));
         jPasswordField1.setBackground(new Color(0,0,0,0));
+//        jPanel1.setExtendedState(jPanel1.getExtendedState() | JFrame.MAXIMIZED_BOTH);
     }
 
     /**
@@ -117,7 +119,6 @@ public class loginpage extends javax.swing.JPanel {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/MicrosoftTeams-image.png"))); // NOI18N
-        jLabel12.setPreferredSize(new java.awt.Dimension(150, 150));
         jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 130, -1, -1));
         jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 310, 280, 10));
         jPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 210, 280, 10));

@@ -115,7 +115,7 @@
           <Color blue="44" green="27" red="1a" type="rgb"/>
         </Property>
         <Property name="horizontalAlignment" type="int" value="0"/>
-        <Property name="text" type="java.lang.String" value="Ambulance"/>
+        <Property name="text" type="java.lang.String" value="Medical Emergency"/>
       </Properties>
       <Events>
         <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabel3MouseClicked"/>
@@ -131,7 +131,7 @@
           <Color blue="44" green="27" red="1a" type="rgb"/>
         </Property>
         <Property name="horizontalAlignment" type="int" value="0"/>
-        <Property name="text" type="java.lang.String" value="Police Department"/>
+        <Property name="text" type="java.lang.String" value="Child Care"/>
         <Property name="toolTipText" type="java.lang.String" value=""/>
       </Properties>
       <Events>
@@ -147,7 +147,7 @@
           <Color blue="44" green="27" red="1a" type="rgb"/>
         </Property>
         <Property name="horizontalAlignment" type="int" value="0"/>
-        <Property name="text" type="java.lang.String" value="Fire Department"/>
+        <Property name="text" type="java.lang.String" value="Medicine Delivery"/>
         <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[140, 30]"/>
         </Property>
