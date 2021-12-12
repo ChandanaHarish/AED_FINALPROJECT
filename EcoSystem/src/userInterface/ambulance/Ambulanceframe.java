@@ -318,7 +318,7 @@ public void populate_table()
         for(int i=0;i<u;i++)
         {
             report_emergency o=ol.get(i);
-            if(o.getEmergency().matches("Medical"))
+            if(o.getEmergency().matches("Medical Emergency"))
             {
                 DefaultTableModel t2 = (DefaultTableModel) jTable1.getModel();
                 String s1=String.valueOf(o.getID());

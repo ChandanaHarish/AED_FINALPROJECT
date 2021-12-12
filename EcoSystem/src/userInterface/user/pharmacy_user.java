@@ -95,7 +95,7 @@ public class pharmacy_user extends javax.swing.JPanel {
 
             },
             new String [] {
-                "ID", "Doctor Name", "Pharmacy", "Status"
+                "ID", "Oncologist Name", "Pharmacy", "Status"
             }
         ));
         jTable1.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -106,7 +106,7 @@ public class pharmacy_user extends javax.swing.JPanel {
         jScrollPane1.setViewportView(jTable1);
 
         jButton1.setBackground(new java.awt.Color(195, 233, 245));
-        jButton1.setText("Order Collected");
+        jButton1.setText("Collect Order");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -141,7 +141,7 @@ public class pharmacy_user extends javax.swing.JPanel {
 
         jLabel3.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(204, 204, 204));
-        jLabel3.setText("Pharmacy");
+        jLabel3.setText("User Pharmacy Portal");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -157,10 +157,7 @@ public class pharmacy_user extends javax.swing.JPanel {
                     .addGap(195, 195, 195)
                     .addComponent(jLabel2)
                     .addGap(237, 237, 237)
-                    .addComponent(jLabel1))
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(140, 140, 140)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 490, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jLabel1)))
             .addGroup(layout.createSequentialGroup()
                 .addGap(181, 181, 181)
                 .addComponent(jButton1)
@@ -170,6 +167,9 @@ public class pharmacy_user extends javax.swing.JPanel {
                 .addContainerGap()
                 .addComponent(jLabel3)
                 .addGap(218, 218, 218))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(140, 140, 140)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 641, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jButton1, jButton2});

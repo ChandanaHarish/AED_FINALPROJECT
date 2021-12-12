@@ -91,7 +91,7 @@ public class vaccination_regd extends javax.swing.JPanel {
 
             },
             new String [] {
-                "ID", "Status", "Pharmacy", "Vaccination", "Date", "Time"
+                "ID", "Status", "Pharmacy", "Therapy", "Date", "Time"
             }
         ));
         jScrollPane1.setViewportView(jTable1);
@@ -186,7 +186,7 @@ public class vaccination_regd extends javax.swing.JPanel {
 
         jLabel5.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(204, 204, 204));
-        jLabel5.setText("Vaccination Registration");
+        jLabel5.setText("Mental Health Portal");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
