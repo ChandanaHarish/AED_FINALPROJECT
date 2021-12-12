@@ -5,7 +5,7 @@
  */
 package Business.Lab;
 
-import Business.Doctor.Doctor;
+import Business.Oncologist.Doctor;
 import java.util.ArrayList;
 
 /**

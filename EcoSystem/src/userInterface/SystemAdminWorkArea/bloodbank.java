@@ -7,8 +7,8 @@ package userinterface.SystemAdminWorkArea;
 
 import Business.Customer.Customer;
 import Business.Customer.CustomerDirectory;
-import Business.Doctor.Doctor;
-import Business.Doctor.Doctor_Directory;
+import Business.Oncologist.Doctor;
+import Business.Oncologist.Doctor_Directory;
 import Business.EcoSystem;
 import Business.Lab.BloodBank;
 import Business.Lab.bloodbank_directory;

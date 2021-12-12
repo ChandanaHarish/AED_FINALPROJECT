@@ -11,7 +11,7 @@ import Business.EcoSystem;
 import Business.UserAccount.UserAccount;
 import Business.WorkQueue.report_emergency;
 import Business.WorkQueue.report_emergency_directory;
-import Business.firedepartment.FireDepartment;
+import Business.MedicineDelivery.FireDepartment;
 import java.awt.CardLayout;
 import java.awt.Component;
 import java.util.ArrayList;

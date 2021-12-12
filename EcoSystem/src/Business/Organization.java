@@ -8,7 +8,7 @@ import Business.Ambulance.ambulance_directory;
 import Business.Customer.CustomerDirectory;
 import Business.Customer.OrderDirectory;
 import Business.DeliveryMan.DeliveryManDirectory;
-import Business.Doctor.Doctor_Directory;
+import Business.Oncologist.Doctor_Directory;
 import Business.Employee.EmployeeDirectory;
 import Business.Lab.bloodbank_directory;
 
@@ -24,13 +24,13 @@ import Business.WorkQueue.medrequest_directory;
 import Business.WorkQueue.report_emergency_directory;
 import Business.WorkQueue.request_blood_directory;
 import Business.WorkQueue.vaccination_request_directory;
-import Business.covidcenter.covidcenter_directory;
-import Business.firedepartment.FireDepartmentDirectory;
-import Business.governmentofficial.governmentoffical_directory;
+import Business.CancerHospitals.covidcenter_directory;
+import Business.MedicineDelivery.FireDepartmentDirectory;
+import Business.NCI.governmentoffical_directory;
 import Business.pharmacy.Pharmacy_directory;
-import Business.policedepartment.PoliceDepartment_Directory;
+import Business.ChildCare.PoliceDepartment_Directory;
 import Business.user.User_directory;
-import Business.vaccination_org.vaccination_org_directory;
+import Business.Consultancy.vaccination_org_directory;
 
 import java.util.ArrayList;
 
