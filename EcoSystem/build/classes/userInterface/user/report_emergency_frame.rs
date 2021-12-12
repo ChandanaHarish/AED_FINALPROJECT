@@ -1,0 +1,5 @@
+userinterface.user.report_emergency_frame$4
+userinterface.user.report_emergency_frame$3
+userinterface.user.report_emergency_frame$2
+userinterface.user.report_emergency_frame$1
+userinterface.user.report_emergency_frame

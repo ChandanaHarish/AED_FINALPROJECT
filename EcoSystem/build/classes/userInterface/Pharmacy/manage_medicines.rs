@@ -1,0 +1,4 @@
+userinterface.pharmacy.manage_medicines
+userinterface.pharmacy.manage_medicines$1
+userinterface.pharmacy.manage_medicines$3
+userinterface.pharmacy.manage_medicines$2

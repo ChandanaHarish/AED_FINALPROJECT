@@ -1,0 +1,6 @@
+userinterface.RestaurantAdminRole.manageorder$5
+userinterface.RestaurantAdminRole.manageorder$4
+userinterface.RestaurantAdminRole.manageorder$3
+userinterface.RestaurantAdminRole.manageorder$2
+userinterface.RestaurantAdminRole.manageorder$1
+userinterface.RestaurantAdminRole.manageorder

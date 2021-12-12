@@ -1,0 +1,5 @@
+userinterface.RestaurantAdminRole.ManageMenu$2
+userinterface.RestaurantAdminRole.ManageMenu$3
+userinterface.RestaurantAdminRole.ManageMenu$4
+userinterface.RestaurantAdminRole.ManageMenu
+userinterface.RestaurantAdminRole.ManageMenu$1

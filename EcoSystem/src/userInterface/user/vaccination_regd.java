@@ -84,7 +84,7 @@ public class vaccination_regd extends javax.swing.JPanel {
 
         jLabel1.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(204, 204, 204));
-        jLabel1.setText("ever diagonised with covid-19??");
+        jLabel1.setText("Are you feeling anxious today ?");
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -108,7 +108,7 @@ public class vaccination_regd extends javax.swing.JPanel {
 
         jLabel2.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(204, 204, 204));
-        jLabel2.setText("Do you have diabetese ??");
+        jLabel2.setText("Are you sleeping well ?");
 
         buttonGroup2.add(jRadioButton3);
         jRadioButton3.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
@@ -132,7 +132,7 @@ public class vaccination_regd extends javax.swing.JPanel {
 
         jLabel3.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(204, 204, 204));
-        jLabel3.setText("Are you uner any medication ??");
+        jLabel3.setText("Are you feeling content ?");
 
         buttonGroup3.add(jRadioButton5);
         jRadioButton5.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
@@ -151,7 +151,7 @@ public class vaccination_regd extends javax.swing.JPanel {
 
         jLabel4.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(204, 204, 204));
-        jLabel4.setText("Blood thinner??");
+        jLabel4.setText("Are you under any medication ?");
 
         buttonGroup4.add(jRadioButton7);
         jRadioButton7.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N

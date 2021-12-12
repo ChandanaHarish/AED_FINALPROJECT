@@ -1,0 +1,12 @@
+userinterface.SystemAdminWorkArea.Doctorregistration$10
+userinterface.SystemAdminWorkArea.Doctorregistration
+userinterface.SystemAdminWorkArea.Doctorregistration$2
+userinterface.SystemAdminWorkArea.Doctorregistration$3
+userinterface.SystemAdminWorkArea.Doctorregistration$11
+userinterface.SystemAdminWorkArea.Doctorregistration$1
+userinterface.SystemAdminWorkArea.Doctorregistration$6
+userinterface.SystemAdminWorkArea.Doctorregistration$7
+userinterface.SystemAdminWorkArea.Doctorregistration$4
+userinterface.SystemAdminWorkArea.Doctorregistration$5
+userinterface.SystemAdminWorkArea.Doctorregistration$8
+userinterface.SystemAdminWorkArea.Doctorregistration$9

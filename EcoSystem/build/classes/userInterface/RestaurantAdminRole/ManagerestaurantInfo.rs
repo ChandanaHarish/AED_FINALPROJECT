@@ -1,0 +1,3 @@
+userinterface.RestaurantAdminRole.ManagerestaurantInfo$1
+userinterface.RestaurantAdminRole.ManagerestaurantInfo
+userinterface.RestaurantAdminRole.ManagerestaurantInfo$2

@@ -1,0 +1,7 @@
+userinterface.pharmacy.pharmacyframe$1
+userinterface.pharmacy.pharmacyframe$2
+userinterface.pharmacy.pharmacyframe
+userinterface.pharmacy.pharmacyframe$3
+userinterface.pharmacy.pharmacyframe$4
+userinterface.pharmacy.pharmacyframe$5
+userinterface.pharmacy.pharmacyframe$6
