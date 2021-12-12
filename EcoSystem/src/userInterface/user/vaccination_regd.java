@@ -176,7 +176,7 @@ public class vaccination_regd extends javax.swing.JPanel {
 
         jLabel5.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 51, 153));
-        jLabel5.setText("Vaccination Registration");
+        jLabel5.setText("Mental Health Registration");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
