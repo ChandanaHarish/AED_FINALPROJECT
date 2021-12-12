@@ -196,7 +196,7 @@ public class User_register extends javax.swing.JPanel {
         jPanel2.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 340, 119, -1));
 
         jButton1.setBackground(new java.awt.Color(0, 102, 102));
-        jButton1.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        jButton1.setFont(new java.awt.Font("Berlin Sans FB Demi", 1, 16)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Register User");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
