@@ -10,6 +10,7 @@ import Business.EcoSystem;
 import java.awt.CardLayout;
 import java.awt.Component;
 import javax.swing.JPanel;
+import userInterface.loginPage;
 //import userinterface.loginpage;
 
 /**
@@ -46,6 +47,7 @@ public class systemadminenterprise extends javax.swing.JPanel {
         btnEmergEnt = new javax.swing.JButton();
         btnGovEnt = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setLayout(new java.awt.CardLayout());
 
@@ -97,6 +99,13 @@ public class systemadminenterprise extends javax.swing.JPanel {
             }
         });
 
+        jLabel2.setText("go back");
+        jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel2MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -119,9 +128,13 @@ public class systemadminenterprise extends javax.swing.JPanel {
                                 .addComponent(btnGovEnt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGap(182, 182, 182)
                                 .addComponent(btnEmergEnt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 9, Short.MAX_VALUE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)))
                 .addComponent(btnPharmaEnt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(155, 155, 155))
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(43, 43, 43)
+                .addComponent(jLabel2)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel2Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {btnEmergEnt, btnGovEnt, btnHospEnt, btnNPE, btnPharmaEnt});
@@ -131,7 +144,9 @@ public class systemadminenterprise extends javax.swing.JPanel {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1)
-                .addGap(83, 83, 83)
+                .addGap(25, 25, 25)
+                .addComponent(jLabel2)
+                .addGap(42, 42, 42)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnHospEnt)
                     .addComponent(btnNPE)
@@ -193,15 +208,20 @@ public class systemadminenterprise extends javax.swing.JPanel {
 //        backAction();
     }//GEN-LAST:event_jLabel1MouseClicked
 
-//    private void backAction() {
-//        container.remove(this);
-//        Component[] componentArray = container.getComponents();
-//        Component component = componentArray[componentArray.length - 1];
-//        loginpage manageSuppliersJPanel = (loginpage) component;        
-//        CardLayout layout = (CardLayout) container.getLayout();
-//        layout.previous(container);
-//        DB4OUtil.dB4OUtil.storeSystem(ecosystem);
-//    }
+    private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
+        // TODO add your handling code here:
+        backAction();
+    }//GEN-LAST:event_jLabel2MouseClicked
+
+    private void backAction() {
+        container.remove(this);
+        Component[] componentArray = container.getComponents();
+        Component component = componentArray[componentArray.length - 1];
+        loginPage manageSuppliersJPanel = (loginPage) component;        
+        CardLayout layout = (CardLayout) container.getLayout();
+        layout.previous(container);
+        DB4OUtil.dB4OUtil.storeSystem(ecosystem);
+    }
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -211,6 +231,7 @@ public class systemadminenterprise extends javax.swing.JPanel {
     private javax.swing.JButton btnNPE;
     private javax.swing.JButton btnPharmaEnt;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
 
