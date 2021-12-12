@@ -96,13 +96,13 @@ public class request_blood_frame extends javax.swing.JPanel {
 
         jLabel1.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(204, 204, 204));
-        jLabel1.setText("First Name :");
+        jLabel1.setText("Name :");
 
         jTextField1.setText("jTextField1");
 
         jLabel2.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(204, 204, 204));
-        jLabel2.setText("Last Name :");
+        jLabel2.setText("Hospital Name:");
 
         jTextField2.setText("jTextField2");
 

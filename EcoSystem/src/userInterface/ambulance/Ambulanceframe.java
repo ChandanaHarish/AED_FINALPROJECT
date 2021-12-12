@@ -73,7 +73,7 @@ public class Ambulanceframe extends javax.swing.JPanel {
 
             },
             new String [] {
-                "ID", "Name", "Emergency", "Location", "Status", "Response"
+                "ID", "Name", "Service", "Location", "Status", "Response"
             }
         ));
         jScrollPane1.setViewportView(jTable1);
@@ -90,7 +90,7 @@ public class Ambulanceframe extends javax.swing.JPanel {
         jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 450, -1, -1));
 
         jButton2.setBackground(new java.awt.Color(189, 195, 199));
-        jButton2.setText("False Alaram");
+        jButton2.setText("N/A");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -196,9 +196,9 @@ public class Ambulanceframe extends javax.swing.JPanel {
                 {
                     JOptionPane.showMessageDialog(null, "Emergency Closed");
                 }
-                else if(o.getStatus().matches("False Alaram"))
+                else if(o.getStatus().matches("N/A"))
                 {
-                    JOptionPane.showMessageDialog(null, "Emergency is a false Alaram");
+                    JOptionPane.showMessageDialog(null, "Service not Applicable");
                 }
                 else if(o.getResponse().matches("No Response"))
                 {
@@ -206,35 +206,9 @@ public class Ambulanceframe extends javax.swing.JPanel {
                 }
                 else
                 {
-                    o.setStatus("False Alaram");
+                    o.setStatus("N/A");
                 }
-                /*if(o.getStatus().matches("Closed"))
-                {
-                    if(o.getStatus().matches("False Alaram"))
-                    {
-                        if(o.getAmbulance().matches("No Response"))
-                        {
-                            JOptionPane.showMessageDialog(null, "Respond to the emergency");
-                            break;
-                        }
-                        else
-                        {
-                            o.setStatus("False Alaram");
-                            
-                        }
-                    }
-                    else
-                    {
-                        JOptionPane.showMessageDialog(null, "Emergency is a false Alaram");
-                        break;
-                    }
-                    
-                }
-                else
-                {
-                JOptionPane.showMessageDialog(null, "Emergency Closed");
-                break;
-                }*/
+                
                 
 
             }
@@ -269,9 +243,9 @@ public class Ambulanceframe extends javax.swing.JPanel {
                 {
                     JOptionPane.showMessageDialog(null, "Emergency Closed");
                 }
-                else if(o.getStatus().matches("False Alaram"))
+                else if(o.getStatus().matches("N/A"))
                 {
-                    JOptionPane.showMessageDialog(null, "Emergency is a false Alaram");
+                    JOptionPane.showMessageDialog(null, "Service not Applicable");
                 }
                 else if(o.getResponse().matches("No Response"))
                 {

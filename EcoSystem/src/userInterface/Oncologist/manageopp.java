@@ -102,7 +102,7 @@ public class manageopp extends javax.swing.JPanel {
         jScrollPane1.setViewportView(jTable1);
 
         jButton3.setBackground(new java.awt.Color(195, 233, 245));
-        jButton3.setText("Consult");
+        jButton3.setText("Consult Patient");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
@@ -110,7 +110,7 @@ public class manageopp extends javax.swing.JPanel {
         });
 
         jButton4.setBackground(new java.awt.Color(195, 233, 245));
-        jButton4.setText("Prescription");
+        jButton4.setText("Prescribe Medicines");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
@@ -143,12 +143,13 @@ public class manageopp extends javax.swing.JPanel {
                                     .addComponent(jButton3)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(jButton1)
-                                    .addGap(72, 72, 72)
-                                    .addComponent(jButton4)))))
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(jButton4)
+                                    .addGap(63, 63, 63)))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(333, 333, 333)
                         .addComponent(jLabel1)))
-                .addContainerGap(120, Short.MAX_VALUE))
+                .addContainerGap(59, Short.MAX_VALUE))
         );
 
         layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jButton1, jButton3, jButton4});
@@ -166,7 +167,7 @@ public class manageopp extends javax.swing.JPanel {
                     .addComponent(jButton3)
                     .addComponent(jButton1)
                     .addComponent(jButton4))
-                .addContainerGap(183, Short.MAX_VALUE))
+                .addContainerGap(177, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

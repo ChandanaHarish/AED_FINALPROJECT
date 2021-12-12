@@ -90,7 +90,7 @@
           <Color blue="44" green="27" red="1a" type="rgb"/>
         </Property>
         <Property name="horizontalAlignment" type="int" value="0"/>
-        <Property name="text" type="java.lang.String" value="Rapid Response "/>
+        <Property name="text" type="java.lang.String" value="NCI Organisation"/>
       </Properties>
       <Events>
         <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabel1MouseClicked"/>

@@ -114,7 +114,7 @@
               <Color blue="44" green="27" red="1a" type="rgb"/>
             </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="text" type="java.lang.String" value="COVID 19 tesing center"/>
+            <Property name="text" type="java.lang.String" value="Cancer Hospitals"/>
           </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabel2MouseClicked"/>
@@ -129,7 +129,7 @@
               <Color blue="44" green="27" red="1a" type="rgb"/>
             </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="text" type="java.lang.String" value="Doctor&apos;s Association"/>
+            <Property name="text" type="java.lang.String" value="Oncologist Information"/>
           </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabel1MouseClicked"/>

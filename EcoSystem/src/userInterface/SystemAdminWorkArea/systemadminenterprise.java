@@ -65,7 +65,7 @@ public class systemadminenterprise extends javax.swing.JPanel {
         });
 
         jButton3.setBackground(new java.awt.Color(195, 233, 245));
-        jButton3.setText("Non Profit Enterprise");
+        jButton3.setText("NGO Enterprise");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
@@ -73,7 +73,7 @@ public class systemadminenterprise extends javax.swing.JPanel {
         });
 
         jButton4.setBackground(new java.awt.Color(195, 233, 245));
-        jButton4.setText("Pharmaceutical Enterprise");
+        jButton4.setText("Drug & Consultation Enterprise");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
@@ -81,7 +81,7 @@ public class systemadminenterprise extends javax.swing.JPanel {
         });
 
         jButton5.setBackground(new java.awt.Color(195, 233, 245));
-        jButton5.setText("Emergency Enterprise");
+        jButton5.setText("Emergency Services Enterprise");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
@@ -89,7 +89,7 @@ public class systemadminenterprise extends javax.swing.JPanel {
         });
 
         jButton6.setBackground(new java.awt.Color(195, 233, 245));
-        jButton6.setText("Government Enterprise");
+        jButton6.setText("NCI Enterprise");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton6ActionPerformed(evt);
