@@ -62,10 +62,11 @@ public class police_frame extends javax.swing.JPanel {
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(204, 255, 204));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/police-car (1)_1.png"))); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 30, -1, -1));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/playtime.png"))); // NOI18N
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 190, -1));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -77,48 +78,49 @@ public class police_frame extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(jTable1);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 170, 794, 230));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 120, 794, 230));
 
-        jButton1.setBackground(new java.awt.Color(195, 233, 245));
+        jButton1.setBackground(new java.awt.Color(232, 233, 130));
+        jButton1.setForeground(new java.awt.Color(0, 0, 204));
         jButton1.setText("Respond");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 440, -1, -1));
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 360, 110, -1));
 
-        jButton2.setBackground(new java.awt.Color(195, 233, 245));
+        jButton2.setBackground(new java.awt.Color(232, 233, 130));
+        jButton2.setForeground(new java.awt.Color(0, 0, 204));
         jButton2.setText("N/A");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
-        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 440, -1, -1));
+        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 400, 110, -1));
 
-        jButton3.setBackground(new java.awt.Color(195, 233, 245));
+        jButton3.setBackground(new java.awt.Color(232, 233, 130));
+        jButton3.setForeground(new java.awt.Color(0, 0, 204));
         jButton3.setText("Close Case");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
             }
         });
-        add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 440, -1, -1));
+        add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 440, -1, -1));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/logout (1).png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/back-button.png"))); // NOI18N
         jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel2MouseClicked(evt);
             }
         });
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 20, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, -1, -1));
 
-        jLabel3.setBackground(new java.awt.Color(26, 39, 68));
+        jLabel3.setBackground(new java.awt.Color(204, 255, 204));
         jLabel3.setOpaque(true);
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1040, 540));
-
-        jLabel4.setText("jLabel4");
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 0, 220, 140));
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(451, 140, 130, -1));
     }// </editor-fold>//GEN-END:initComponents
 
