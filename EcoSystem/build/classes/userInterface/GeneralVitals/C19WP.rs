@@ -1,0 +1,2 @@
+userinterface.GeneralVitals.C19WP
+userinterface.GeneralVitals.C19WP$1

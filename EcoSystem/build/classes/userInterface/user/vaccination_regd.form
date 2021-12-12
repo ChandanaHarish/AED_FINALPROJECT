@@ -164,7 +164,7 @@
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="cc" green="cc" red="cc" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="ever diagonised with covid-19??"/>
+        <Property name="text" type="java.lang.String" value="Are you feeling anxious today ?"/>
       </Properties>
     </Component>
     <Container class="javax.swing.JScrollPane" name="jScrollPane1">
@@ -260,7 +260,7 @@
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="cc" green="cc" red="cc" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Do you have diabetese ??"/>
+        <Property name="text" type="java.lang.String" value="Are you sleeping well ?"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JRadioButton" name="jRadioButton3">
@@ -305,7 +305,7 @@
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="cc" green="cc" red="cc" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Are you uner any medication ??"/>
+        <Property name="text" type="java.lang.String" value="Are you feeling content ?"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JRadioButton" name="jRadioButton5">
@@ -347,7 +347,7 @@
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="cc" green="cc" red="cc" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Blood thinner??"/>
+        <Property name="text" type="java.lang.String" value="Are you under any medication ?"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JRadioButton" name="jRadioButton7">

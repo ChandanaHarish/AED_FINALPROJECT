@@ -1,0 +1,6 @@
+userinterface.SystemAdminWorkArea.pharmacy$2
+userinterface.SystemAdminWorkArea.pharmacy$1
+userinterface.SystemAdminWorkArea.pharmacy$4
+userinterface.SystemAdminWorkArea.pharmacy$3
+userinterface.SystemAdminWorkArea.pharmacy$5
+userinterface.SystemAdminWorkArea.pharmacy

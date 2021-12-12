@@ -1,0 +1,5 @@
+userinterface.RestaurantAdminRole.AdminWorkAreaJPanel
+userinterface.RestaurantAdminRole.AdminWorkAreaJPanel$1
+userinterface.RestaurantAdminRole.AdminWorkAreaJPanel$2
+userinterface.RestaurantAdminRole.AdminWorkAreaJPanel$3
+userinterface.RestaurantAdminRole.AdminWorkAreaJPanel$4

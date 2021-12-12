@@ -1,0 +1,13 @@
+userinterface.bloodbankframe.manage_stock$9
+userinterface.bloodbankframe.manage_stock$3
+userinterface.bloodbankframe.manage_stock$4
+userinterface.bloodbankframe.manage_stock$1
+userinterface.bloodbankframe.manage_stock$2
+userinterface.bloodbankframe.manage_stock$7
+userinterface.bloodbankframe.manage_stock$8
+userinterface.bloodbankframe.manage_stock$5
+userinterface.bloodbankframe.manage_stock$6
+userinterface.bloodbankframe.manage_stock
+userinterface.bloodbankframe.manage_stock$10
+userinterface.bloodbankframe.manage_stock$11
+userinterface.bloodbankframe.manage_stock$12

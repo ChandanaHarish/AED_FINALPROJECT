@@ -1,0 +1,4 @@
+userinterface.CustomerRole.CustomerAreaJPanel
+userinterface.CustomerRole.CustomerAreaJPanel$1
+userinterface.CustomerRole.CustomerAreaJPanel$2
+userinterface.CustomerRole.CustomerAreaJPanel$3

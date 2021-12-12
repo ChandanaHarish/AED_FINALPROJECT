@@ -1,0 +1,4 @@
+userinterface.GeneralVitals.covid19_mainframe
+userinterface.GeneralVitals.covid19_mainframe$3
+userinterface.GeneralVitals.covid19_mainframe$2
+userinterface.GeneralVitals.covid19_mainframe$1
