@@ -5,7 +5,7 @@
  */
 package Business.Ambulance;
 
-import Business.governmentofficial.governmentofficial;
+import Business.NCI.governmentofficial;
 import java.util.ArrayList;
 
 /**

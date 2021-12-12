@@ -6,7 +6,7 @@
 package userinterface.bloodbankframe;
 
 import Business.DB4OUtil.DB4OUtil;
-import Business.Doctor.Doctor;
+import Business.Oncologist.Doctor;
 import Business.EcoSystem;
 import Business.Lab.BloodBank;
 import Business.Lab.bloodbank_directory;

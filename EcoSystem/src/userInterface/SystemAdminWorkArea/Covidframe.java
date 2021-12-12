@@ -6,10 +6,10 @@
 package userinterface.SystemAdminWorkArea;
 
 import Business.EcoSystem;
-import Business.covidcenter.covidcenter;
-import Business.covidcenter.covidcenter_directory;
-import Business.governmentofficial.governmentoffical_directory;
-import Business.governmentofficial.governmentofficial;
+import Business.CancerHospitals.covidcenter;
+import Business.CancerHospitals.covidcenter_directory;
+import Business.NCI.governmentoffical_directory;
+import Business.NCI.governmentofficial;
 import static java.time.Clock.system;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;

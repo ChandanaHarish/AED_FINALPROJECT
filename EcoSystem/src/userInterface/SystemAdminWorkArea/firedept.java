@@ -6,8 +6,8 @@
 package userinterface.SystemAdminWorkArea;
 
 import Business.EcoSystem;
-import Business.firedepartment.FireDepartment;
-import Business.firedepartment.FireDepartmentDirectory;
+import Business.MedicineDelivery.FireDepartment;
+import Business.MedicineDelivery.FireDepartmentDirectory;
 import Business.pharmacy.Pharmacy;
 import Business.pharmacy.Pharmacy_directory;
 import java.util.ArrayList;

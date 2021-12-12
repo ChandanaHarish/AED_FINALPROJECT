@@ -5,7 +5,7 @@
  */
 package userinterface.user;
 
-import Business.Doctor.Doctor;
+import Business.Oncologist.Doctor;
 import Business.EcoSystem;
 import Business.UserAccount.UserAccount;
 import Business.WorkQueue.Doctor_appointment;
