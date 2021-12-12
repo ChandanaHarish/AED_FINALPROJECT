@@ -17,6 +17,7 @@ import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
+import userInterface.loginPage;
 
 /**
  *
@@ -79,6 +80,7 @@ public class MedicineDeliveryUI extends javax.swing.JPanel {
         btnFalseAlarmRespond = new javax.swing.JButton();
         btnCloseMedicalDelivery = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -120,6 +122,13 @@ public class MedicineDeliveryUI extends javax.swing.JPanel {
             }
         });
 
+        jLabel1.setText("go back");
+        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel1MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -138,6 +147,10 @@ public class MedicineDeliveryUI extends javax.swing.JPanel {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 161, Short.MAX_VALUE)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(38, 38, 38))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addGap(482, 482, 482))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -154,7 +167,9 @@ public class MedicineDeliveryUI extends javax.swing.JPanel {
                     .addComponent(btnRespondMedicalDelivery)
                     .addComponent(btnFalseAlarmRespond)
                     .addComponent(btnCloseMedicalDelivery))
-                .addContainerGap(129, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addGap(72, 72, 72))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -300,18 +315,25 @@ public class MedicineDeliveryUI extends javax.swing.JPanel {
 //        DB4OUtil.dB4OUtil.storeSystem(ecoSystem);
     }//GEN-LAST:event_jLabel2MouseClicked
 
+    private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
+        // TODO add your handling code here:
+        backAction();
+        DB4OUtil.dB4OUtil.storeSystem(ecoSystem);
+    }//GEN-LAST:event_jLabel1MouseClicked
+
      private void backAction() {
-//        container.remove(this);
-//        Component[] componentArray = container.getComponents();
-//        Component component = componentArray[componentArray.length - 1];
-//        loginpage manageSuppliersJPanel = (loginpage) component;        
-//        CardLayout layout = (CardLayout) container.getLayout();
-//        layout.previous(container);
+        container.remove(this);
+        Component[] componentArray = container.getComponents();
+        Component component = componentArray[componentArray.length - 1];
+        loginPage manageSuppliersJPanel = (loginPage) component;        
+        CardLayout layout = (CardLayout) container.getLayout();
+        layout.previous(container);
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnCloseMedicalDelivery;
     private javax.swing.JButton btnFalseAlarmRespond;
     private javax.swing.JButton btnRespondMedicalDelivery;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
