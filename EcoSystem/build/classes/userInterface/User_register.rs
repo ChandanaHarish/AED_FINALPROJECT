@@ -1,3 +1,4 @@
+userinterface.User_register$10
 userinterface.User_register$3
 userinterface.User_register
 userinterface.User_register$4
