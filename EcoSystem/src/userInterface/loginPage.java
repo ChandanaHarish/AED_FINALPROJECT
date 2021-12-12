@@ -123,6 +123,7 @@ public class loginPage extends javax.swing.JPanel {
         jLabel2 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
 
         setPreferredSize(new java.awt.Dimension(1036, 537));
 
@@ -139,9 +140,9 @@ public class loginPage extends javax.swing.JPanel {
             }
         });
         jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 90, 40));
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 30, 100, 110));
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 20, 100, 110));
 
-        jPasswordField1.setBackground(new java.awt.Color(0, 0, 0));
+        jPasswordField1.setBackground(new java.awt.Color(216, 235, 228));
         jPasswordField1.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
         jPasswordField1.setToolTipText("");
         jPasswordField1.setBorder(null);
@@ -153,7 +154,7 @@ public class loginPage extends javax.swing.JPanel {
         });
         jPanel1.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 280, 280, 40));
 
-        jTextField1.setBackground(new java.awt.Color(0, 0, 0));
+        jTextField1.setBackground(new java.awt.Color(216, 235, 228));
         jTextField1.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
         jTextField1.setBorder(null);
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
@@ -163,7 +164,7 @@ public class loginPage extends javax.swing.JPanel {
         });
         jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 180, 290, 40));
 
-        jButton1.setBackground(new java.awt.Color(195, 233, 245));
+        jButton1.setBackground(new java.awt.Color(0, 102, 102));
         jButton1.setFont(new java.awt.Font("Lucida Fax", 0, 16)); // NOI18N
         jButton1.setText("Login");
         jButton1.setBorderPainted(false);
@@ -173,14 +174,14 @@ public class loginPage extends javax.swing.JPanel {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(586, 380, 160, -1));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 330, 280, -1));
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 270, 32, 40));
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 180, 32, 40));
 
         jLabel1.setPreferredSize(new java.awt.Dimension(300, 120));
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 290, -1, -1));
 
-        jButton2.setBackground(new java.awt.Color(195, 233, 245));
+        jButton2.setBackground(new java.awt.Color(0, 102, 102));
         jButton2.setFont(new java.awt.Font("Lucida Fax", 0, 16)); // NOI18N
         jButton2.setText("User Registration");
         jButton2.setBorderPainted(false);
@@ -190,32 +191,33 @@ public class loginPage extends javax.swing.JPanel {
                 jButton2ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 380, 170, -1));
+        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 380, 280, -1));
 
         jLabel6.setFont(new java.awt.Font("Berlin Sans FB", 0, 20)); // NOI18N
-        jLabel6.setText("Password");
+        jLabel6.setText("Enter Password");
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 240, 140, 40));
 
         jLabel7.setFont(new java.awt.Font("Berlin Sans FB", 0, 20)); // NOI18N
-        jLabel7.setText("Username");
+        jLabel7.setText("Enter Username");
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 140, 140, 40));
 
-        jLabel3.setBackground(new java.awt.Color(204, 204, 255));
+        jLabel3.setBackground(new java.awt.Color(216, 235, 228));
         jLabel3.setOpaque(true);
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 0, 630, 540));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 0, 50, 540));
 
-        jLabel2.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel2.setBackground(new java.awt.Color(216, 235, 228));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel2.setOpaque(true);
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 490, 540));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 40, 540));
 
         jLabel8.setFont(new java.awt.Font("Berlin Sans FB", 0, 20)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel8.setText("Username");
+        jLabel8.setText("USER LOGIN");
         jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 80, 140, 40));
-
-        jLabel10.setText("jLabel10");
         jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 20, 80, -1));
+
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userInterface/ribbon.png"))); // NOI18N
+        jLabel13.setText("jLabel13");
+        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 10, 460, 520));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -664,6 +666,7 @@ public class loginPage extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
