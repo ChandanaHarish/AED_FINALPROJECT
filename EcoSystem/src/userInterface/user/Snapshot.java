@@ -130,7 +130,7 @@ public class Snapshot extends javax.swing.JPanel {
 
         setLayout(new java.awt.CardLayout());
 
-        jPanel2.setBackground(new java.awt.Color(26, 39, 68));
+        jPanel2.setBackground(new java.awt.Color(216, 235, 228));
 
         jButton1.setBackground(new java.awt.Color(195, 233, 245));
         jButton1.setText("Start");
@@ -166,7 +166,6 @@ public class Snapshot extends javax.swing.JPanel {
         });
 
         jLabel2.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(204, 204, 204));
         jLabel2.setText("Temperature");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
