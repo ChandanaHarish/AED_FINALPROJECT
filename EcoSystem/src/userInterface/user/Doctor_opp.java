@@ -171,7 +171,7 @@ public class Doctor_opp extends javax.swing.JPanel {
 
         jLabel4.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(204, 204, 204));
-        jLabel4.setText("Doctor's Appointment");
+        jLabel4.setText("Oncologist's Appointment");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);

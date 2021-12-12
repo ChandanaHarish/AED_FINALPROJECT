@@ -168,7 +168,7 @@
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="44" green="27" red="1a" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Covid -19 Testing"/>
+        <Property name="text" type="java.lang.String" value="General Checkup"/>
       </Properties>
       <Events>
         <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabel4MouseClicked"/>
@@ -182,7 +182,7 @@
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="44" green="27" red="1a" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Vaccination "/>
+        <Property name="text" type="java.lang.String" value="Mental Health"/>
       </Properties>
       <Events>
         <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabel3MouseClicked"/>
@@ -210,7 +210,7 @@
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="44" green="27" red="1a" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Report Emergency "/>
+        <Property name="text" type="java.lang.String" value="Emergency Services"/>
       </Properties>
       <Events>
         <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabel5MouseClicked"/>

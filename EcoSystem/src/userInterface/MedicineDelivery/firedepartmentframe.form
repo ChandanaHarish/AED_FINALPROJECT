@@ -45,7 +45,7 @@
               <Table columnCount="6" rowCount="0">
                 <Column editable="true" title="ID" type="java.lang.Object"/>
                 <Column editable="true" title="Name" type="java.lang.Object"/>
-                <Column editable="true" title="Emergency" type="java.lang.Object"/>
+                <Column editable="true" title="Service" type="java.lang.Object"/>
                 <Column editable="true" title="Location" type="java.lang.Object"/>
                 <Column editable="true" title="Status" type="java.lang.Object"/>
                 <Column editable="true" title="Response" type="java.lang.Object"/>
@@ -113,7 +113,7 @@
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="f5" green="e9" red="c3" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="False Alaram"/>
+        <Property name="text" type="java.lang.String" value="N/A"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>

@@ -30,7 +30,7 @@ public class firedepartmentframe extends javax.swing.JPanel {
     private final UserAccount userAccount;
 
     /**
-     * Creates new form firedepartmentframe
+     * Creates new form Medicine Delivery
      */
     public firedepartmentframe(JPanel container,EcoSystem system,UserAccount userAccount) {
         initComponents();
@@ -50,7 +50,7 @@ public class firedepartmentframe extends javax.swing.JPanel {
         {
             report_emergency o=ol.get(i);
             System.out.println(o.getEmergency());
-            if(o.getEmergency().matches("Fire"))
+            if(o.getEmergency().matches("Medicine Delivery"))
             {
             
                 DefaultTableModel t2 = (DefaultTableModel) jTable1.getModel();
@@ -93,7 +93,7 @@ public class firedepartmentframe extends javax.swing.JPanel {
 
             },
             new String [] {
-                "ID", "Name", "Emergency", "Location", "Status", "Response"
+                "ID", "Name", "Service", "Location", "Status", "Response"
             }
         ));
         jScrollPane1.setViewportView(jTable1);
@@ -110,7 +110,7 @@ public class firedepartmentframe extends javax.swing.JPanel {
         add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 420, -1, -1));
 
         jButton2.setBackground(new java.awt.Color(195, 233, 245));
-        jButton2.setText("False Alaram");
+        jButton2.setText("N/A");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -161,9 +161,9 @@ public class firedepartmentframe extends javax.swing.JPanel {
                 {
                     JOptionPane.showMessageDialog(null, "Emergency Closed");
                 }
-                else if(o.getStatus().matches("False Alaram"))
+                else if(o.getStatus().matches("N/A"))
                 {
-                    JOptionPane.showMessageDialog(null, "Emergency is a false Alaram");
+                    JOptionPane.showMessageDialog(null, "Service is not applicable");
                 }
                 else if(o.getResponse().matches("No Response"))
                 {
@@ -207,9 +207,9 @@ public class firedepartmentframe extends javax.swing.JPanel {
                 {
                     JOptionPane.showMessageDialog(null, "Emergency Closed");
                 }
-                else if(o.getStatus().matches("False Alaram"))
+                else if(o.getStatus().matches("N/A"))
                 {
-                    JOptionPane.showMessageDialog(null, "Emergency is a false Alaram");
+                    JOptionPane.showMessageDialog(null, "Service is not Applicable");
                 }
                 else if(o.getResponse().matches("No Response"))
                 {
@@ -254,9 +254,9 @@ public class firedepartmentframe extends javax.swing.JPanel {
                 {
                     JOptionPane.showMessageDialog(null, "Emergency Closed");
                 }
-                else if(o.getStatus().matches("False Alaram"))
+                else if(o.getStatus().matches("N/A"))
                 {
-                    JOptionPane.showMessageDialog(null, "Emergency is a false Alaram");
+                    JOptionPane.showMessageDialog(null, "Service is not applicable");
                 }
                 else if(o.getResponse().matches("No Response"))
                 {
@@ -264,7 +264,7 @@ public class firedepartmentframe extends javax.swing.JPanel {
                 }
                 else
                 {
-                    o.setStatus("False Alaram");
+                    o.setStatus("N/A");
                 }
             }
             

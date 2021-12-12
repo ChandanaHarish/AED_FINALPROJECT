@@ -82,7 +82,7 @@ public class report_emergency_frame extends javax.swing.JPanel {
 
         jLabel3.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(204, 204, 204));
-        jLabel3.setText("Emergency :");
+        jLabel3.setText("Services :");
 
         jLabel4.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(204, 204, 204));
@@ -97,7 +97,7 @@ public class report_emergency_frame extends javax.swing.JPanel {
         });
 
         jButton2.setBackground(new java.awt.Color(195, 233, 245));
-        jButton2.setText("Report Emergency");
+        jButton2.setText("Book Service");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -111,7 +111,7 @@ public class report_emergency_frame extends javax.swing.JPanel {
 
             },
             new String [] {
-                "ID", "Emergency", "Location", "Status", "Response"
+                "ID", "Service", "Location", "Status", "Response"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -124,7 +124,7 @@ public class report_emergency_frame extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(jTable1);
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Fire", "Medical", "Crime" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Medicine Delivery", "Medical Emergency", "Child Care" }));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox1ActionPerformed(evt);
@@ -133,14 +133,14 @@ public class report_emergency_frame extends javax.swing.JPanel {
 
         jLabel5.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(204, 204, 204));
-        jLabel5.setText("Report Emergency");
+        jLabel5.setText("Emergency Services");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(226, Short.MAX_VALUE)
+                .addContainerGap(306, Short.MAX_VALUE)
                 .addComponent(jButton1)
                 .addGap(75, 75, 75)
                 .addComponent(jButton2)
@@ -265,7 +265,7 @@ public class report_emergency_frame extends javax.swing.JPanel {
                 }   
             else
             {
-                JOptionPane.showMessageDialog(null, "Reported as false Alaram!!");
+                JOptionPane.showMessageDialog(null, "Service not Applicable, Sorry!");
             }
             }
             

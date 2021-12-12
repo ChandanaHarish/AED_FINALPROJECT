@@ -89,7 +89,7 @@ public class usermainpannel extends javax.swing.JPanel {
 
         jLabel4.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(26, 39, 68));
-        jLabel4.setText("Covid -19 Testing");
+        jLabel4.setText("General Checkup");
         jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel4MouseClicked(evt);
@@ -98,7 +98,7 @@ public class usermainpannel extends javax.swing.JPanel {
 
         jLabel3.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(26, 39, 68));
-        jLabel3.setText("Vaccination ");
+        jLabel3.setText("Mental Health");
         jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel3MouseClicked(evt);
@@ -116,7 +116,7 @@ public class usermainpannel extends javax.swing.JPanel {
 
         jLabel5.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(26, 39, 68));
-        jLabel5.setText("Report Emergency ");
+        jLabel5.setText("Emergency Services");
         jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel5MouseClicked(evt);

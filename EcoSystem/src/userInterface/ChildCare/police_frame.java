@@ -285,7 +285,7 @@ public class police_frame extends javax.swing.JPanel {
         for(int i=0;i<u;i++)
         {
             report_emergency o=ol.get(i);
-            if(o.getEmergency().matches("Crime"))
+            if(o.getEmergency().matches("Child Care"))
             {
             
                 DefaultTableModel t2 = (DefaultTableModel) jTable1.getModel();

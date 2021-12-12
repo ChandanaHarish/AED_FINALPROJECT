@@ -178,7 +178,7 @@
                 <Column editable="true" title="ID" type="java.lang.Object"/>
                 <Column editable="true" title="Status" type="java.lang.Object"/>
                 <Column editable="true" title="Pharmacy" type="java.lang.Object"/>
-                <Column editable="true" title="Vaccination" type="java.lang.Object"/>
+                <Column editable="true" title="Therapy" type="java.lang.Object"/>
                 <Column editable="true" title="Date" type="java.lang.Object"/>
                 <Column editable="true" title="Time" type="java.lang.Object"/>
               </Table>
@@ -411,7 +411,7 @@
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="cc" green="cc" red="cc" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Vaccination Registration"/>
+        <Property name="text" type="java.lang.String" value="Mental Health Portal"/>
       </Properties>
     </Component>
   </SubComponents>
