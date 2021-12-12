@@ -307,7 +307,7 @@ public class User_register extends javax.swing.JPanel {
                 jTextField2.setText("");
                 return;
             }
-            User customer = new User(jTextField6.getText(),jTextField5.getText(),jTextField1.getText(),jTextField7.getText(),jTextField4.getText(),jTextField3.getText(),jTextField2.getText());
+            User customer = new User(jTextField6.getText(),jTextField5.getText(),jTextField4.getText(),jTextField1.getText(),jTextField7.getText(),jTextField3.getText(),jTextField2.getText());
             ecosystem.getUserAccountDirectory().addAccount(customer);
             ecosystem.getUserDirectory().addUser(customer);
             sendmail();

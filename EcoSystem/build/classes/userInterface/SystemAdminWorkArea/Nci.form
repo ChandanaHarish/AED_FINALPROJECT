@@ -29,9 +29,15 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <Group type="103" groupAlignment="1" attributes="0">
+<<<<<<< HEAD
+                          <Component id="btnDelete" linkSize="2" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnAdd" linkSize="2" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnUpdate" linkSize="2" alignment="1" min="-2" max="-2" attributes="0"/>
+=======
                           <Component id="jButton3" linkSize="2" alignment="1" min="-2" max="-2" attributes="0"/>
                           <Component id="jButton1" linkSize="2" alignment="1" min="-2" max="-2" attributes="0"/>
                           <Component id="jButton2" linkSize="2" alignment="1" min="-2" max="-2" attributes="0"/>
+>>>>>>> 0a957d8e8765793f9e90ac0740a280f9c2f86886
                       </Group>
                       <EmptySpace min="-2" pref="236" max="-2" attributes="0"/>
                   </Group>
@@ -40,7 +46,11 @@
                           <Group type="102" attributes="0">
                               <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
+<<<<<<< HEAD
+                              <Component id="txtName" linkSize="1" min="-2" pref="103" max="-2" attributes="0"/>
+=======
                               <Component id="jTextField1" linkSize="1" min="-2" pref="103" max="-2" attributes="0"/>
+>>>>>>> 0a957d8e8765793f9e90ac0740a280f9c2f86886
                           </Group>
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="1" attributes="0">
@@ -51,10 +61,17 @@
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
+<<<<<<< HEAD
+                                  <Component id="txtPhNo" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtUserID" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtPwd" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtLastName" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
+=======
                                   <Component id="jTextField3" linkSize="1" min="-2" max="-2" attributes="0"/>
                                   <Component id="jTextField4" linkSize="1" min="-2" max="-2" attributes="0"/>
                                   <Component id="jTextField5" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="jTextField2" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
+>>>>>>> 0a957d8e8765793f9e90ac0740a280f9c2f86886
                               </Group>
                           </Group>
                       </Group>
@@ -64,7 +81,11 @@
           </Group>
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="73" max="-2" attributes="0"/>
+<<<<<<< HEAD
+              <Component id="tblNCI" min="-2" pref="565" max="-2" attributes="0"/>
+=======
               <Component id="jScrollPane1" min="-2" pref="565" max="-2" attributes="0"/>
+>>>>>>> 0a957d8e8765793f9e90ac0740a280f9c2f86886
               <EmptySpace min="0" pref="132" max="32767" attributes="0"/>
           </Group>
       </Group>
@@ -73,6 +94,18 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
+<<<<<<< HEAD
+              <Component id="tblNCI" min="-2" pref="193" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="txtName" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnAdd" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="txtLastName" alignment="3" min="-2" max="-2" attributes="0"/>
+=======
               <Component id="jScrollPane1" min="-2" pref="193" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -83,17 +116,32 @@
               <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jTextField2" alignment="3" min="-2" max="-2" attributes="0"/>
+>>>>>>> 0a957d8e8765793f9e90ac0740a280f9c2f86886
                   <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
+<<<<<<< HEAD
+                  <Component id="txtPhNo" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnUpdate" alignment="3" min="-2" max="-2" attributes="0"/>
+=======
                   <Component id="jTextField3" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jButton2" alignment="3" min="-2" max="-2" attributes="0"/>
+>>>>>>> 0a957d8e8765793f9e90ac0740a280f9c2f86886
                   <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
+<<<<<<< HEAD
+                  <Component id="txtUserID" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="txtPwd" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnDelete" alignment="3" min="-2" max="-2" attributes="0"/>
+=======
                   <Component id="jTextField4" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -101,6 +149,7 @@
                   <Component id="jTextField5" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jButton3" alignment="3" min="-2" max="-2" attributes="0"/>
+>>>>>>> 0a957d8e8765793f9e90ac0740a280f9c2f86886
               </Group>
               <EmptySpace pref="117" max="32767" attributes="0"/>
           </Group>
@@ -108,6 +157,28 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
+<<<<<<< HEAD
+    <Component class="javax.swing.JTextField" name="txtName">
+      <Events>
+        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtNameKeyPressed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtLastName">
+      <Events>
+        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtLastNameKeyPressed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtPhNo">
+      <Events>
+        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtPhNoKeyPressed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtUserID">
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtPwd">
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="tblNCI">
+=======
     <Component class="javax.swing.JTextField" name="jTextField1">
       <Events>
         <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTextField1KeyPressed"/>
@@ -128,6 +199,7 @@
     <Component class="javax.swing.JTextField" name="jTextField5">
     </Component>
     <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+>>>>>>> 0a957d8e8765793f9e90ac0740a280f9c2f86886
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
       <SubComponents>
@@ -203,12 +275,20 @@
         <Property name="text" type="java.lang.String" value="Last Name :"/>
       </Properties>
     </Component>
+<<<<<<< HEAD
+    <Component class="javax.swing.JButton" name="btnAdd">
+=======
     <Component class="javax.swing.JButton" name="jButton1">
+>>>>>>> 0a957d8e8765793f9e90ac0740a280f9c2f86886
       <Properties>
         <Property name="text" type="java.lang.String" value="Add"/>
       </Properties>
       <Events>
+<<<<<<< HEAD
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAddActionPerformed"/>
+=======
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+>>>>>>> 0a957d8e8765793f9e90ac0740a280f9c2f86886
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel3">
@@ -219,15 +299,26 @@
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="cc" green="cc" red="cc" type="rgb"/>
         </Property>
+<<<<<<< HEAD
+        <Property name="text" type="java.lang.String" value="Phone number:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnUpdate">
+=======
         <Property name="text" type="java.lang.String" value="phone number:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton2">
+>>>>>>> 0a957d8e8765793f9e90ac0740a280f9c2f86886
       <Properties>
         <Property name="text" type="java.lang.String" value="Update"/>
       </Properties>
       <Events>
+<<<<<<< HEAD
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnUpdateActionPerformed"/>
+=======
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
+>>>>>>> 0a957d8e8765793f9e90ac0740a280f9c2f86886
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel4">
@@ -242,12 +333,20 @@
         <Property name="toolTipText" type="java.lang.String" value=""/>
       </Properties>
     </Component>
+<<<<<<< HEAD
+    <Component class="javax.swing.JButton" name="btnDelete">
+=======
     <Component class="javax.swing.JButton" name="jButton3">
+>>>>>>> 0a957d8e8765793f9e90ac0740a280f9c2f86886
       <Properties>
         <Property name="text" type="java.lang.String" value="Delete"/>
       </Properties>
       <Events>
+<<<<<<< HEAD
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDeleteActionPerformed"/>
+=======
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton3ActionPerformed"/>
+>>>>>>> 0a957d8e8765793f9e90ac0740a280f9c2f86886
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel5">

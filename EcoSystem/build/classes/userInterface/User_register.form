@@ -145,7 +145,10 @@
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="null"/>
             </Property>
+<<<<<<< HEAD
+=======
             <Property name="opaque" type="boolean" value="false"/>
+>>>>>>> 0a957d8e8765793f9e90ac0740a280f9c2f86886
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField6ActionPerformed"/>
@@ -191,7 +194,10 @@
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="null"/>
             </Property>
+<<<<<<< HEAD
+=======
             <Property name="opaque" type="boolean" value="false"/>
+>>>>>>> 0a957d8e8765793f9e90ac0740a280f9c2f86886
           </Properties>
           <Events>
             <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTextField5KeyPressed"/>
@@ -226,7 +232,10 @@
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="null"/>
             </Property>
+<<<<<<< HEAD
+=======
             <Property name="opaque" type="boolean" value="false"/>
+>>>>>>> 0a957d8e8765793f9e90ac0740a280f9c2f86886
           </Properties>
           <Events>
             <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTextField4KeyPressed"/>
@@ -258,7 +267,10 @@
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="null"/>
             </Property>
+<<<<<<< HEAD
+=======
             <Property name="opaque" type="boolean" value="false"/>
+>>>>>>> 0a957d8e8765793f9e90ac0740a280f9c2f86886
           </Properties>
           <Events>
             <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTextField3KeyPressed"/>
@@ -291,7 +303,10 @@
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="null"/>
             </Property>
+<<<<<<< HEAD
+=======
             <Property name="opaque" type="boolean" value="false"/>
+>>>>>>> 0a957d8e8765793f9e90ac0740a280f9c2f86886
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField2ActionPerformed"/>
@@ -325,7 +340,10 @@
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="null"/>
             </Property>
+<<<<<<< HEAD
+=======
             <Property name="opaque" type="boolean" value="false"/>
+>>>>>>> 0a957d8e8765793f9e90ac0740a280f9c2f86886
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -354,7 +372,10 @@
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="null"/>
             </Property>
+<<<<<<< HEAD
+=======
             <Property name="opaque" type="boolean" value="false"/>
+>>>>>>> 0a957d8e8765793f9e90ac0740a280f9c2f86886
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">

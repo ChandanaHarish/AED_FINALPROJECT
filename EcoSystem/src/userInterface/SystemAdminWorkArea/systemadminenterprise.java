@@ -40,54 +40,54 @@ public class systemadminenterprise extends javax.swing.JPanel {
     private void initComponents() {
 
         jPanel2 = new javax.swing.JPanel();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
+        btnHospEnt = new javax.swing.JButton();
+        btnNPE = new javax.swing.JButton();
+        btnPharmaEnt = new javax.swing.JButton();
+        btnEmergEnt = new javax.swing.JButton();
+        btnGovEnt = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setLayout(new java.awt.CardLayout());
 
         jPanel2.setBackground(new java.awt.Color(26, 39, 68));
 
-        jButton2.setBackground(new java.awt.Color(195, 233, 245));
-        jButton2.setText("Hospital Enterprise");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btnHospEnt.setBackground(new java.awt.Color(195, 233, 245));
+        btnHospEnt.setText("Hospital Enterprise");
+        btnHospEnt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btnHospEntActionPerformed(evt);
             }
         });
 
-        jButton3.setBackground(new java.awt.Color(195, 233, 245));
-        jButton3.setText("Non Profit Enterprise");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        btnNPE.setBackground(new java.awt.Color(195, 233, 245));
+        btnNPE.setText("Non Profit Enterprise");
+        btnNPE.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                btnNPEActionPerformed(evt);
             }
         });
 
-        jButton4.setBackground(new java.awt.Color(195, 233, 245));
-        jButton4.setText("Pharmaceutical Enterprise");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        btnPharmaEnt.setBackground(new java.awt.Color(195, 233, 245));
+        btnPharmaEnt.setText("Pharmaceutical Enterprise");
+        btnPharmaEnt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                btnPharmaEntActionPerformed(evt);
             }
         });
 
-        jButton5.setBackground(new java.awt.Color(195, 233, 245));
-        jButton5.setText("Emergency Enterprise");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        btnEmergEnt.setBackground(new java.awt.Color(195, 233, 245));
+        btnEmergEnt.setText("Emergency Enterprise");
+        btnEmergEnt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                btnEmergEntActionPerformed(evt);
             }
         });
 
-        jButton6.setBackground(new java.awt.Color(195, 233, 245));
-        jButton6.setText("Government Enterprise");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        btnGovEnt.setBackground(new java.awt.Color(195, 233, 245));
+        btnGovEnt.setText("Government Enterprise");
+        btnGovEnt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                btnGovEntActionPerformed(evt);
             }
         });
 
@@ -105,9 +105,9 @@ public class systemadminenterprise extends javax.swing.JPanel {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                         .addGap(105, 105, 105)
-                        .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnHospEnt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnNPE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGap(173, 173, 173))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -116,15 +116,15 @@ public class systemadminenterprise extends javax.swing.JPanel {
                                 .addComponent(jLabel1))
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addGap(258, 258, 258)
-                                .addComponent(jButton6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(btnGovEnt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGap(182, 182, 182)
-                                .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                .addComponent(btnEmergEnt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 9, Short.MAX_VALUE)))
-                .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnPharmaEnt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(155, 155, 155))
         );
 
-        jPanel2Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jButton2, jButton3, jButton4, jButton5, jButton6});
+        jPanel2Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {btnEmergEnt, btnGovEnt, btnHospEnt, btnNPE, btnPharmaEnt});
 
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -133,60 +133,60 @@ public class systemadminenterprise extends javax.swing.JPanel {
                 .addComponent(jLabel1)
                 .addGap(83, 83, 83)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton2)
-                    .addComponent(jButton3)
-                    .addComponent(jButton4))
+                    .addComponent(btnHospEnt)
+                    .addComponent(btnNPE)
+                    .addComponent(btnPharmaEnt))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 282, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton6)
-                    .addComponent(jButton5))
+                    .addComponent(btnGovEnt)
+                    .addComponent(btnEmergEnt))
                 .addGap(121, 121, 121))
         );
 
-        jPanel2Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jButton2, jButton3, jButton4, jButton5, jButton6});
+        jPanel2Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {btnEmergEnt, btnGovEnt, btnHospEnt, btnNPE, btnPharmaEnt});
 
         add(jPanel2, "card2");
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void btnNPEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNPEActionPerformed
         // TODO add your handling code here:
 //        non_profit_org sy=new non_profit_org(container,ecosystem);
 //        container.add(sy);
 //        CardLayout layout = (CardLayout) container.getLayout();
 //        layout.next(container);
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_btnNPEActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void btnHospEntActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHospEntActionPerformed
         // TODO add your handling code here:
         hospital_org sy=new hospital_org(container,ecosystem);
         container.add(sy);
         CardLayout layout = (CardLayout) container.getLayout();
         layout.next(container);
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_btnHospEntActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void btnPharmaEntActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPharmaEntActionPerformed
         // TODO add your handling code here:
         pharmaceutical_org sy=new pharmaceutical_org(container,ecosystem);
         container.add(sy);
         CardLayout layout = (CardLayout) container.getLayout();
         layout.next(container);
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_btnPharmaEntActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void btnEmergEntActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEmergEntActionPerformed
         // TODO add your handling code here:
         emergency_org sy=new emergency_org(container,ecosystem);
         container.add(sy);
         CardLayout layout = (CardLayout) container.getLayout();
         layout.next(container);
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_btnEmergEntActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    private void btnGovEntActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGovEntActionPerformed
         // TODO add your handling code here:
         NCI_org sy=new NCI_org(container,ecosystem);
         container.add(sy);
         CardLayout layout = (CardLayout) container.getLayout();
         layout.next(container);
-    }//GEN-LAST:event_jButton6ActionPerformed
+    }//GEN-LAST:event_btnGovEntActionPerformed
 
     private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
         // TODO add your handling code here:
@@ -205,11 +205,11 @@ public class systemadminenterprise extends javax.swing.JPanel {
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
+    private javax.swing.JButton btnEmergEnt;
+    private javax.swing.JButton btnGovEnt;
+    private javax.swing.JButton btnHospEnt;
+    private javax.swing.JButton btnNPE;
+    private javax.swing.JButton btnPharmaEnt;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables

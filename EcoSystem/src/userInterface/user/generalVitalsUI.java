@@ -503,7 +503,7 @@ private void backAction() {
                  JOptionPane.showMessageDialog(null, "Appointment Booked!!");
                 //email
                 {
-   String ToEmail = jtof.getText();
+        String ToEmail = jtof.getText();
         String myAccountEmail = "aedtesting123";
         String password = "aedtesting123456";
         String Subjects = "";

@@ -17,18 +17,30 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
+<<<<<<< HEAD
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="594" max="32767" attributes="0"/>
+=======
               <EmptySpace min="-2" pref="248" max="-2" attributes="0"/>
               <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace pref="352" max="32767" attributes="0"/>
+>>>>>>> 0a957d8e8765793f9e90ac0740a280f9c2f86886
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
+<<<<<<< HEAD
+              <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="577" max="32767" attributes="0"/>
+=======
               <EmptySpace min="-2" pref="245" max="-2" attributes="0"/>
               <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace pref="355" max="32767" attributes="0"/>
+>>>>>>> 0a957d8e8765793f9e90ac0740a280f9c2f86886
           </Group>
       </Group>
     </DimensionLayout>
