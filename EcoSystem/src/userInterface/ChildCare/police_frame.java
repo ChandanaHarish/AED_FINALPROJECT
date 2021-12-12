@@ -80,35 +80,35 @@ public class police_frame extends javax.swing.JPanel {
 
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 120, 794, 230));
 
-        jButton1.setBackground(new java.awt.Color(232, 233, 130));
-        jButton1.setForeground(new java.awt.Color(0, 0, 204));
+        jButton1.setBackground(new java.awt.Color(0, 102, 102));
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Respond");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 360, 110, -1));
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 360, 110, -1));
 
-        jButton2.setBackground(new java.awt.Color(232, 233, 130));
-        jButton2.setForeground(new java.awt.Color(0, 0, 204));
+        jButton2.setBackground(new java.awt.Color(0, 102, 102));
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("N/A");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
-        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 400, 110, -1));
+        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 410, 110, -1));
 
-        jButton3.setBackground(new java.awt.Color(232, 233, 130));
-        jButton3.setForeground(new java.awt.Color(0, 0, 204));
+        jButton3.setBackground(new java.awt.Color(0, 102, 102));
+        jButton3.setForeground(new java.awt.Color(255, 255, 255));
         jButton3.setText("Close Case");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
             }
         });
-        add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 440, -1, -1));
+        add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 460, -1, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/back-button.png"))); // NOI18N
         jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
