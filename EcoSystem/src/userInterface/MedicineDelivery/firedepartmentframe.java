@@ -81,7 +81,6 @@ public class firedepartmentframe extends javax.swing.JPanel {
         jButton3 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(204, 255, 204));
@@ -97,7 +96,7 @@ public class firedepartmentframe extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(jTable1);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 90, 794, 230));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 90, 794, 230));
 
         jButton1.setBackground(new java.awt.Color(0, 102, 102));
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
@@ -107,7 +106,7 @@ public class firedepartmentframe extends javax.swing.JPanel {
                 jButton1ActionPerformed(evt);
             }
         });
-        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 340, 100, -1));
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 340, 100, -1));
 
         jButton2.setBackground(new java.awt.Color(0, 102, 102));
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
@@ -117,7 +116,7 @@ public class firedepartmentframe extends javax.swing.JPanel {
                 jButton2ActionPerformed(evt);
             }
         });
-        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 400, 100, -1));
+        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 400, 100, -1));
 
         jButton3.setBackground(new java.awt.Color(0, 102, 102));
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
@@ -127,9 +126,8 @@ public class firedepartmentframe extends javax.swing.JPanel {
                 jButton3ActionPerformed(evt);
             }
         });
-        add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 460, -1, -1));
+        add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 460, -1, -1));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\18573\\Downloads\\back-button1.png")); // NOI18N
         jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel2MouseClicked(evt);
@@ -141,12 +139,9 @@ public class firedepartmentframe extends javax.swing.JPanel {
         jLabel3.setOpaque(true);
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 0, 190, 540));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userInterface/MedicineDelivery/pills1.png"))); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 360, 270, 150));
-
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userInterface/MedicineDelivery/medicines1.png"))); // NOI18N
         jLabel4.setText("jLabel4");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 350, 180, 150));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 340, 180, 150));
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -307,7 +302,6 @@ public class firedepartmentframe extends javax.swing.JPanel {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

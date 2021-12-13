@@ -1,4 +1,6 @@
 userinterface.Oncologist.request_blood_frame
+userinterface.Oncologist.request_blood_frame$5
+userinterface.Oncologist.request_blood_frame$6
 userinterface.Oncologist.request_blood_frame$3
 userinterface.Oncologist.request_blood_frame$4
 userinterface.Oncologist.request_blood_frame$1
