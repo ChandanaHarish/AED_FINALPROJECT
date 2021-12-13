@@ -98,7 +98,7 @@ public class Ambulanceframe extends javax.swing.JPanel {
                 jButton2ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 450, 110, -1));
+        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 410, 110, -1));
 
         jButton3.setBackground(new java.awt.Color(0, 102, 102));
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
@@ -108,7 +108,7 @@ public class Ambulanceframe extends javax.swing.JPanel {
                 jButton3ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 490, -1, -1));
+        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 420, -1, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/back-button1.png"))); // NOI18N
         jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {

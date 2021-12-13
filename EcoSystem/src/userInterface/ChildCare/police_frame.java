@@ -94,7 +94,7 @@ public class police_frame extends javax.swing.JPanel {
                 jButton2ActionPerformed(evt);
             }
         });
-        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 390, 110, -1));
+        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 350, 110, -1));
 
         jButton3.setBackground(new java.awt.Color(0, 102, 102));
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
@@ -104,7 +104,7 @@ public class police_frame extends javax.swing.JPanel {
                 jButton3ActionPerformed(evt);
             }
         });
-        add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 430, -1, -1));
+        add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 360, -1, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/back-button.png"))); // NOI18N
         jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
