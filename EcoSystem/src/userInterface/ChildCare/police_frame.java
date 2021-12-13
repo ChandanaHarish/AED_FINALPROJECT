@@ -52,7 +52,6 @@ public class police_frame extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         jButton1 = new javax.swing.JButton();
@@ -65,9 +64,6 @@ public class police_frame extends javax.swing.JPanel {
         setBackground(new java.awt.Color(204, 255, 204));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/playtime.png"))); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 190, -1));
-
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -78,7 +74,7 @@ public class police_frame extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(jTable1);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 120, 794, 230));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, 794, 230));
 
         jButton1.setBackground(new java.awt.Color(0, 102, 102));
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
@@ -88,7 +84,7 @@ public class police_frame extends javax.swing.JPanel {
                 jButton1ActionPerformed(evt);
             }
         });
-        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 360, 110, -1));
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 350, 110, -1));
 
         jButton2.setBackground(new java.awt.Color(0, 102, 102));
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
@@ -98,7 +94,7 @@ public class police_frame extends javax.swing.JPanel {
                 jButton2ActionPerformed(evt);
             }
         });
-        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 410, 110, -1));
+        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 390, 110, -1));
 
         jButton3.setBackground(new java.awt.Color(0, 102, 102));
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
@@ -108,7 +104,7 @@ public class police_frame extends javax.swing.JPanel {
                 jButton3ActionPerformed(evt);
             }
         });
-        add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 460, -1, -1));
+        add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 430, -1, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/back-button.png"))); // NOI18N
         jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -306,7 +302,6 @@ public class police_frame extends javax.swing.JPanel {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

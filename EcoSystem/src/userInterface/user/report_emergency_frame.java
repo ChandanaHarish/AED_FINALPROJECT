@@ -66,29 +66,26 @@ public class report_emergency_frame extends javax.swing.JPanel {
         jComboBox1 = new javax.swing.JComboBox<>();
         jLabel5 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(26, 39, 68));
+        setBackground(new java.awt.Color(204, 255, 204));
 
         jLabel1.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(204, 204, 204));
         jLabel1.setText("First name :");
 
         jTextField1.setText("jTextField1");
 
         jLabel2.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(204, 204, 204));
         jLabel2.setText("Last Name :");
 
         jTextField2.setText("jTextField2");
 
         jLabel3.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(204, 204, 204));
         jLabel3.setText("Services :");
 
         jLabel4.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(204, 204, 204));
         jLabel4.setText("Location :");
 
-        jButton1.setBackground(new java.awt.Color(195, 233, 245));
+        jButton1.setBackground(new java.awt.Color(0, 102, 102));
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Close Case");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -96,7 +93,8 @@ public class report_emergency_frame extends javax.swing.JPanel {
             }
         });
 
-        jButton2.setBackground(new java.awt.Color(195, 233, 245));
+        jButton2.setBackground(new java.awt.Color(0, 102, 102));
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Book Service");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -132,7 +130,6 @@ public class report_emergency_frame extends javax.swing.JPanel {
         });
 
         jLabel5.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(204, 204, 204));
         jLabel5.setText("Emergency Services");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
