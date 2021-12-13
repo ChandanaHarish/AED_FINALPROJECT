@@ -45,7 +45,7 @@ import userinterface.SystemAdminWorkArea.systemadmin;
 import userinterface.ambulance.Ambulanceframe;
 import userinterface.bloodbankframe.bloodbankframe;
 import userinterface.GeneralVitals.covid19_mainframe;
-import userinterface.Oncologist.Doctorframe;
+import userInterface.Oncologist.Doctorframe;
 import userinterface.MedicineDelivery.firedepartmentframe;
 import userinterface.NCI.government_main_frame;
 import userinterface.pharmacy.pharmacyframe;
