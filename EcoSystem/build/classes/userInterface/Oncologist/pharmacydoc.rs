@@ -1,4 +1,0 @@
-userinterface.Oncologist.pharmacydoc
-userinterface.Oncologist.pharmacydoc$3
-userinterface.Oncologist.pharmacydoc$2
-userinterface.Oncologist.pharmacydoc$1
